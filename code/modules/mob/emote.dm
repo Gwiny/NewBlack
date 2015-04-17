@@ -17,6 +17,7 @@
 		input = message
 	if(input)
 		message = "<B>[src]</B> [input]"
+		message = rhtml_decode(message)
 	else
 		return
 

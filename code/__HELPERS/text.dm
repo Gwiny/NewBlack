@@ -34,7 +34,7 @@
 	return t
 
 //Removes a few problematic characters
-/proc/sanitize_simple(var/t,var/list/repl_chars = list("\n"="#","\t"="#"))
+/proc/sanitize_simple(var/t,var/list/repl_chars = list("\n"="#","ÿ"="&#255;","&amp;#255"="&#255;","\t"="#","&lt;"=")"))
 	for(var/char in repl_chars)
 		t = replacetext(t, char, repl_chars[char])
 	return t
@@ -47,6 +47,31 @@
 			t = copytext(t, 1, index) + repl_chars[char] + copytext(t, index+5)
 			index = findtext(t, char)
 	return t
+
+
+///proc/sanitize_simple(var/t,var/list/repl_chars = list("\n"="#","\t"="#","ÿ"="&amp;#255;","&lt;"=")"))
+//	for(var/char in repl_chars)
+//		var/index = findtext(t, char)
+//		while(index)
+//			t = copytext(t, 1, index) + repl_chars[char] + copytext(t, index+1)
+//			index = findtext(t, char)
+//	return t
+
+/proc/sanitize_simple_uni(var/t,var/list/repl_chars = list("\n"="#","\t"="#","ÿ"="&#255;","&amp;#255"="&#255;","&lt;"=")"))
+	for(var/char in repl_chars)
+		var/index = findtext(t, char)
+		while(index)
+			t = copytext(t, 1, index) + repl_chars[char] + copytext(t, index+1)
+			index = findtext(t, char)
+	return t
+
+proc/sanitize_russian(var/msg) //?????????? ??? ?????, ??? ?? ????? ??????? ???????? ????? ? ??????.
+	var/index = findtext(msg, "?")
+	while(index)
+		msg = copytext(msg, 1, index) + "&#255;" + copytext(msg, index + 1)
+		index = findtext(msg, "?")
+	return msg
+
 
 //Runs byond's sanitization proc along-side sanitize_simple
 /proc/sanitize(var/t,var/list/repl_chars = null)
@@ -363,3 +388,73 @@ proc/TextPreview(var/string,var/len=40)
 	if(C && (C.prefs.toggles & CHAT_NOICONS))
 		return tagdesc
 	return "<IMG src='\ref[text_tag_icons.icon]' class='text_tag' iconstate='[tagname]'" + (tagdesc ? " alt='[tagdesc]'" : "") + ">"
+
+
+
+/proc/rhtml_encode(var/msg)
+        var/list/c = text2list(msg, "ÿ")
+        if(c.len == 1)
+                c = text2list(msg, "&#255;")
+                if(c.len == 1)
+                        return html_encode(msg)
+        var/out = ""
+        var/first = 1
+        for(var/text in c)
+                if(!first)
+                        out += "&#255;"
+                first = 0
+                out += html_encode(text)
+        return out
+
+/proc/rhtml_decode(var/msg)
+        var/list/c = text2list(msg, "ÿ")
+        if(c.len == 1)
+                c = text2list(msg, "&#255;")
+                if(c.len == 1)
+                        return html_decode(msg)
+        var/out = ""
+        var/first = 1
+        for(var/text in c)
+                if(!first)
+                        out += "&#255;"
+                first = 0
+                out += html_decode(text)
+        return out
+
+
+//proc/sanitize(var/t,var/list/repl_chars = null)
+//	return sanitize_simple(t,repl_chars)
+
+/proc/sanitize_uni(var/t,var/list/repl_chars = null)
+	return sanitize_simple_uni(t,repl_chars)
+
+//Runs sanitize and strip_html_simple
+//I believe strip_html_simple() is required to run first to prevent '<' from displaying as '&lt;' after sanitize() calls byond's html_encode()
+//proc/strip_html(var/t,var/limit=MAX_MESSAGE_LEN)
+//	return copytext((sanitize(strip_html_simple(t))),1,limit)
+
+//Runs byond's sanitization proc along-side strip_html_simple
+//I believe strip_html_simple() is required to run first to prevent '<' from displaying as '&lt;' that html_encode() would cause
+//proc/adminscrub(var/t,var/limit=MAX_MESSAGE_LEN)
+//	return copytext((sanitize(strip_html_simple(t))),1,limit)
+
+
+/proc/upperrustext(text as text)
+	var/t = ""
+	for(var/i = 1, i <= length(text), i++)
+		var/a = text2ascii(text, i)
+		if (a > 223)
+			t += ascii2text(a - 32)
+		else if (a == 184)
+			t += ascii2text(168)
+		else t += ascii2text(a)
+	t = replacetext(t,"&#255")
+	return t
+
+/proc/ruscapitalize(var/t as text)
+	var/s = 2
+	if (copytext(t,1,2) == ";")
+		s += 1
+	else if (copytext(t,1,2) == ":")
+		s += 2
+	return upperrustext(copytext(t, 1, s)) + copytext(t, s)

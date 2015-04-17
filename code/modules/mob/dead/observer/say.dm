@@ -19,6 +19,7 @@
 
 /mob/dead/observer/emote(var/act, var/type, var/message)
 	message = trim_strip_html_properly(message)
+	message = rhtml_decode(message)
 
 	if(!message)
 		return
