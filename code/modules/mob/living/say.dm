@@ -80,7 +80,7 @@ proc/get_radio_key_from_channel(var/channel)
 		if(dongle.translate_binary) return 1
 
 /mob/living/say(var/message, var/datum/language/speaking = null, var/verb="says", var/alt_name="", var/italics=0, var/message_range = world.view, var/sound/speech_sound, var/sound_vol)
-	message = trim(copytext(sanitize(message), 1, MAX_MESSAGE_LEN))
+	message = copytext(sanitize(message), 1, MAX_MESSAGE_LEN)
 	message = rhtml_decode(message)
 	var/turf/T = get_turf(src)
 

@@ -37,7 +37,7 @@
 		return
 
 	//message = strip_html_properly(message)
-	message = trim(copytext(sanitize(message), 1, MAX_MESSAGE_LEN))
+	message = copytext(sanitize(message), 1, MAX_MESSAGE_LEN)
 	message = rhtml_decode(message)
 
 

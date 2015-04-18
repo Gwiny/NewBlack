@@ -10,7 +10,8 @@
 			src << "\red You cannot speak in IC (Muted)."
 			return
 
-	message = trim_strip_html_properly(message)
+	message = copytext(sanitize(message), 1, MAX_MESSAGE_LEN)
+	message = rhtml_decode(message)
 
 	if(stat)
 		if(stat == 2)
@@ -159,7 +160,7 @@
 			var/temp = winget(client, "input", "text")
 			if(findtextEx(temp, "Say \"", 1, 7) && length(temp) > 5)	//case sensitive means
 
-				temp = replacetext(temp, ";", "")	//general radio
+				temp = replacetext(temp, ";", ";")	//general radio
 
 				if(findtext(trim_left(temp), ":", 6, 7))	//dept radio
 					temp = copytext(trim_left(temp), 8)
