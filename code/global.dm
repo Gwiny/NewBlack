@@ -1,5 +1,6 @@
 //#define TESTING
-
+world
+	fps = 40
 // Items that ask to be called every cycle.
 var/global/obj/effect/datacore/data_core = null
 var/global/list/all_areas                = list()
