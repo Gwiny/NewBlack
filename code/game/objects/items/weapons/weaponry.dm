@@ -4,7 +4,7 @@
 	icon = 'icons/obj/items.dmi'
 	icon_state = "toyhammer"
 	slot_flags = SLOT_BELT
-	throwforce = 0
+	throwforce = 2 * 0
 	w_class = 2.0
 	throw_speed = 7
 	throw_range = 15
@@ -20,10 +20,10 @@
 	icon_state = "nullrod"
 	item_state = "nullrod"
 	slot_flags = SLOT_BELT
-	force = 15
+	force = 2 * 15
 	throw_speed = 1
 	throw_range = 4
-	throwforce = 10
+	throwforce = 2 * 10
 	w_class = 2
 
 	suicide_act(mob/user)
@@ -76,8 +76,8 @@
 	icon_state = "sord"
 	item_state = "sord"
 	slot_flags = SLOT_BELT
-	force = 2
-	throwforce = 1
+	force = 2 * 2
+	throwforce = 2 * 1
 	sharp = 1
 	edge = 1
 	w_class = 3
@@ -98,8 +98,8 @@
 	item_state = "claymore"
 	flags = CONDUCT
 	slot_flags = SLOT_BELT
-	force = 40
-	throwforce = 10
+	force = 2 * 40
+	throwforce = 2 * 10
 	sharp = 1
 	edge = 1
 	w_class = 3
@@ -123,8 +123,8 @@
 	item_state = "katana"
 	flags = CONDUCT
 	slot_flags = SLOT_BELT | SLOT_BACK
-	force = 40
-	throwforce = 10
+	force = 2 * 40
+	throwforce = 2 * 10
 	sharp = 1
 	edge = 1
 	w_class = 3
@@ -148,8 +148,8 @@
 	desc = "Tharr she blows!"
 	icon_state = "harpoon"
 	item_state = "harpoon"
-	force = 20
-	throwforce = 15
+	force = 2 * 20
+	throwforce = 2 * 15
 	w_class = 3
 	attack_verb = list("jabbed","stabbed","ripped")
 
@@ -161,12 +161,12 @@
 	hitsound = null
 	var/active = 0
 	w_class = 2
-	force = 2
+	force = 2 * 2
 	sharp = 0
 	edge = 0
 	throw_speed = 3
 	throw_range = 4
-	throwforce = 7
+	throwforce = 2 * 7
 	attack_verb = list("patted", "tapped")
 
 /obj/item/butterflyconstruction
@@ -215,8 +215,8 @@
 	if(active)
 		user << "<span class='notice'>You flip out your [src].</span>"
 		playsound(user, 'sound/weapons/flipblade.ogg', 15, 1)
-		force = 15 //bay adjustments
-		throwforce = 12
+		force = 2 * 15 //bay adjustments
+		throwforce = 2 * 12
 		edge = 1
 		sharp = 1
 		hitsound = 'sound/weapons/bladeslice.ogg'
@@ -225,7 +225,7 @@
 		attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 	else
 		user << "<span class='notice'>The butterfly knife can now be concealed.</span>"
-		force = initial(force)
+		force = 2 * initial(force)
 		edge = 0
 		sharp = 0
 		hitsound = initial(hitsound)
@@ -241,8 +241,8 @@ obj/item/weapon/wirerod
 	icon_state = "wiredrod"
 	item_state = "rods"
 	flags = CONDUCT
-	force = 8
-	throwforce = 10
+	force = 2 * 8
+	throwforce = 2 * 10
 	w_class = 3
 	attack_verb = list("hit", "bludgeoned", "whacked", "bonked")
 
@@ -272,9 +272,9 @@ obj/item/weapon/wirerod/attackby(var/obj/item/I, mob/user as mob)
 	name = "shuriken"
 	desc = "A sharp, perfectly weighted piece of metal."
 	icon_state = "star"
-	force = 5
+	force = 2 * 5
 	throw_speed = 10
-	throwforce =  15
+	throwforce = 2 *  15
 	throw_range = 15
 	sharp = 1
 	edge =  1
@@ -305,8 +305,8 @@ obj/item/weapon/wirerod/attackby(var/obj/item/I, mob/user as mob)
 	desc = "It's a net made of green energy."
 	icon = 'icons/effects/effects.dmi'
 	icon_state = "energynet"
-	throwforce = 0
-	force = 0
+	throwforce = 2 * 0
+	force = 2 * 0
 	var/net_type = /obj/effect/energy_net
 
 /obj/item/weapon/energy_net/dropped()

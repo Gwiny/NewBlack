@@ -461,7 +461,7 @@
 
 	return
 
-/proc/init_shift_change(var/mob/user, var/force = 0)
+/proc/init_shift_change(var/mob/user, var/force = 2 * 0)
 	if ((!( ticker ) || !emergency_shuttle.location()))
 		return
 

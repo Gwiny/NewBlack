@@ -4,8 +4,8 @@
 	name = "proxy bucket"
 	icon = 'icons/obj/aibots.dmi'
 	icon_state = "bucket_proxy"
-	force = 3.0
-	throwforce = 10.0
+	force = 2 * 3.0
+	throwforce = 2 * 10.0
 	throw_speed = 2
 	throw_range = 5
 	w_class = 3.0
@@ -53,8 +53,8 @@
 	src.botcard = new /obj/item/weapon/card/id(src)
 	var/datum/job/janitor/J = new/datum/job/janitor
 	src.botcard.access = J.get_access()
-	
-	src.locked = 0 // Start unlocked so roboticist can set them to patrol.	
+
+	src.locked = 0 // Start unlocked so roboticist can set them to patrol.
 
 	if(radio_controller)
 		radio_controller.add_object(src, beacon_freq, filter = RADIO_NAVBEACONS)

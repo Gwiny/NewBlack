@@ -4,7 +4,7 @@
 	icon_state = "briefcase"
 	item_state = "briefcase"
 	flags = CONDUCT
-	force = 8.0
+	force = 2 * 8.0
 	throw_speed = 1
 	throw_range = 4
 	w_class = 4.0

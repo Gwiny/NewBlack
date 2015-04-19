@@ -4,7 +4,7 @@
 	item_state = "spray"
 	flags = NOBLUDGEON
 	slot_flags = SLOT_BELT
-	throwforce = 4
+	throwforce = 2 * 4
 	w_class = 2.0
 	throw_speed = 2
 	throw_range = 10
@@ -55,8 +55,8 @@
 	icon_state = "hoe"
 	item_state = "hoe"
 	flags = CONDUCT | NOBLUDGEON
-	force = 5.0
-	throwforce = 7.0
+	force = 2 * 5.0
+	throwforce = 2 * 7.0
 	w_class = 2.0
 	matter = list("metal" = 50)
 	attack_verb = list("slashed", "sliced", "cut", "clawed")

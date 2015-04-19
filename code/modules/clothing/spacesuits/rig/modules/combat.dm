@@ -16,7 +16,7 @@
 	interface_name = "integrated grenade launcher"
 	interface_desc = "Discharges loaded grenades against the wearer's location."
 
-	var/fire_force = 30
+	var/fire_force = 2 *30
 	var/fire_distance = 10
 
 	charges = list(
@@ -207,7 +207,7 @@
 	interface_desc = "An integrated microfactory that produces poisoned throwing stars from thin air and electricity."
 
 	var/fabrication_type = /obj/item/weapon/star/ninja
-	var/fire_force = 30
+	var/fire_force = 2 *30
 	var/fire_distance = 10
 
 /obj/item/rig_module/fabricator/engage(atom/target)

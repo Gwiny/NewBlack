@@ -117,7 +117,7 @@
 	icon_state = "fingerprint0"
 	var/amount = 10.0
 	item_state = "paper"
-	throwforce = 1
+	throwforce = 2 * 1
 	w_class = 1.0
 	throw_speed = 3
 	throw_range = 5

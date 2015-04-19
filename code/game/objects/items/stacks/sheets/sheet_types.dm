@@ -85,7 +85,7 @@ var/global/list/datum/stack_recipe/metal_recipes = list ( \
 	singular_name = "metal sheet"
 	icon_state = "sheet-metal"
 	matter = list("metal" = 3750)
-	throwforce = 14.0
+	throwforce = 2 * 14.0
 	flags = CONDUCT
 	origin_tech = "materials=1"
 
@@ -121,7 +121,7 @@ var/global/list/datum/stack_recipe/plasteel_recipes = list ( \
 	icon_state = "sheet-plasteel"
 	item_state = "sheet-metal"
 	matter = list("metal" = 7500)
-	throwforce = 15.0
+	throwforce = 2 * 15.0
 	flags = CONDUCT
 	origin_tech = "materials=2"
 

@@ -8,7 +8,7 @@
 	desc = "A hand-held scanner able to diagnose robotic injuries."
 	flags = CONDUCT
 	slot_flags = SLOT_BELT
-	throwforce = 3
+	throwforce = 2 * 3
 	w_class = 2.0
 	throw_speed = 5
 	throw_range = 10

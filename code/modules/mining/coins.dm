@@ -5,8 +5,8 @@
 	name = "Coin"
 	icon_state = "coin"
 	flags = CONDUCT
-	force = 0.0
-	throwforce = 0.0
+	force = 2 * 0.0
+	throwforce = 2 * 0.0
 	w_class = 1.0
 	var/string_attached
 	var/sides = 2

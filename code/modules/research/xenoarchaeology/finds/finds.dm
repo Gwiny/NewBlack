@@ -294,7 +294,7 @@
 		if(19)
 			apply_prefix = 0
 			new_item = new /obj/item/weapon/claymore(src.loc)
-			new_item.force = 10
+			new_item.force = 2 * 10
 			item_type = new_item.name
 		if(20)
 			//arcane clothing
@@ -337,7 +337,7 @@
 		if(25)
 			apply_prefix = 0
 			new_item = new /obj/item/weapon/katana(src.loc)
-			new_item.force = 10
+			new_item.force = 2 * 10
 			item_type = new_item.name
 		if(26)
 			//energy gun

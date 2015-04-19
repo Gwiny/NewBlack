@@ -21,10 +21,10 @@
 
 
 /obj/item/toy
-	throwforce = 0
+	throwforce = 2 * 0
 	throw_speed = 4
 	throw_range = 20
-	force = 0
+	force = 2 * 0
 
 
 /*
@@ -94,10 +94,10 @@
 /obj/item/toy/syndicateballoon
 	name = "criminal balloon"
 	desc = "There is a tag on the back that reads \"FUK NT!11!\"."
-	throwforce = 0
+	throwforce = 2 * 0
 	throw_speed = 4
 	throw_range = 20
-	force = 0
+	force = 2 * 0
 	icon = 'icons/obj/weapons.dmi'
 	icon_state = "syndballoon"
 	item_state = "syndballoon"
@@ -106,10 +106,10 @@
 /obj/item/toy/nanotrasenballoon
 	name = "criminal balloon"
 	desc = "Across the balloon the following is printed: \"Man, I love NT soooo much. I use only NanoTrasen products. You have NO idea.\""
-	throwforce = 0
+	throwforce = 2 * 0
 	throw_speed = 4
 	throw_range = 20
-	force = 0
+	force = 2 * 0
 	icon = 'icons/obj/weapons.dmi'
 	icon_state = "ntballoon"
 	item_state = "ntballoon"
@@ -370,8 +370,8 @@
 	item_state = "katana"
 	flags = CONDUCT
 	slot_flags = SLOT_BELT | SLOT_BACK
-	force = 5
-	throwforce = 5
+	force = 2 * 5
+	throwforce = 2 * 5
 	w_class = 3
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced")
 
@@ -805,8 +805,8 @@
 	item_state = "katana"
 	flags = CONDUCT
 	slot_flags = SLOT_BELT | SLOT_BACK
-	force = 5
-	throwforce = 5
+	force = 2 * 5
+	throwforce = 2 * 5
 	w_class = 3
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced")
 
@@ -964,7 +964,7 @@
 	icon_state = "toddler"
 	name = "toddler"
 	desc = "This baby looks almost real. Wait, did it just burp?"
-	force = 5
+	force = 2 * 5
 	w_class = 4.0
 	slot_flags = SLOT_BACK
 */

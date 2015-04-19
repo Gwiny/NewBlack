@@ -3,9 +3,9 @@
 	desc = "Goo extracted from a slime. Legends claim these to have \"magical powers\"."
 	icon = 'icons/mob/slimes.dmi'
 	icon_state = "grey slime extract"
-	force = 1.0
+	force = 2 * 1.0
 	w_class = 1.0
-	throwforce = 0
+	throwforce = 2 * 0
 	throw_speed = 3
 	throw_range = 6
 	origin_tech = "biotech=4"
@@ -290,9 +290,9 @@
 	desc = "Goo extracted from a slime. Legends claim these to have \"magical powers\"."
 	icon = 'icons/mob/slimes.dmi'
 	icon_state = "slime extract"
-	force = 1.0
+	force = 2 * 1.0
 	w_class = 1.0
-	throwforce = 1.0
+	throwforce = 2 * 1.0
 	throw_speed = 2
 	throw_range = 6
 	origin_tech = "biotech=4"

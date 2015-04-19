@@ -5,7 +5,7 @@
 	item_state = "shotgun"
 	max_shells = 4
 	w_class = 4.0
-	force = 10
+	force = 2 * 10
 	flags =  CONDUCT
 	slot_flags = SLOT_BACK
 	caliber = "shotgun"
@@ -59,7 +59,7 @@
 	handle_casings = CYCLE_CASINGS
 	max_shells = 2
 	w_class = 4
-	force = 10
+	force = 2 * 10
 	flags =  CONDUCT
 	slot_flags = SLOT_BACK
 	caliber = "shotgun"

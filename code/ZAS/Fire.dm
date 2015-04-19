@@ -212,7 +212,7 @@ datum/gas_mixture/proc/zburn(obj/effect/decal/cleanable/liquid_fuel/liquid, forc
 			return 0
 
 		//Calculate the firelevel.
-		var/firelevel = calculate_firelevel(liquid, total_fuel, total_oxidizers, force = 1)
+		var/firelevel = calculate_firelevel(liquid, total_fuel, total_oxidizers, force = 2 * 1)
 
 		//get the current inner energy of the gas mix
 		//this must be taken here to prevent the addition or deletion of energy by a changing heat capacity
@@ -285,7 +285,7 @@ datum/gas_mixture/proc/check_combustability(obj/effect/decal/cleanable/liquid_fu
 			. = 1
 			break
 
-datum/gas_mixture/proc/calculate_firelevel(obj/effect/decal/cleanable/liquid_fuel/liquid, total_fuel = null, total_oxidizers = null, force = 0)
+datum/gas_mixture/proc/calculate_firelevel(obj/effect/decal/cleanable/liquid_fuel/liquid, total_fuel = null, total_oxidizers = null, force = 2 * 0)
 	//Calculates the firelevel based on one equation instead of having to do this multiple times in different areas.
 	var/firelevel = 0
 

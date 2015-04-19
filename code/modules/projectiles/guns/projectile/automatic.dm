@@ -29,7 +29,7 @@
 	icon_state = "c20r"
 	item_state = "c20r"
 	w_class = 3
-	force = 10
+	force = 2 * 10
 	caliber = "12mm"
 	origin_tech = "combat=5;materials=2;syndicate=8"
 	slot_flags = SLOT_BELT|SLOT_BACK
@@ -53,7 +53,7 @@
 	icon_state = "arifle"
 	item_state = null
 	w_class = 4
-	force = 10
+	force = 2 * 10
 	caliber = "a762"
 	origin_tech = "combat=6;materials=1;syndicate=4"
 	slot_flags = SLOT_BACK
@@ -93,7 +93,7 @@
 	icon_state = "carbine"
 	item_state = "z8carbine"
 	w_class = 4
-	force = 10
+	force = 2 * 10
 	caliber = "a556"
 	origin_tech = "combat=8;materials=3"
 	ammo_type = "/obj/item/ammo_casing/a556"
@@ -103,7 +103,7 @@
 	magazine_type = /obj/item/ammo_magazine/a556
 	auto_eject = 1
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
-	
+
 	var/use_launcher = 0
 	var/obj/item/weapon/gun/launcher/grenade/underslung/launcher
 
@@ -156,7 +156,7 @@
 	icon_state = "l6closed100"
 	item_state = "l6closedmag"
 	w_class = 4
-	force = 10
+	force = 2 * 10
 	slot_flags = 0
 	max_shells = 50
 	caliber = "a762"

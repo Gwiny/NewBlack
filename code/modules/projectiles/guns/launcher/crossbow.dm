@@ -6,7 +6,7 @@
 	icon = 'icons/obj/weapons.dmi'
 	icon_state = "bolt"
 	item_state = "bolt"
-	throwforce = 8
+	throwforce = 2 * 8
 	w_class = 3.0
 	sharp = 1
 	edge = 0
@@ -19,7 +19,7 @@
 	desc = "It's about a foot of weird silver metal with a wicked point."
 	sharp = 1
 	edge = 0
-	throwforce = 5
+	throwforce = 2 * 5
 	w_class = 2
 	icon = 'icons/obj/weapons.dmi'
 	icon_state = "metal-rod"
@@ -31,7 +31,7 @@
 	icon = 'icons/obj/weapons.dmi'
 	icon_state = "quill"
 	item_state = "quill"
-	throwforce = 5
+	throwforce = 2 * 5
 
 /obj/item/weapon/arrow/rod
 	name = "metal rod"
@@ -64,7 +64,7 @@
 	var/current_user                        // Used to check if the crossbow has changed hands since being drawn.
 
 /obj/item/weapon/gun/launcher/crossbow/update_release_force()
-	release_force = tension*release_speed
+	release_force = 2 * tension*release_speed
 
 /obj/item/weapon/gun/launcher/crossbow/consume_next_projectile(mob/user=null)
 	if(tension <= 0)
@@ -105,14 +105,14 @@
 	current_user = user
 	user.visible_message("[user] begins to draw back the string of [src].","<span class='notice'>You begin to draw back the string of [src].</span>")
 	tension = 1
-	
+
 	while(bolt && tension && current_user == user)
 		if(!do_after(user, 25)) //crossbow strings don't just magically pull back on their own.
 			user.visible_message("[usr] stops drawing and relaxes the string of [src].","<span class='warning'>You stop drawing back and relax the string of [src].</span>")
 			tension = 0
 			icon_state = "crossbow"
 			return
-		
+
 		tension++
 		icon_state = "crossbow-drawn"
 
@@ -120,7 +120,7 @@
 			tension = max_tension
 			usr << "[src] clunks as you draw the string to its maximum tension!"
 			return
-		
+
 		user.visible_message("[usr] draws back the string of [src]!","<span class='notice'>You continue drawing back the string of [src]!</span>")
 
 /obj/item/weapon/gun/launcher/crossbow/proc/increase_tension(var/mob/user as mob)
@@ -178,7 +178,7 @@
 	if(!istype(bolt,/obj/item/weapon/arrow/rod)) return
 
 	user << "<span class='notice'>[bolt] plinks and crackles as it begins to glow red-hot.</span>"
-	bolt.throwforce = 15
+	bolt.throwforce = 2 * 15
 	bolt.icon_state = "metal-rod-superheated"
 	cell.use(500)
 

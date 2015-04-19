@@ -3,7 +3,7 @@
 	icon = 'icons/obj/bureaucracy.dmi'
 	icon_state = "clipboard"
 	item_state = "clipboard"
-	throwforce = 0
+	throwforce = 2 * 0
 	w_class = 2.0
 	throw_speed = 3
 	throw_range = 10
@@ -43,7 +43,7 @@
 	return
 
 /obj/item/weapon/clipboard/attackby(obj/item/weapon/W as obj, mob/user as mob)
-	
+
 	if(istype(W, /obj/item/weapon/paper) || istype(W, /obj/item/weapon/photo))
 		user.drop_item()
 		W.loc = src
@@ -106,20 +106,20 @@
 
 		else if(href_list["write"])
 			var/obj/item/weapon/P = locate(href_list["write"])
-			
+
 			if(P && (P.loc == src) && istype(P, /obj/item/weapon/paper) && (P == toppaper) )
-				
+
 				var/obj/item/I = usr.get_active_hand()
-				
+
 				if(istype(I, /obj/item/weapon/pen))
-				
+
 					P.attackby(I, usr)
 
 		else if(href_list["remove"])
 			var/obj/item/P = locate(href_list["remove"])
-			
+
 			if(P && (P.loc == src) && (istype(P, /obj/item/weapon/paper) || istype(P, /obj/item/weapon/photo)) )
-			
+
 				P.loc = usr.loc
 				usr.put_in_hands(P)
 				if(P == toppaper)
@@ -132,9 +132,9 @@
 
 		else if(href_list["read"])
 			var/obj/item/weapon/paper/P = locate(href_list["read"])
-			
+
 			if(P && (P.loc == src) && istype(P, /obj/item/weapon/paper) )
-			
+
 				if(!(istype(usr, /mob/living/carbon/human) || istype(usr, /mob/dead/observer) || istype(usr, /mob/living/silicon)))
 					usr << browse("<HTML><HEAD><TITLE>[P.name]</TITLE></HEAD><BODY>[stars(P.info)][P.stamps]</BODY></HTML>", "window=[P.name]")
 					onclose(usr, "[P.name]")

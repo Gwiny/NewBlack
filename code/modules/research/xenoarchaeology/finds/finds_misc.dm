@@ -2,8 +2,8 @@
 /obj/item/weapon/shard/phoron
 	name = "phoron shard"
 	desc = "A shard of phoron glass. Considerably tougher then normal glass shards. Apparently not tough enough to be a window."
-	force = 8.0
-	throwforce = 15.0
+	force = 2 * 8.0
+	throwforce = 2 * 15.0
 	icon_state = "phoronlarge"
 	sharp = 1
 	edge = 1

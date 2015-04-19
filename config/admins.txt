@@ -9,7 +9,7 @@
 ssting - Host
 plin - Game Master
 gwin - Game Master
-hap12345 - Game Master
+#hap12345 - Game Master
 vallat - Game Master
-zixxa - Game Master
+zixxa - Moderator
 barka - Game Master

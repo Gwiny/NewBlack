@@ -300,8 +300,8 @@ var/global/ManifestJSON
 	density = 0
 	anchored = 0
 	w_class = 2.0
-	force = 0.0
-	throwforce = 0.0
+	force = 2 * 0.0
+	throwforce = 2 * 0.0
 	throw_speed = 1
 	throw_range = 20
 	flags = CONDUCT

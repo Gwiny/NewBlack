@@ -157,12 +157,12 @@
 /obj/structure/window/hitby(AM as mob|obj)
 	..()
 	visible_message("<span class='danger'>[src] was hit by [AM].</span>")
-	var/tforce = 0
+	var/tforce = 2 * 0
 	if(ismob(AM))
-		tforce = 40
+		tforce = 2 * 40
 	else if(isobj(AM))
 		var/obj/item/I = AM
-		tforce = I.throwforce
+		tforce = 2 * I.throwforce
 	if(reinf) tforce *= 0.25
 	if(health - tforce <= 7 && !reinf)
 		anchored = 0

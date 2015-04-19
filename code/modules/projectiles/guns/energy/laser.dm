@@ -6,7 +6,7 @@
 	fire_sound = 'sound/weapons/Laser.ogg'
 	slot_flags = SLOT_BELT|SLOT_BACK
 	w_class = 3
-	force = 10
+	force = 2 * 10
 	matter = list("metal" = 2000)
 	origin_tech = "combat=3;magnets=2"
 	projectile_type = /obj/item/projectile/beam
@@ -37,7 +37,7 @@ obj/item/weapon/gun/energy/retro
 	icon_state = "caplaser"
 	item_state = "caplaser"
 	desc = "This is an antique laser gun. All craftsmanship is of the highest quality. It is decorated with assistant leather and chrome. The object menaces with spikes of energy. On the item is an image of Space Station 13. The station is exploding."
-	force = 5
+	force = 2 * 5
 	fire_sound = 'sound/weapons/Laser.ogg'
 	slot_flags = SLOT_BELT
 	w_class = 3
@@ -86,7 +86,7 @@ obj/item/weapon/gun/energy/retro
 	slot_flags = SLOT_BACK
 	charge_cost = 250
 	fire_delay = 35
-	force = 10
+	force = 2 * 10
 	w_class = 4
 	accuracy = -3 //shooting at the hip
 	scoped_accuracy = 0

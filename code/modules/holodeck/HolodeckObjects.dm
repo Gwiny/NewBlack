@@ -153,7 +153,7 @@
 		return
 
 	if(src.density && istype(I, /obj/item/weapon) && !istype(I, /obj/item/weapon/card))
-		var/aforce = I.force
+		var/aforce = 2 * I.force
 		playsound(src.loc, 'sound/effects/Glasshit.ogg', 75, 1)
 		visible_message("\red <B>[src] was hit by [I].</B>")
 		if(I.damtype == BRUTE || I.damtype == BURN)
@@ -196,10 +196,10 @@
 /obj/item/weapon/holo/esword
 	desc = "May the force be within you. Sorta."
 	icon_state = "sword0"
-	force = 3.0
+	force = 2 * 3.0
 	throw_speed = 1
 	throw_range = 5
-	throwforce = 0
+	throwforce = 2 * 0
 	w_class = 2.0
 	flags = NOSHIELD | NOBLOODY
 	var/active = 0
@@ -226,13 +226,13 @@
 /obj/item/weapon/holo/esword/attack_self(mob/living/user as mob)
 	active = !active
 	if (active)
-		force = 30
+		force = 2 * 30
 		icon_state = "sword[item_color]"
 		w_class = 4
 		playsound(user, 'sound/weapons/saberon.ogg', 50, 1)
 		user << "<span class='notice'>[src] is now active.</span>"
 	else
-		force = 3
+		force = 2 * 3
 		icon_state = "sword0"
 		w_class = 2
 		playsound(user, 'sound/weapons/saberoff.ogg', 50, 1)

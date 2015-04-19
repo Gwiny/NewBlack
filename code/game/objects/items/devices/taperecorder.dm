@@ -16,7 +16,7 @@
 	var/list/timestamp = new/list()
 	var/canprint = 1
 	flags = CONDUCT
-	throwforce = 2
+	throwforce = 2 * 2
 	throw_speed = 4
 	throw_range = 20
 

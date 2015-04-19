@@ -94,7 +94,7 @@
 /obj/item/clothing/ears
 	name = "ears"
 	w_class = 1.0
-	throwforce = 2
+	throwforce = 2 * 2
 	slot_flags = SLOT_EARS
 
 /obj/item/clothing/ears/attack_hand(mob/user as mob)
@@ -356,7 +356,7 @@ BLIND     // can't see anything
 
 	permeability_coefficient = 0.50
 	slowdown = SHOES_SLOWDOWN
-	force = 2
+	force = 2 * 2
 	species_restricted = list("exclude","Unathi","Tajara")
 	sprite_sheets = list("Vox" = 'icons/mob/species/vox/shoes.dmi')
 

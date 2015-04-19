@@ -8,8 +8,8 @@
 	edge = 1
 	desc = "Could probably be used as ... a throwing weapon?"
 	w_class = 2.0
-	force = 5.0
-	throwforce = 8.0
+	force = 2 * 5.0
+	throwforce = 2 * 8.0
 	item_state = "shard-glass"
 	matter = list("glass" = 3750)
 	attack_verb = list("stabbed", "slashed", "sliced", "cut")
@@ -27,9 +27,9 @@
 
 	spawn( 0 )
 		if (prob(20))
-			src.force = 15
+			src.force = 2 * 15
 		else
-			src.force = 4
+			src.force = 2 * 4
 		..()
 		return
 	return

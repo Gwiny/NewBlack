@@ -6,8 +6,8 @@
 	icon = 'icons/obj/wizard.dmi'
 	icon_state = "render"
 	item_state = "render"
-	force = 15
-	throwforce = 10
+	force = 2 * 15
+	throwforce = 2 * 10
 	w_class = 3
 	var/charged = 1
 
@@ -47,9 +47,9 @@
 	icon_state = "bluespace"
 	throw_speed = 3
 	throw_range = 7
-	throwforce = 10
+	throwforce = 2 * 10
 	damtype = BURN
-	force = 10
+	force = 2 * 10
 	hitsound = 'sound/items/welder2.ogg'
 
 /obj/item/weapon/scrying/attack_self(mob/user as mob)

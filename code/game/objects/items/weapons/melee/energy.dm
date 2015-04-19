@@ -12,8 +12,8 @@
 	if(active)
 		return
 	active = 1
-	force = active_force
-	throwforce = active_throwforce
+	force = 2 * active_force
+	throwforce = 2 * active_throwforce
 	sharp = 1
 	edge = 1
 	w_class = active_w_class
@@ -25,8 +25,8 @@
 		return
 	playsound(user, 'sound/weapons/saberoff.ogg', 50, 1)
 	active = 0
-	force = initial(force)
-	throwforce = initial(throwforce)
+	force = 2 * initial(force)
+	throwforce = 2 * initial(throwforce)
 	sharp = initial(sharp)
 	edge = initial(edge)
 	w_class = initial(w_class)
@@ -62,14 +62,14 @@
 	name = "energy axe"
 	desc = "An energised battle axe."
 	icon_state = "axe0"
-	//active_force = 150 //holy...
-	active_force = 60
-	active_throwforce = 35
+	//active_force = 2 * 150 //holy...
+	active_force = 2 * 60
+	active_throwforce = 2 * 35
 	active_w_class = 5
-	//force = 40
-	//throwforce = 25
-	force = 20
-	throwforce = 10
+	//force = 2 * 40
+	//throwforce = 2 * 25
+	force = 2 * 20
+	throwforce = 2 * 10
 	throw_speed = 1
 	throw_range = 5
 	w_class = 3
@@ -101,11 +101,11 @@
 	name = "energy sword"
 	desc = "May the force be within you."
 	icon_state = "sword0"
-	active_force = 30
-	active_throwforce = 20
+	active_force = 2 * 30
+	active_throwforce = 2 * 20
 	active_w_class = 4
-	force = 3
-	throwforce = 5
+	force = 2 * 3
+	throwforce = 2 * 5
 	throw_speed = 1
 	throw_range = 5
 	w_class = 2
@@ -169,11 +169,11 @@
 	name = "energy blade"
 	desc = "A concentrated beam of energy in the shape of a blade. Very stylish... and lethal."
 	icon_state = "blade"
-	force = 70.0//Normal attacks deal very high damage.
+	force = 2 * 70.0//Normal attacks deal very high damage.
 	sharp = 1
 	edge = 1
 	anchored = 1    // Never spawned outside of inventory, should be fine.
-	throwforce = 1  //Throwing or dropping the item deletes it.
+	throwforce = 2 * 1  //Throwing or dropping the item deletes it.
 	throw_speed = 1
 	throw_range = 1
 	w_class = 4.0//So you can't hide it in your pocket or some such.

@@ -287,7 +287,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	icon = 'icons/obj/clothing/masks.dmi'
 	icon_state = "cigbutt"
 	w_class = 1
-	throwforce = 1
+	throwforce = 2 * 1
 
 /obj/item/weapon/cigbutt/New()
 	..()
@@ -417,7 +417,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	var/icon_on = "lighter-g-on"
 	var/icon_off = "lighter-g"
 	w_class = 1
-	throwforce = 4
+	throwforce = 2 * 4
 	flags = CONDUCT
 	slot_flags = SLOT_BELT
 	attack_verb = list("burnt", "singed")

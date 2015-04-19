@@ -3,8 +3,8 @@
 	desc = "Apply butt."
 	icon = 'icons/obj/objects.dmi'
 	icon_state = "stool"
-	force = 10
-	throwforce = 10
+	force = 2 * 10
+	throwforce = 2 * 10
 	w_class = 5
 
 /obj/item/weapon/stool/attack(mob/M as mob, mob/user as mob)

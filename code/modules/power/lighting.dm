@@ -637,8 +637,8 @@
 
 /obj/item/weapon/light
 	icon = 'icons/obj/lighting.dmi'
-	force = 2
-	throwforce = 5
+	force = 2 * 2
+	throwforce = 2 * 5
 	w_class = 2
 	var/status = 0		// LIGHT_OK, LIGHT_BURNED or LIGHT_BROKEN
 	var/base_state
@@ -746,7 +746,7 @@
 	if(status == LIGHT_OK || status == LIGHT_BURNED)
 		src.visible_message("\red [name] shatters.","\red You hear a small glass object shatter.")
 		status = LIGHT_BROKEN
-		force = 5
+		force = 2 * 5
 		sharp = 1
 		playsound(src.loc, 'sound/effects/Glasshit.ogg', 75, 1)
 		update()

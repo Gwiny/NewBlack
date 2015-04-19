@@ -7,7 +7,7 @@
 	var/spike_gen_time = 100
 	var/max_spikes = 3
 	var/spikes = 3
-	release_force = 30
+	release_force = 2 * 30
 	icon = 'icons/obj/gun.dmi'
 	icon_state = "spikethrower3"
 	item_state = "spikethrower"

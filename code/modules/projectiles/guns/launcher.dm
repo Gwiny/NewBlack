@@ -5,7 +5,7 @@
 	flags =  CONDUCT
 	slot_flags = SLOT_BACK
 
-	var/release_force = 0
+	var/release_force = 2 *0
 	var/throw_distance = 10
 	fire_sound_text = "a launcher firing"
 

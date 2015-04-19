@@ -83,12 +83,12 @@
 	if(status > 1)	return
 	src.onfire = !( src.onfire )
 	if (src.onfire)
-		src.force = 3
+		src.force = 2 * 3
 		src.damtype = "fire"
 		src.icon_state = "cake1"
 		processing_objects.Add(src)
 	else
-		src.force = null
+		src.force = 2 * null
 		src.damtype = "brute"
 		src.icon_state = "cake0"
 	return
