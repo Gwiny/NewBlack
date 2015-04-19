@@ -146,9 +146,9 @@
 				return
 
 			if(client.prefs.species != "Human" && !check_rights(R_ADMIN, 0))
-				if(!is_alien_whitelisted(src, client.prefs.species) && config.usealienwhitelist)
-					src << alert("You are currently not whitelisted to play [client.prefs.species].")
-					return 0
+				//if(!is_alien_whitelisted(src, client.prefs.species) && config.usealienwhitelist)
+				//	src << alert("You are currently not whitelisted to play [client.prefs.species].")
+				//	return 0
 
 				var/datum/species/S = all_species[client.prefs.species]
 				if(!(S.flags & IS_WHITELISTED))
@@ -170,9 +170,9 @@
 				return
 
 			if(client.prefs.species != "Human")
-				if(!is_alien_whitelisted(src, client.prefs.species) && config.usealienwhitelist)
-					src << alert("You are currently not whitelisted to play [client.prefs.species].")
-					return 0
+				//if(!is_alien_whitelisted(src, client.prefs.species) && config.usealienwhitelist)
+				//	src << alert("You are currently not whitelisted to play [client.prefs.species].")
+				//	return 0
 
 				var/datum/species/S = all_species[client.prefs.species]
 				if(!(S.flags & CAN_JOIN))
@@ -430,8 +430,8 @@
 			chosen_species = all_species[client.prefs.species]
 		if(chosen_species)
 			// Have to recheck admin due to no usr at roundstart. Latejoins are fine though.
-			if(is_species_whitelisted(chosen_species) || has_admin_rights())
-				new_character = new(loc, client.prefs.species)
+			//if(is_species_whitelisted(chosen_species) || has_admin_rights())
+			new_character = new(loc, client.prefs.species)
 
 		if(!new_character)
 			new_character = new(loc)
@@ -510,7 +510,7 @@
 	if(!chosen_species)
 		return "Human"
 
-	if(is_species_whitelisted(chosen_species) || has_admin_rights())
+	if(is_species_whitelisted(chosen_species) || !is_species_whitelisted(chosen_species))
 		return chosen_species.name
 
 	return "Human"
