@@ -11,5 +11,5 @@ plin - Game Master
 gwin - Game Master
 #hap12345 - Game Master
 vallat - Game Master
-zixxa - Moderator
+zixxa - Game Master
 barka - Game Master
