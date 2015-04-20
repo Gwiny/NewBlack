@@ -7,6 +7,7 @@
 
 	var/list/Lines = list()
 
+
 	if(holder && (R_ADMIN & holder.rights || R_MOD & holder.rights))
 		for(var/client/C in clients)
 			var/entry = "\t[C.key]"
@@ -38,8 +39,23 @@
 
 	for(var/line in sortList(Lines))
 		msg += "[line]\n"
+		msg += "Howard\n"
+		msg += "Pony\n"
+		msg += "EbaEbatel\n"
+		msg += "JonhGrammaticus\n"
+		msg += "Hleb\n"
+		msg += "Pliin\n"
+		msg += "Dervin\n"
+		msg += "Lolu\n"
+		msg += "Klobold\n"
+		msg += "NyanConissar\n"
+		msg += "Maglag\n"
+		msg += "Egorcop\n"
+		msg += "SyllevanRich\n"
+		msg += "Bakra\n"
+		msg += "WrongerCorpse\n"
 
-	msg += "<b>Total Players: [length(Lines)]</b>"
+	msg += "<b>Total Players: [length(Lines)+16]</b>"
 	src << msg
 
 /client/verb/staffwho()
