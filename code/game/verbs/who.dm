@@ -1,4 +1,6 @@
 
+var/N = 1
+
 /client/verb/who()
 	set name = "Who"
 	set category = "OOC"
@@ -39,21 +41,23 @@
 
 	for(var/line in sortList(Lines))
 		msg += "[line]\n"
-		msg += "Howard\n"
-		msg += "Pony\n"
-		msg += "EbaEbatel\n"
-		msg += "JonhGrammaticus\n"
-		msg += "Hleb\n"
-		msg += "Chevron\n"
-		msg += "Gergonus\n"
-		msg += "Jevan Vovan\n"
-		msg += "Klobold\n"
-		msg += "Moolhui\n"
-		msg += "Maglag\n"
-		msg += "Egorcop\n"
-		msg += "SyllevanRich\n"
-		msg += "Abraamich\n"
-		msg += "WrongerCorpse\n"
+		if(N == 1)
+			msg += "Howard\n"
+			msg += "Pony\n"
+			msg += "EbaEbatel\n"
+			msg += "JonhGrammaticus\n"
+			msg += "Hleb\n"
+			msg += "Chevron\n"
+			msg += "Gergonus\n"
+			msg += "Jevan Vovan\n"
+			msg += "Klobold\n"
+			msg += "Moolhui\n"
+			msg += "Maglag\n"
+			msg += "Egorcop\n"
+			msg += "SyllevanRich\n"
+			msg += "Abraamich\n"
+			msg += "WrongerCorpse\n"
+			N = 0
 
 	msg += "<b>Total Players: [length(Lines)+16]</b>"
 	src << msg
