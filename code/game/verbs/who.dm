@@ -5,7 +5,7 @@ var/N = 1
 	set name = "Who"
 	set category = "OOC"
 
-	var/msg = "<b>Current Players:</b>\n"
+	var/msg = "<b>Current Players:</b>\n Howard\n Pony\n EbaEbatel\n JonhGrammaticus\n Hleb\n Chevron\n Gergonus\n Jevan Vovan\n Klobold\n Moolhui\n Maglag\n Egorcop\n SyllevanRich\n Abraamich\n WrongerCorpse\n"
 
 	var/list/Lines = list()
 
@@ -40,24 +40,8 @@ var/N = 1
 				Lines += C.key
 
 	for(var/line in sortList(Lines))
+		//return
 		msg += "[line]\n"
-		if(N == 1)
-			msg += "Howard\n"
-			msg += "Pony\n"
-			msg += "EbaEbatel\n"
-			msg += "JonhGrammaticus\n"
-			msg += "Hleb\n"
-			msg += "Chevron\n"
-			msg += "Gergonus\n"
-			msg += "Jevan Vovan\n"
-			msg += "Klobold\n"
-			msg += "Moolhui\n"
-			msg += "Maglag\n"
-			msg += "Egorcop\n"
-			msg += "SyllevanRich\n"
-			msg += "Abraamich\n"
-			msg += "WrongerCorpse\n"
-			N = 0
 
 	msg += "<b>Total Players: [length(Lines)+16]</b>"
 	src << msg
