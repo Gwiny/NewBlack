@@ -10,8 +10,8 @@
 
 	pressure_resistance = ONE_ATMOSPHERE*5
 
-	force = 5.0
-	throwforce = 10.0
+	force = 2 * 5.0
+	throwforce = 2 * 10.0
 	throw_speed = 1
 	throw_range = 4
 
@@ -124,7 +124,7 @@
 			location = loc.loc
 	else if(istype(loc, /mob/living/carbon))
 		location = loc
-	
+
 	var/using_internal
 	if(istype(location))
 		if(location.internal==src)

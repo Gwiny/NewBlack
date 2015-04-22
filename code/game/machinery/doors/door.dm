@@ -28,7 +28,7 @@
 	var/maxhealth = 300
 	var/health
 	var/destroy_hits = 10 //How many strong hits it takes to destroy the door
-	var/min_force = 10 //minimum amount of force needed to damage the door with a melee weapon
+	var/min_force = 2 *10 //minimum amount of force needed to damage the door with a melee weapon
 	var/hitsound = 'sound/weapons/smash.ogg' //sound door makes when hit with a weapon
 	var/obj/item/stack/sheet/metal/repairing
 	var/block_air_zones = 1 //If set, air zones cannot merge across the door even when it is opened.
@@ -165,11 +165,11 @@
 
 	..()
 	visible_message("\red <B>[src.name] was hit by [AM].</B>")
-	var/tforce = 0
+	var/tforce = 2 * 0
 	if(ismob(AM))
-		tforce = 15 * (speed/5)
+		tforce = 2 * 15 * (speed/5)
 	else
-		tforce = AM:throwforce * (speed/5)
+		tforce = 2 * AM:throwforce * (speed/5)
 	playsound(src.loc, hitsound, 100, 1)
 	take_damage(tforce)
 	return

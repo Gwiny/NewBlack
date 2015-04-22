@@ -12,7 +12,8 @@
 		src << "Guests may not use OOC."
 		return
 
-	msg = trim(sanitize(copytext(msg, 1, MAX_MESSAGE_LEN)))
+	msg = copytext(sanitize(msg), 1, MAX_MESSAGE_LEN)
+	msg = rhtml_decode(msg)
 	if(!msg)	return
 
 	if(!(prefs.toggles & CHAT_OOC))

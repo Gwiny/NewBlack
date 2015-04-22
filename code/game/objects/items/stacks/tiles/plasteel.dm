@@ -3,9 +3,9 @@
 	singular_name = "floor tile"
 	desc = "Those could work as a pretty decent throwing weapon"
 	icon_state = "tile"
-	force = 6.0
+	force = 2 * 6.0
 	matter = list("metal" = 937.5)
-	throwforce = 15.0
+	throwforce = 2 * 15.0
 	throw_speed = 5
 	throw_range = 20
 	flags = CONDUCT

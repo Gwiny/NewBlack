@@ -3,8 +3,8 @@
 	desc = "A latex glove, usually used as a balloon."
 	icon_state = "latexballon"
 	item_state = "lgloves"
-	force = 0
-	throwforce = 0
+	force = 2 * 0
+	throwforce = 2 * 0
 	w_class = 2.0
 	throw_speed = 1
 	throw_range = 15

@@ -110,16 +110,16 @@
 
 /obj/item/weapon/gun/launcher/pneumatic/update_release_force(obj/item/projectile)
 	if(tank)
-		release_force = ((fire_pressure*tank.volume)/projectile.w_class)/force_divisor //projectile speed.
-		if(release_force > 80) release_force = 80 //damage cap.
+		release_force = 2 * ((fire_pressure*tank.volume)/projectile.w_class)/force_divisor //projectile speed.
+		if(release_force > 80) release_force = 2 * 80 //damage cap.
 	else
-		release_force = 0
+		release_force = 2 * 0
 
 /obj/item/weapon/gun/launcher/pneumatic/handle_post_fire()
 	if(tank)
 		var/lost_gas_amount = tank.air_contents.total_moles*(pressure_setting/100)
 		var/datum/gas_mixture/removed = tank.air_contents.remove(lost_gas_amount)
-		
+
 		var/turf/T = get_turf(src.loc)
 		if(T) T.assume_air(removed)
 	..()

@@ -6,7 +6,7 @@
 	item_state = "cleaner"
 	flags = OPENCONTAINER|NOBLUDGEON
 	slot_flags = SLOT_BELT
-	throwforce = 3
+	throwforce = 2 * 3
 	w_class = 2.0
 	throw_speed = 2
 	throw_range = 10
@@ -188,7 +188,7 @@
 	icon = 'icons/obj/gun.dmi'
 	icon_state = "chemsprayer"
 	item_state = "chemsprayer"
-	throwforce = 3
+	throwforce = 2 * 3
 	w_class = 3.0
 	possible_transfer_amounts = null
 	volume = 600

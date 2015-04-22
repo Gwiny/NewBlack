@@ -17,9 +17,9 @@
  * Utensils
  */
 /obj/item/weapon/kitchen/utensil
-	force = 5.0
+	force = 2 * 5.0
 	w_class = 1.0
-	throwforce = 5.0
+	throwforce = 2 * 5.0
 	throw_speed = 3
 	throw_range = 5
 	flags = CONDUCT
@@ -93,8 +93,8 @@
 	name = "knife"
 	desc = "Can cut through any food."
 	icon_state = "knife"
-	force = 10.0
-	throwforce = 10.0
+	force = 2 * 10.0
+	throwforce = 2 * 10.0
 	sharp = 1
 	edge = 1
 
@@ -116,8 +116,8 @@
 	name = "plastic knife"
 	desc = "The bluntest of blades."
 	icon_state = "pknife"
-	force = 1
-	throwforce = 1
+	force = 2 * 1
+	throwforce = 2 * 1
 	sharp = 0
 	edge = 1 //for cutting pizzas
 
@@ -140,9 +140,9 @@
 	flags = CONDUCT
 	sharp = 1
 	edge = 1
-	force = 10.0
+	force = 2 * 10.0
 	w_class = 3.0
-	throwforce = 6.0
+	throwforce = 2 * 6.0
 	throw_speed = 3
 	throw_range = 6
 	matter = list("metal" = 12000)
@@ -170,9 +170,9 @@
 	icon_state = "butch"
 	desc = "A huge thing used for chopping and chopping up meat. This includes clowns and clown-by-products."
 	flags = CONDUCT
-	force = 15.0
+	force = 2 * 15.0
 	w_class = 2.0
-	throwforce = 8.0
+	throwforce = 2 * 8.0
 	throw_speed = 3
 	throw_range = 6
 	matter = list("metal" = 12000)
@@ -193,8 +193,8 @@
 	name = "rolling pin"
 	desc = "Used to knock out the Bartender."
 	icon_state = "rolling_pin"
-	force = 8.0
-	throwforce = 10.0
+	force = 2 * 8.0
+	throwforce = 2 * 10.0
 	throw_speed = 2
 	throw_range = 7
 	w_class = 3.0
@@ -241,8 +241,8 @@
 	icon = 'icons/obj/food.dmi'
 	icon_state = "tray"
 	desc = "A metal tray to lay food on."
-	throwforce = 12.0
-	throwforce = 10.0
+	throwforce = 2 * 12.0
+	throwforce = 2 * 10.0
 	throw_speed = 1
 	throw_range = 5
 	w_class = 3.0

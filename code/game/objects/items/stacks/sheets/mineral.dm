@@ -55,8 +55,8 @@ var/global/list/datum/stack_recipe/iron_recipes = list ( \
 )
 
 /obj/item/stack/sheet/mineral
-	force = 5.0
-	throwforce = 5
+	force = 2 * 5.0
+	throwforce = 2 * 5
 	w_class = 3.0
 	throw_speed = 3
 	throw_range = 3

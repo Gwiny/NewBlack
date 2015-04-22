@@ -93,6 +93,19 @@
 		..()
 		reagents.add_reagent("fuel",1000)
 
+/obj/structure/reagent_dispensers/teatank
+	name = "teatank"
+	desc = "A teatank"
+	icon = 'icons/obj/objects.dmi'
+	icon_state = "teatank"
+	amount_per_transfer_from_this = 10
+	var/modded = 0
+	var/obj/item/device/assembly_holder/rig = null
+	New()
+		..()
+		reagents.add_reagent("tea",1000)
+
+
 /obj/structure/reagent_dispensers/fueltank/examine(mob/user)
 	if(!..(user, 2))
 		return

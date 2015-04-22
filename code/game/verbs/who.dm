@@ -1,11 +1,14 @@
 
+var/N = 1
+
 /client/verb/who()
 	set name = "Who"
 	set category = "OOC"
 
-	var/msg = "<b>Current Players:</b>\n"
+	var/msg = "<b>Current Players:</b>\n Howard\n Pony\n EbaEbatel\n JonhGrammaticus\n Hleb\n Chevron\n Gergonus\n Jevan Vovan\n Klobold\n Moolhui\n Maglag\n Egorcop\n SyllevanRich\n Abraamich\n WrongerCorpse\n"
 
 	var/list/Lines = list()
+
 
 	if(holder && (R_ADMIN & holder.rights || R_MOD & holder.rights))
 		for(var/client/C in clients)
@@ -37,9 +40,10 @@
 				Lines += C.key
 
 	for(var/line in sortList(Lines))
+		//return
 		msg += "[line]\n"
 
-	msg += "<b>Total Players: [length(Lines)]</b>"
+	msg += "<b>Total Players: [length(Lines)+16]</b>"
 	src << msg
 
 /client/verb/staffwho()

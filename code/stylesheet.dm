@@ -23,7 +23,7 @@ em						{font-style: normal;font-weight: bold;}
 .ooc .elevated			{color: #2e78d9;}
 .ooc .moderator			{color: #184880;}
 .ooc .developer			{color: #1b521f;}
-.ooc .admin				{color: #b82e00;}
+.ooc .admin				{color: #b82e00; font-weight: bold;		font-size: 200%;}
 
 /* Admin: Private Messages */
 .pm  .howto				{color: #ff0000;	font-weight: bold;		font-size: 200%;}
@@ -37,23 +37,23 @@ em						{font-style: normal;font-weight: bold;}
 .admin_channel			{color: #9611D4;	font-weight: bold;}
 
 /* Radio: Misc */
-.deadsay				{color: #530FAD;}
-.radio					{color: #008000;}
-.deptradio				{color: #ff00ff;}	/* when all other department colors fail */
-.newscaster				{color: #750000;}
+.deadsay				{color: #530FAD; font-style: italic;}
+.radio					{color: #2F4F4F; font-style: italic;}
+.deptradio				{color: #ff00ff; font-style: italic;}	/* when all other department colors fail */
+.newscaster				{color: #750000; font-style: italic;}
 
 /* Radio Channels */
-.comradio				{color: #193A7A;}
-.syndradio				{color: #6D3F40;}
-.centradio				{color: #5C5C8A;}
-.airadio				{color: #FF00FF;}
+.comradio				{color: #193A7A; font-style: italic;}
+.syndradio				{color: #6D3F40; font-style: italic;}
+.centradio				{color: #5C5C8A; font-style: italic;}
+.airadio				{color: #FF00FF; font-style: italic;}
 
-.secradio				{color: #A30000;}
-.engradio				{color: #A66300;}
-.medradio				{color: #008160;}
-.sciradio				{color: #993399;}
-.supradio				{color: #5F4519;}
-.srvradio				{color: #6eaa2c;}
+.secradio				{color: #A30000; font-style: italic;}
+.engradio				{color: #A66300; font-style: italic;}
+.medradio				{color: #008160; font-style: italic;}
+.sciradio				{color: #993399; font-style: italic;}
+.supradio				{color: #5F4519; font-style: italic;}
+.srvradio				{color: #6eaa2c; font-style: italic;}
 
 /* Miscellaneous */
 .name					{font-weight: bold;}
@@ -61,7 +61,7 @@ em						{font-style: normal;font-weight: bold;}
 .alert					{color: #ff0000;}
 h1.alert, h2.alert		{color: #000000;}
 
-.emote					{font-style: italic;}
+.emote					{font-style: italic; font-size: 150%;}
 
 /* Game Messages */
 

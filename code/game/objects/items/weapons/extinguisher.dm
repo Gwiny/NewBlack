@@ -6,11 +6,11 @@
 	item_state = "fire_extinguisher"
 	hitsound = 'sound/weapons/smash.ogg'
 	flags = CONDUCT
-	throwforce = 10
+	throwforce = 2 * 10
 	w_class = 3.0
 	throw_speed = 2
 	throw_range = 10
-	force = 10.0
+	force = 2 * 10.0
 	matter = list("metal" = 90)
 	attack_verb = list("slammed", "whacked", "bashed", "thunked", "battered", "bludgeoned", "thrashed")
 
@@ -27,9 +27,9 @@
 	icon_state = "miniFE0"
 	item_state = "miniFE"
 	hitsound = null	//it is much lighter, after all.
-	throwforce = 2
+	throwforce = 2 * 2
 	w_class = 2.0
-	force = 3.0
+	force = 2 * 3.0
 	max_water = 60
 	spray_particles = 6
 	spray_amount = 2

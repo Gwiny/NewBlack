@@ -6,7 +6,7 @@
 	fire_sound = 'sound/weapons/Laser.ogg'
 	origin_tech = "combat=2;magnets=4"
 	w_class = 4
-	force = 10
+	force = 2 * 10
 	flags =  CONDUCT
 	slot_flags = SLOT_BACK
 	charge_cost = 100

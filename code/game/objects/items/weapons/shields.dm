@@ -8,8 +8,8 @@
 	icon_state = "riot"
 	flags = CONDUCT
 	slot_flags = SLOT_BACK
-	force = 5.0
-	throwforce = 5.0
+	force = 2 * 5.0
+	throwforce = 2 * 5.0
 	throw_speed = 1
 	throw_range = 4
 	w_class = 4.0
@@ -40,8 +40,8 @@
 	icon = 'icons/obj/weapons.dmi'
 	icon_state = "eshield0" // eshield1 for expanded
 	flags = CONDUCT
-	force = 3.0
-	throwforce = 5.0
+	force = 2 * 3.0
+	throwforce = 2 * 5.0
 	throw_speed = 1
 	throw_range = 4
 	w_class = 2
@@ -61,14 +61,14 @@
 		user.take_organ_damage(5)
 	active = !active
 	if (active)
-		force = 10
+		force = 2 * 10
 		icon_state = "eshield[active]"
 		w_class = 4
 		playsound(user, 'sound/weapons/saberon.ogg', 50, 1)
 		user << "\blue [src] is now active."
 
 	else
-		force = 3
+		force = 2 * 3
 		icon_state = "eshield[active]"
 		w_class = 1
 		playsound(user, 'sound/weapons/saberoff.ogg', 50, 1)
@@ -90,7 +90,7 @@
 	var/active = 0.0
 	flags = CONDUCT
 	item_state = "electronic"
-	throwforce = 10.0
+	throwforce = 2 * 10.0
 	throw_speed = 2
 	throw_range = 10
 	w_class = 2.0

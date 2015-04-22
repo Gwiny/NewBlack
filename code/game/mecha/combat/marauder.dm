@@ -19,7 +19,7 @@
 	wreckage = /obj/effect/decal/mecha_wreckage/marauder
 	add_req_access = 0
 	internal_damage_threshold = 25
-	force = 45
+	force = 2 * 45
 	max_equip = 4
 
 /obj/mecha/combat/marauder/seraph
@@ -32,7 +32,7 @@
 	health = 550
 	wreckage = /obj/effect/decal/mecha_wreckage/seraph
 	internal_damage_threshold = 20
-	force = 55
+	force = 2 * 55
 	max_equip = 5
 
 /obj/mecha/combat/marauder/mauler

@@ -120,9 +120,9 @@ var/const/BLOOD_VOLUME_SURVIVE = 122
 
 		// Without enough blood you slowly go hungry.
 		if(blood_volume < BLOOD_VOLUME_SAFE)
-			if(nutrition >= 300)
+			if(nutrition >= 200)
 				nutrition -= 10
-			else if(nutrition >= 200)
+			else if(nutrition >= 100)
 				nutrition -= 3
 
 		//Bleeding out

@@ -54,8 +54,8 @@
 	icon = 'icons/obj/items.dmi'
 	flags = CONDUCT
 	slot_flags = SLOT_BELT
-	force = 15.0
-	throwforce = 4.0
+	force = 2 * 15.0
+	throwforce = 2 * 4.0
 	icon_state = "pickaxe"
 	item_state = "jackhammer"
 	w_class = 4.0
@@ -155,8 +155,8 @@
 	icon_state = "shovel"
 	flags = CONDUCT
 	slot_flags = SLOT_BELT
-	force = 8.0
-	throwforce = 4.0
+	force = 2 * 8.0
+	throwforce = 2 * 4.0
 	item_state = "shovel"
 	w_class = 3.0
 	matter = list("metal" = 50)
@@ -170,8 +170,8 @@
 	desc = "A small tool for digging and moving dirt."
 	icon_state = "spade"
 	item_state = "spade"
-	force = 5.0
-	throwforce = 7.0
+	force = 2 * 5.0
+	throwforce = 2 * 7.0
 	w_class = 2.0
 
 

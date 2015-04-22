@@ -1,8 +1,8 @@
 /obj/item/stack/sheet
 	name = "sheet"
 	w_class = 3.0
-	force = 5
-	throwforce = 5
+	force = 2 * 5
+	throwforce = 2 * 5
 	max_amount = 50
 	throw_speed = 3
 	throw_range = 3

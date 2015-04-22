@@ -4,7 +4,7 @@
 	icon = 'icons/obj/bureaucracy.dmi'
 	icon_state = "stamp-qm"
 	item_state = "stamp"
-	throwforce = 0
+	throwforce = 2 * 0
 	w_class = 1.0
 	throw_speed = 7
 	throw_range = 15

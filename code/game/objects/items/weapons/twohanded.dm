@@ -25,13 +25,13 @@
 
 /obj/item/weapon/twohanded/proc/unwield()
 	wielded = 0
-	force = initial(force)
+	force = 2 * initial(force)
 	name = "[initial(name)]"
 	update_icon()
 
 /obj/item/weapon/twohanded/proc/wield()
 	wielded = 1
-	force = force_wielded
+	force = 2 * force_wielded
 	name = "[initial(name)] (Wielded)"
 	update_icon()
 
@@ -123,7 +123,7 @@
 	base_icon = "fireaxe"
 	name = "fire axe"
 	desc = "Truly, the weapon of a madman. Who would think to fight fire with an axe?"
-	force = 10
+	force = 2 * 10
 	sharp = 1
 	edge = 1
 	w_class = 4.0
@@ -155,8 +155,8 @@
 	base_icon = "dualsaber"
 	name = "double-bladed energy sword"
 	desc = "Handle with care."
-	force = 3
-	throwforce = 5.0
+	force = 2 * 3
+	throwforce = 2 * 5.0
 	throw_speed = 1
 	throw_range = 5
 	w_class = 2.0
@@ -193,11 +193,11 @@
 	base_icon = "spearglass"
 	name = "spear"
 	desc = "A haphazardly-constructed yet still deadly weapon of ancient design."
-	force = 14
+	force = 2 * 14
 	w_class = 4.0
 	slot_flags = SLOT_BACK
 	force_wielded = 22 // Was 13, Buffed - RR
-	throwforce = 20
+	throwforce = 2 * 20
 	throw_speed = 3
 	edge = 0
 	sharp = 1
@@ -214,10 +214,10 @@
 	sharp = 0
 	edge = 0
 	w_class = 3
-	force = 15
+	force = 2 * 15
 	throw_speed = 3
 	throw_range = 7
-	throwforce = 7
+	throwforce = 2 * 7
 	attack_verb = list("smashed", "beaten", "slammed", "smacked", "striked", "battered", "bonked")
 	hitsound = 'sound/weapons/genhit3.ogg'
 	force_wielded = 23
@@ -228,6 +228,6 @@
 	icon_state = "metalbat0"
 	base_icon = "metalbat"
 	item_state = "metalbat"
-	force = 18
+	force = 2 * 18
 	w_class = 3.0
 	force_wielded = 27

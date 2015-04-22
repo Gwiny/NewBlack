@@ -6,13 +6,13 @@
 	w_class = 4.0
 	throw_speed = 2
 	throw_range = 10
-	force = 5.0
+	force = 2 * 5.0
 	flags =  CONDUCT | USEDELAY
 	slot_flags = 0
 	origin_tech = "combat=8;materials=5"
 	fire_sound = 'sound/effects/bang.ogg'
-	
-	release_force = 15
+
+	release_force = 2 * 15
 	throw_distance = 30
 	var/max_rockets = 1
 	var/list/rockets = new/list()

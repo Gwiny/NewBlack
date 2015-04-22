@@ -69,7 +69,7 @@ REAGENT SCANNER
 	item_state = "analyzer"
 	flags = CONDUCT
 	slot_flags = SLOT_BELT
-	throwforce = 3
+	throwforce = 2 * 3
 	w_class = 2.0
 	throw_speed = 5
 	throw_range = 10
@@ -232,7 +232,7 @@ REAGENT SCANNER
 	w_class = 2.0
 	flags = CONDUCT
 	slot_flags = SLOT_BELT
-	throwforce = 5
+	throwforce = 2 * 5
 	throw_speed = 4
 	throw_range = 20
 
@@ -279,7 +279,7 @@ REAGENT SCANNER
 	w_class = 2.0
 	flags = CONDUCT | OPENCONTAINER
 	slot_flags = SLOT_BELT
-	throwforce = 5
+	throwforce = 2 * 5
 	throw_speed = 4
 	throw_range = 20
 
@@ -353,7 +353,7 @@ REAGENT SCANNER
 	w_class = 2.0
 	flags = CONDUCT
 	slot_flags = SLOT_BELT
-	throwforce = 5
+	throwforce = 2 * 5
 	throw_speed = 4
 	throw_range = 20
 	matter = list("metal" = 30,"glass" = 20)
@@ -412,7 +412,7 @@ REAGENT SCANNER
 	origin_tech = "biotech=1"
 	w_class = 2.0
 	flags = CONDUCT
-	throwforce = 0
+	throwforce = 2 * 0
 	throw_speed = 3
 	throw_range = 7
 	matter = list("metal" = 30,"glass" = 20)

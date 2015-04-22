@@ -91,11 +91,11 @@
 	..()
 	for(var/mob/O in viewers(src, null))
 		O.show_message("\red <B>[src] was hit by [AM].</B>", 1)
-	var/tforce = 0
+	var/tforce = 2 * 0
 	if(ismob(AM))
-		tforce = 10
+		tforce = 2 * 10
 	else
-		tforce = AM:throwforce
+		tforce = 2 * AM:throwforce
 	playsound(loc, 'sound/effects/attackblob.ogg', 100, 1)
 	health = max(0, health - tforce)
 	healthcheck()
@@ -129,7 +129,7 @@
 
 /obj/effect/alien/resin/attackby(obj/item/weapon/W as obj, mob/user as mob)
 
-	var/aforce = W.force
+	var/aforce = 2 * W.force
 	health = max(0, health - aforce)
 	playsound(loc, 'sound/effects/attackblob.ogg', 100, 1)
 	healthcheck()

@@ -3,7 +3,7 @@
 	icon_state = "mecha_clamp"
 	equip_cooldown = 15
 	energy_drain = 10
-	var/dam_force = 20
+	var/dam_force = 2 *20
 	var/obj/mecha/working/ripley/cargo_holder
 	required_type = /obj/mecha/working
 
@@ -15,7 +15,7 @@
 	action(atom/target)
 		if(!action_checks(target)) return
 		if(!cargo_holder) return
-		
+
 		//loading
 		if(istype(target,/obj))
 			var/obj/O = target
@@ -29,7 +29,7 @@
 			if(cargo_holder.cargo.len >= cargo_holder.cargo_capacity)
 				occupant_message("<font color='red'>Not enough room in cargo compartment.</font>")
 				return
-			
+
 			occupant_message("You lift [target] and start to load it into cargo compartment.")
 			chassis.visible_message("[chassis] lifts [target] and starts to load it into cargo compartment.")
 			set_ready_state(0)
@@ -72,7 +72,7 @@
 	icon_state = "mecha_drill"
 	equip_cooldown = 30
 	energy_drain = 10
-	force = 15
+	force = 2 * 15
 	required_type = list(/obj/mecha/working/ripley, /obj/mecha/combat)
 
 	action(atom/target)
@@ -124,7 +124,7 @@
 	origin_tech = "materials=4;engineering=3"
 	construction_cost = list("metal"=10000,"diamond"=6500)
 	equip_cooldown = 20
-	force = 15
+	force = 2 * 15
 
 	action(atom/target)
 		if(!action_checks(target)) return
@@ -999,7 +999,7 @@
 	icon_state = "mecha_clamp"
 	equip_cooldown = 15
 	energy_drain = 0
-	var/dam_force = 0
+	var/dam_force = 2 *0
 	var/obj/mecha/working/ripley/cargo_holder
 	required_type = /obj/mecha/working/ripley
 

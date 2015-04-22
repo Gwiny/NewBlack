@@ -19,7 +19,7 @@
 	name = "\improper SWAT shoes"
 	desc = "When you want to turn up the heat."
 	icon_state = "swat"
-	force = 3
+	force = 2 * 3
 	armor = list(melee = 80, bullet = 60, laser = 50,energy = 25, bomb = 50, bio = 10, rad = 0)
 	flags = NOSLIP
 	siemens_coefficient = 0.6
@@ -28,7 +28,7 @@
 	name = "combat boots"
 	desc = "When you REALLY want to turn up the heat"
 	icon_state = "swat"
-	force = 5
+	force = 2 * 5
 	armor = list(melee = 80, bullet = 60, laser = 50,energy = 25, bomb = 50, bio = 10, rad = 0)
 	flags = NOSLIP
 	siemens_coefficient = 0.6
@@ -67,7 +67,7 @@
 	item_state = "clown_shoes"
 	slowdown = SHOES_SLOWDOWN+1
 	item_color = "clown"
-	force = 0
+	force = 2 * 0
 	var/footstep = 1	//used for squeeks whilst walking
 	species_restricted = null
 
@@ -87,7 +87,7 @@
 	icon_state = "jackboots"
 	item_state = "jackboots"
 	item_color = "hosred"
-	force = 3
+	force = 2 * 3
 	siemens_coefficient = 0.7
 
 /obj/item/clothing/shoes/cult
@@ -96,7 +96,7 @@
 	icon_state = "cult"
 	item_state = "cult"
 	item_color = "cult"
-	force = 2
+	force = 2 * 2
 	siemens_coefficient = 0.7
 
 	cold_protection = FEET
@@ -115,7 +115,7 @@
 	desc = "Fluffy!"
 	icon_state = "slippers"
 	item_state = "slippers"
-	force = 0
+	force = 2 * 0
 	species_restricted = null
 	w_class = 2
 
@@ -124,7 +124,7 @@
 	desc = "Fluffy..."
 	icon_state = "slippers_worn"
 	item_state = "slippers_worn"
-	force = 0
+	force = 2 * 0
 	w_class = 2
 
 /obj/item/clothing/shoes/laceup

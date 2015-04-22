@@ -84,7 +84,7 @@
 	health = 24.0
 	matter = list("metal" = 30,"glass" = 30)
 	empty_desc = "Cheap plastic ashtray."
-	throwforce = 3.0
+	throwforce = 2 * 3.0
 	die()
 		..()
 		name = "pieces of plastic"
@@ -104,7 +104,7 @@
 	health = 72.0
 	matter = list("metal" = 80)
 	empty_desc = "Massive bronze ashtray."
-	throwforce = 10.0
+	throwforce = 2 * 10.0
 
 	die()
 		..()
@@ -125,7 +125,7 @@
 	health = 12.0
 	matter = list("glass" = 60)
 	empty_desc = "Glass ashtray. Looks fragile."
-	throwforce = 6.0
+	throwforce = 2 * 6.0
 
 	die()
 		..()

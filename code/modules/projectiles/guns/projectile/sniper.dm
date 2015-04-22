@@ -4,7 +4,7 @@
 	icon_state = "heavysniper"
 	item_state = "l6closednomag" //placeholder
 	w_class = 4
-	force = 10
+	force = 2 * 10
 	slot_flags = SLOT_BACK
 	origin_tech = "combat=8;materials=2;syndicate=8"
 	caliber = "14.5mm"

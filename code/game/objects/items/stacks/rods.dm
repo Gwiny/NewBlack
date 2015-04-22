@@ -5,8 +5,8 @@
 	icon_state = "rods"
 	flags = CONDUCT
 	w_class = 3.0
-	force = 9.0
-	throwforce = 15.0
+	force = 2 * 9.0
+	throwforce = 2 * 15.0
 	throw_speed = 5
 	throw_range = 20
 	matter = list("metal" = 1875)

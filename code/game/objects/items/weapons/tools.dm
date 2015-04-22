@@ -21,8 +21,8 @@
 	icon_state = "wrench"
 	flags = CONDUCT
 	slot_flags = SLOT_BELT
-	force = 5.0
-	throwforce = 7.0
+	force = 2 * 5.0
+	throwforce = 2 * 7.0
 	w_class = 2.0
 	matter = list("metal" = 150)
 	origin_tech = "materials=1;engineering=1"
@@ -39,9 +39,9 @@
 	icon_state = "screwdriver"
 	flags = CONDUCT
 	slot_flags = SLOT_BELT
-	force = 5.0
+	force = 2 * 5.0
 	w_class = 1.0
-	throwforce = 5.0
+	throwforce = 2 * 5.0
 	throw_speed = 3
 	throw_range = 5
 	matter = list("metal" = 75)
@@ -98,7 +98,7 @@
 	icon_state = "cutters"
 	flags = CONDUCT
 	slot_flags = SLOT_BELT
-	force = 6.0
+	force = 2 * 6.0
 	throw_speed = 2
 	throw_range = 9
 	w_class = 2.0
@@ -137,8 +137,8 @@
 	slot_flags = SLOT_BELT
 
 	//Amount of OUCH when it's thrown
-	force = 3.0
-	throwforce = 5.0
+	force = 2 * 3.0
+	throwforce = 2 * 5.0
 	throw_speed = 1
 	throw_range = 5
 	w_class = 2.0
@@ -211,7 +211,7 @@
 		//If off
 		if(0)
 			if(src.icon_state != "welder") //Check that the sprite is correct, if it isnt, it means toggle() was not called
-				src.force = 3
+				src.force = 2 * 3
 				src.damtype = "brute"
 				src.icon_state = "welder"
 				src.welding = 0
@@ -220,7 +220,7 @@
 		//Welders left on now use up fuel, but lets not have them run out quite that fast
 		if(1)
 			if(src.icon_state != "welder1") //Check that the sprite is correct, if it isnt, it means toggle() was not called
-				src.force = 15
+				src.force = 2 * 15
 				src.damtype = "fire"
 				src.icon_state = "welder1"
 			if(prob(5))
@@ -304,7 +304,7 @@
 	if(temp_welding > 0)
 		if (remove_fuel(1))
 			usr << "\blue The [src] switches on."
-			src.force = 15
+			src.force = 2 * 15
 			src.damtype = "fire"
 			src.icon_state = "welder1"
 			processing_objects.Add(src)
@@ -315,7 +315,7 @@
 	//Otherwise
 	else
 		usr << "\blue The [src] switches off."
-		src.force = 3
+		src.force = 2 * 3
 		src.damtype = "brute"
 		src.icon_state = "welder"
 		src.welding = 0
@@ -335,7 +335,7 @@
 	if (src.welding)
 		if (remove_fuel(1))
 			usr << "\blue You switch the [src] on."
-			src.force = 15
+			src.force = 2 * 15
 			src.damtype = "fire"
 			src.icon_state = "welder1"
 			src.w_class = 4
@@ -349,7 +349,7 @@
 			usr << "\blue You switch the [src] off."
 		else
 			usr << "\blue The [src] shuts off!"
-		src.force = 3
+		src.force = 2 * 3
 		src.damtype = "brute"
 		src.icon_state = "welder"
 		src.welding = 0
@@ -440,8 +440,8 @@
 	icon_state = "crowbar"
 	flags = CONDUCT
 	slot_flags = SLOT_BELT
-	force = 5.0
-	throwforce = 7.0
+	force = 2 * 5.0
+	throwforce = 2 * 7.0
 	item_state = "crowbar"
 	w_class = 2.0
 	matter = list("metal" = 50)

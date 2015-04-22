@@ -226,7 +226,7 @@ emp_act
 
 	if(armor >= 2)	return 0
 	if(!I.force)	return 0
-	var/Iforce = I.force //to avoid runtimes on the forcesay checks at the bottom. Some items might delete themselves if you drop them. (stunning yourself, ninja swords)
+	var/Iforce = 2 * I.force //to avoid runtimes on the forcesay checks at the bottom. Some items might delete themselves if you drop them. (stunning yourself, ninja swords)
 
 	apply_damage(I.force, I.damtype, affecting, armor, sharp=weapon_sharp, edge=weapon_edge, used_weapon=I)
 
@@ -372,13 +372,13 @@ emp_act
 			var/obj/item/I = O
 			mass = I.w_class/THROWNOBJ_KNOCKBACK_DIVISOR
 		var/momentum = speed*mass
-		
+
 		if(O.throw_source && momentum >= THROWNOBJ_KNOCKBACK_SPEED)
 			var/dir = get_dir(O.throw_source, src)
 
 			visible_message("\red [src] staggers under the impact!","\red You stagger under the impact!")
 			src.throw_at(get_edge_target_turf(src,dir),1,momentum)
-			
+
 			if(!O || !src) return
 
 			if(O.loc == src && O.sharp) //Projectile is embedded and suitable for pinning.
@@ -392,7 +392,7 @@ emp_act
 
 /mob/living/carbon/human/embed(var/obj/O, var/def_zone=null)
 	if(!def_zone) ..()
-	
+
 	var/datum/organ/external/affecting = get_organ(def_zone)
 	if(affecting)
 		affecting.embed(O)

@@ -68,6 +68,7 @@
 	name = "Maintenance Access"
 	icon = 'icons/obj/doors/Doormaint.dmi'
 	assembly_type = /obj/structure/door_assembly/door_assembly_mai
+	req_access_txt = "0"
 
 /obj/machinery/door/airlock/external
 	name = "External Airlock"

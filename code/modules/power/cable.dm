@@ -472,7 +472,7 @@ obj/structure/cable/proc/cableColor(var/colorC)
 	color = COLOR_RED
 	//item_color = COLOR_RED Use regular "color" var instead. No need to have it duplicate in two vars. Causes confusion.
 	desc = "A coil of power cable."
-	throwforce = 10
+	throwforce = 2 * 10
 	w_class = 2.0
 	throw_speed = 2
 	throw_range = 5

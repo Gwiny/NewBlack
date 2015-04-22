@@ -7,7 +7,7 @@
 	item_state = "electronic"
 	w_class = 4.0
 	flags = CONDUCT
-	throwforce = 5
+	throwforce = 2 * 5
 	throw_speed = 1
 	throw_range = 2
 

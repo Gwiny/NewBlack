@@ -5,15 +5,15 @@
 	icon_state = "stunbaton"
 	item_state = "baton"
 	slot_flags = SLOT_BELT
-	force = 15
+	force = 2 * 15
 	sharp = 0
 	edge = 0
-	throwforce = 7
+	throwforce = 2 * 7
 	w_class = 3
 	origin_tech = "combat=2"
 	attack_verb = list("beaten")
-	var/stunforce = 0
-	var/agonyforce = 60
+	var/stunforce = 2 *0
+	var/agonyforce = 2 *60
 	var/status = 0		//whether the thing is on or not
 	var/obj/item/weapon/cell/bcell = null
 	var/hitcost = 1000	//oh god why do power cells carry so much charge? We probably need to make a distinction between "industrial" sized power cells for APCs and power cells for everything else.
@@ -53,7 +53,7 @@
 /obj/item/weapon/melee/baton/examine(mob/user)
 	if(!..(user, 1))
 		return
-	
+
 	if(bcell)
 		user <<"<span class='notice'>The baton is [round(bcell.percent())]% charged.</span>"
 	if(!bcell)
@@ -183,10 +183,10 @@
 	desc = "An improvised stun baton."
 	icon_state = "stunprod_nocell"
 	item_state = "prod"
-	force = 3
-	throwforce = 5
-	stunforce = 0
-	agonyforce = 60	//same force as a stunbaton, but uses way more charge.
+	force = 2 * 3
+	throwforce = 2 * 5
+	stunforce = 2 * 0
+	agonyforce = 2 * 60	//same force as a stunbaton, but uses way more charge.
 	hitcost = 2500
 	attack_verb = list("poked")
 	slot_flags = null

@@ -42,7 +42,7 @@
 	icon_state = "nucgun"
 	origin_tech = "combat=3;materials=5;powerstorage=3"
 	slot_flags = SLOT_BELT
-	force = 8 //looks heavier than a pistol
+	force = 2 * 8 //looks heavier than a pistol
 	self_recharge = 1
 	var/lightfail = 0
 

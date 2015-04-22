@@ -1,5 +1,6 @@
 //#define TESTING
-
+world
+	fps = 40
 // Items that ask to be called every cycle.
 var/global/obj/effect/datacore/data_core = null
 var/global/list/all_areas                = list()
@@ -14,6 +15,8 @@ var/list/restricted_camera_networks = list("thunder","ERT","NUKE","Secret")
 
 var/global/list/global_mutations  = list() // List of hidden mutation things.
 var/global/defer_powernet_rebuild = 0      // True if net rebuild will be called manually after an event.
+
+var/global/forceX = 2
 
 // The resulting sector map looks like:
 //  ___ ___

@@ -7,8 +7,8 @@
 	matter = list("metal" = 125, "glass" = 375)
 	flags = CONDUCT
 	slot_flags = SLOT_BELT
-	throwforce = 3
-	force = 3
+	throwforce = 2 * 3
+	force = 2 * 3
 	w_class = 1
 	var/obj/item/weapon/reagent_containers/syringe/syringe
 
@@ -53,10 +53,10 @@
 			if(L.can_inject())
 				if(syringe.reagents)
 					syringe.reagents.trans_to(L, 15)
-		
+
 		syringe.break_syringe(iscarbon(hit_atom)? hit_atom : null)
 		syringe.update_icon()
-	
+
 	icon_state = initial(icon_state) //reset icon state
 	update_icon()
 
@@ -66,16 +66,16 @@
 	icon_state = "syringegun"
 	item_state = "syringegun"
 	w_class = 3
-	force = 7
+	force = 2 * 7
 	matter = list("metal" = 2000)
 	slot_flags = SLOT_BELT
-	
+
 	fire_sound = 'sound/weapons/empty.ogg'
 	fire_sound_text = "a metallic thunk"
 	recoil = 0
-	release_force = 10
+	release_force = 2 * 10
 	throw_distance = 10
-	
+
 	var/list/darts = list()
 	var/max_darts = 1
 	var/obj/item/weapon/syringe_cartridge/next

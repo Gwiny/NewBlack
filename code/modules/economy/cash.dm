@@ -7,8 +7,8 @@
 	opacity = 0
 	density = 0
 	anchored = 0.0
-	force = 1.0
-	throwforce = 1.0
+	force = 2 * 1.0
+	throwforce = 2 * 1.0
 	throw_speed = 1
 	throw_range = 2
 	w_class = 2.0

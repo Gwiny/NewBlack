@@ -4,7 +4,7 @@
 	icon_state = "pulse"
 	item_state = null	//so the human update icon uses the icon_state instead.
 	slot_flags = SLOT_BELT|SLOT_BACK
-	force = 10
+	force = 2 * 10
 	fire_sound = 'sound/weapons/pulse.ogg'
 	charge_cost = 200
 	projectile_type = /obj/item/projectile/beam/pulse

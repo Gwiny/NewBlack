@@ -16,7 +16,7 @@
 	icon_state = "pen"
 	item_state = "pen"
 	slot_flags = SLOT_BELT | SLOT_EARS
-	throwforce = 0
+	throwforce = 2 * 0
 	w_class = 1.0
 	throw_speed = 7
 	throw_range = 15
