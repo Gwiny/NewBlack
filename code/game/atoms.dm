@@ -10,6 +10,7 @@
 	var/last_bumped = 0
 	var/pass_flags = 0
 	var/throwpass = 0
+	var/list/stored_DNA = list()
 	var/germ_level = GERM_LEVEL_AMBIENT // The higher the germ level, the more germ on the atom.
 
 	///Chemistry.
@@ -232,6 +233,8 @@ its easier to just keep the beam vertical.
 /atom/proc/add_hiddenprint(mob/living/M as mob)
 	if(isnull(M)) return
 	if(isnull(M.key)) return
+	if (!( src.flags ) & FPRINT)
+		return
 	if (ishuman(M))
 		var/mob/living/carbon/human/H = M
 		if (!istype(H.dna, /datum/dna))
@@ -256,6 +259,8 @@ its easier to just keep the beam vertical.
 	if(isnull(M)) return
 	if(isAI(M)) return
 	if(isnull(M.key)) return
+	if (!( src.flags ) & FPRINT)
+		return
 	if (ishuman(M))
 		//Add the list if it does not exist.
 		if(!fingerprintshidden)
@@ -392,6 +397,8 @@ its easier to just keep the beam vertical.
 			M.dna = new /datum/dna(null)
 			M.dna.real_name = M.real_name
 		M.check_dna()
+		if (!( src.flags ) & FPRINT)
+			return 0
 		if (M.species)
 			blood_color = M.species.blood_color
 	. = 1

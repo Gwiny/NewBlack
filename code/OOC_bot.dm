@@ -1,5 +1,5 @@
 mob/OOC_bot
-	var/speak_chance = 21
+	var/speak_chance = 6
 	var/BOT_NAME
 	var/BOT_MESSAGE
 	mouse_opacity = 0

@@ -19,6 +19,7 @@ datum
 		var/volume = 0
 		var/nutriment_factor = 0
 		var/custom_metabolism = REAGENTS_METABOLISM
+		var/metabolization_rate = REAGENTS_METABOLISM //how fast the reagent is metabolized by the mob
 		var/overdose = 0
 		var/overdose_dam = 1
 		var/scannable = 0 //shows up on health analyzers
@@ -26,6 +27,10 @@ datum
 		var/glass_name = null
 		var/glass_desc = null
 		var/glass_center_of_mass = null
+		var/overdose_threshold = 0
+		var/addiction_threshold = 0
+		var/current_cycle = 0
+		var/addiction_stage = 0
 		//var/list/viruses = list()
 		var/color = "#000000" // rgb: 0, 0, 0 (does not support alpha channels - yet!)
 

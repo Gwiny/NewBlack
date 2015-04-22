@@ -1,3 +1,8 @@
+//AURORA PORTING
+
+/*
+
+
 /obj/machinery/computer/forensic_scanning
 	name = "high-res forensic scanning computer"
 	icon_state = "forensic"
@@ -310,3 +315,5 @@
 			var/datum/data/record/forensic/fresh = new(scanning)
 			add_record(fresh)
 			updateUsrDialog()
+
+*/

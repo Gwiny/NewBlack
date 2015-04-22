@@ -840,7 +840,11 @@ note dizziness decrements automatically in the mob's Life() proc.
 					statpanel("Spells","[S.holder_var_type] [S.holder_var_amount]",S)
 
 
+/mob/proc/Jitter(amount)
+	jitteriness = max(jitteriness,amount,0)
 
+/mob/proc/Dizzy(amount)
+	dizziness = max(dizziness,amount,0)
 
 // facing verbs
 /mob/proc/canface()
