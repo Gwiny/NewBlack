@@ -59,6 +59,8 @@ var/global/datum/global_init/init = new ()
 
 	// Create autolathe recipes, as above.
 	populate_lathe_recipes()
+	// Create metrolathe recipes, as above.
+	populate_metrolathe_recipes()
 
 	master_controller = new /datum/controller/game_controller()
 	spawn(1)
