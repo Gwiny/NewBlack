@@ -40,7 +40,7 @@ var/global/list/hair_styles_female_list = list()
 var/global/list/facial_hair_styles_list = list()	//stores /datum/sprite_accessory/facial_hair indexed by name
 var/global/list/facial_hair_styles_male_list = list()
 var/global/list/facial_hair_styles_female_list = list()
-var/global/list/skin_styles_female_list = list()		//unused
+//var/global/list/skin_styles_female_list = list()		//unused
 	//Underwear
 var/global/list/underwear_m = list("White" = "m1", "Grey" = "m2", "Green" = "m3", "Blue" = "m4", "Black" = "m5", "Mankini" = "m6", "None") //Curse whoever made male/female underwear diffrent colours
 var/global/list/underwear_f = list("Red" = "f1", "White" = "f2", "Yellow" = "f3", "Blue" = "f4", "Black" = "f5", "Thong" = "f6", "Black Sports" = "f7","White Sports" = "f8","None")

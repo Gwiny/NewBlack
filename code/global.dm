@@ -80,6 +80,46 @@ var/NOPRINTSBLOCK      = 0
 var/SHOCKIMMUNITYBLOCK = 0
 var/SMALLSIZEBLOCK     = 0
 
+///////////////////////////////
+// Goon Stuff
+///////////////////////////////
+// Disabilities
+var/LISPBLOCK = 0
+var/MUTEBLOCK = 0
+var/RADBLOCK = 0
+var/FATBLOCK = 0
+var/CHAVBLOCK = 0
+var/SWEDEBLOCK = 0
+var/SCRAMBLEBLOCK = 0
+var/TOXICFARTBLOCK = 0
+var/STRONGBLOCK = 0
+var/HORNSBLOCK = 0
+var/SMILEBLOCK = 0
+var/ELVISBLOCK = 0
+var/COLDBLOCK = 0
+// Powers
+var/SOBERBLOCK = 0
+var/PSYRESISTBLOCK = 0
+//var/SHADOWBLOCK = 0
+var/FARSIGHTBLOCK = 0
+var/CHAMELEONBLOCK = 0
+var/CRYOBLOCK = 0
+var/EATBLOCK = 0
+var/JUMPBLOCK = 0
+var/MELTBLOCK = 0
+var/EMPATHBLOCK = 0
+var/SUPERFARTBLOCK = 0
+var/IMMOLATEBLOCK = 0
+var/POLYMORPHBLOCK = 0
+
+///////////////////////////////
+// /vg/ Mutations
+///////////////////////////////
+var/LOUDBLOCK = 0
+var/WHISPERBLOCK = 0
+var/DIZZYBLOCK = 0
+var/SANSBLOCK = 0
+
 var/skipupdate = 0
 
 var/eventchance = 10 // Percent chance per 5 minutes.

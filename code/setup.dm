@@ -304,6 +304,73 @@
 #define SKELETON      29
 #define PLANT         30
 
+#define	M_TK			1
+#define M_RESIST_COLD	2
+#define M_XRAY			3
+#define M_HULK			4
+#define M_CLUMSY			5
+#define M_FAT				6
+#define M_HUSK			7
+#define M_NOCLONE			8
+
+
+// Extra powers:
+#define M_LASER			9 	// harm intent - click anywhere to shoot lasers from eyes
+//#define HEAL			10 	// (Not implemented) healing people with hands
+//#define SHADOW		11 	// (Not implemented) shadow teleportation (create in/out portals anywhere) (25%)
+//#define SCREAM		12 	// (Not implemented) supersonic screaming (25%)
+//#define EXPLOSIVE		13 	// (Not implemented) exploding on-demand (15%)
+//#define REGENERATION	14 	// (Not implemented) superhuman regeneration (30%)
+//#define REPROCESSOR	15 	// (Not implemented) eat anything (50%)
+//#define SHAPESHIFTING	16 	// (Not implemented) take on the appearance of anything (40%)
+//#define PHASING		17 	// (Not implemented) ability to phase through walls (40%)
+//#define SHIELD		18 	// (Not implemented) shielding from all projectile attacks (30%)
+//#define SHOCKWAVE		19 	// (Not implemented) attack a nearby tile and cause a massive shockwave, knocking most people on their asses (25%)
+//#define ELECTRICITY	20 	// (Not implemented) ability to shoot electric attacks (15%)
+
+	//2spook
+
+// Other Mutations:
+#define M_NO_BREATH		100 	// no need to breathe
+#define M_REMOTE_VIEW	101 	// remote viewing
+#define M_REGEN			102 	// health regen
+#define M_RUN			103 	// no slowdown
+#define M_REMOTE_TALK	104 	// remote talking
+#define M_MORPH			105 	// changing appearance
+#define M_RESIST_HEAT	106 	// heat resistance
+#define M_HALLUCINATE	107 	// hallucinations
+#define M_FINGERPRINTS	108 	// no fingerprints
+#define M_NO_SHOCK		109 	// insulated hands
+#define M_DWARF			110 	// table climbing
+
+// Goon muts
+#define M_OBESITY       200		// Decreased metabolism
+#define M_TOXIC_FARTS   201		// Duh
+#define M_STRONG        202		// (Nothing)
+#define M_SOBER         203		// Increased alcohol metabolism
+#define M_PSY_RESIST    204		// Block remoteview
+#define M_SUPER_FART    205		// Duh
+#define M_SMILE         206		// :)
+#define M_ELVIS         207		// You ain't nothin' but a hound dog.
+
+// /vg/ muts
+#define M_LOUD		208		// CAUSES INTENSE YELLING
+#define M_WHISPER	209		// causes quiet whispering
+#define M_DIZZY		210		// Trippy.
+#define M_SANS		211		// IF YOU SEE THIS WHILST BROWSING CODE, YOU HAVE BEEN VISITED BY: THE FONT OF SHITPOSTING. GREAT LUCK AND WEALTH WILL COME TO YOU, BUT ONLY IF YOU SAY 'fuck comic sans' IN YOUR PR.
+#define M_FARSIGHT	212		// Increases mob's view range by 2
+
+// Bustanuts
+#define M_HARDCORE      300
+
+//disabilities
+#define NEARSIGHTED		1
+#define EPILEPSY		2
+#define COUGHING		4
+#define TOURETTES		8
+#define NERVOUS			16
+
+
 // Other Mutations:
 #define mNobreath      100 // No need to breathe.
 #define mRemote        101 // Remote viewing.
@@ -775,3 +842,45 @@ var/list/be_special_flags = list(
 #define ROBOT_NOTIFICATION_NEW_NAME 2
 #define ROBOT_NOTIFICATION_NEW_MODULE 3
 #define ROBOT_NOTIFICATION_MODULE_RESET 4
+
+
+
+////////////////////////
+////WIZARD SHIT GO//////
+////////////////////////
+
+/*		WIZARD SPELL FLAGS		*/
+#define GHOSTCAST		1	//can a ghost cast it?
+#define NEEDSCLOTHES	2	//does it need the wizard garb to cast? Nonwizard spells should not have this
+#define NEEDSHUMAN		4	//does it require the caster to be human?
+#define Z2NOCAST		8	//if this is added, the spell can't be cast at centcomm
+#define STATALLOWED		16	//if set, the user doesn't have to be conscious to cast. Required for ghost spells
+#define IGNOREPREV		32	//if set, each new target does not overlap with the previous one
+//The following flags only affect different types of spell, and therefore overlap
+//Targeted spells
+#define INCLUDEUSER		64	//does the spell include the caster in its target selection?
+#define SELECTABLE		128	//can you select each target for the spell?
+//AOE spells
+#define IGNOREDENSE		64	//are dense turfs ignored in selection?
+#define IGNORESPACE		128	//are space turfs ignored in selection?
+//End split flags
+#define CONSTRUCT_CHECK	256	//used by construct spells - checks for nullrods
+#define NO_BUTTON		512	//spell won't show up in the HUD with this
+
+//invocation
+#define SpI_SHOUT	"shout"
+#define SpI_WHISPER	"whisper"
+#define SpI_EMOTE	"emote"
+#define SpI_NONE	"none"
+
+//upgrading
+#define Sp_SPEED	"speed"
+#define Sp_POWER	"power"
+#define Sp_TOTAL	"total"
+
+//casting costs
+#define Sp_RECHARGE	"recharge"
+#define Sp_CHARGES	"charges"
+#define Sp_HOLDVAR	"holdervar"
+
+///////WIZ END/////////

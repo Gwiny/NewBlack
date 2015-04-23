@@ -149,9 +149,9 @@
 
 	H.set_cloned_appearance()
 
-	for(var/datum/language/L in R.languages)
-		H.add_language(L.name)
-	H.flavor_texts = R.flavor.Copy()
+	//for(var/datum/language/L in R.languages)
+	//	H.add_language(L.name)
+	//H.flavor_texts = R.flavor.Copy()
 	H.suiciding = 0
 	attempting = 0
 	return 1
