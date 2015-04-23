@@ -4,6 +4,7 @@ datum
 		var/name = null
 		var/id = null
 		var/result = null
+		var/required_temp = 0
 		var/resultcolor = null //for paint
 		var/list/required_reagents = new/list()
 		var/list/required_catalysts = new/list()
@@ -2251,3 +2252,17 @@ datum
 			result = "suidream"
 			required_reagents = list("space_up" = 2, "bluecuracao" = 1, "melonliquor" = 1)
 			result_amount = 4
+
+
+/datum/chemical_reaction/proc/goonchem_vortex(var/turf/simulated/T, var/setting_type, var/range, var/pull_times)
+	for(var/atom/movable/X in orange(range, T))
+		if(istype(X, /obj/effect))
+			continue  //stop pulling smoke and hotspots please
+		if(istype(X, /atom/movable))
+			if((X) && !X.anchored)
+				if(setting_type)
+					for(var/i = 0, i < pull_times, i++)
+						step_away(X,T)
+				else
+					for(var/i = 0, i < pull_times, i++)
+						step_towards(X,T)

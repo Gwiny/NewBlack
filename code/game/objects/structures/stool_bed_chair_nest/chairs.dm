@@ -5,6 +5,7 @@
 	buckle_lying = 0 //force people to sit up in chairs when buckled
 
 	var/propelled = 0 // Check for fire-extinguisher-driven chairs
+	anchored = 0
 
 /obj/structure/bed/chair/New()
 	..()

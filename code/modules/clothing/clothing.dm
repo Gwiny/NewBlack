@@ -2,7 +2,7 @@
 	name = "clothing"
 	siemens_coefficient = 0.9
 	var/list/species_restricted = null //Only these species can wear this kit.
-
+	var/gsr = 0
 	/*
 		Sprites used when the clothing item is refit. This is done by setting icon_override.
 		For best results, if this is set then sprite_sheets should be null and vice versa, but that is by no means necessary.

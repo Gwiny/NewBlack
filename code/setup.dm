@@ -177,7 +177,9 @@
 #define NOSHIELD           16   // Weapon not affected by shield.
 #define CONDUCT            32   // Conducts electricity. (metal etc.)
 #define ON_BORDER          64   // Item has priority to check when entering or leaving.
-#define NOBLOODY           512  // Used for items if they don't want to get a blood overlay.
+#define NOBLOODY           512
+#define FPRINT             256
+  // Used for items if they don't want to get a blood overlay.
 #define NODELAY            8192 // 1 second attack-by delay skipped (Can be used once every 0.2s). Most objects have a 1s attack-by delay, which doesn't require a flag.
 
 #define GLASSESCOVERSEYES 256
@@ -243,7 +245,7 @@
 #define slot_legs        21
 #define slot_tie         22
 
-// Mob sprite sheets. These need to be strings as numbers 
+// Mob sprite sheets. These need to be strings as numbers
 // cannot be used as associative list keys.
 #define icon_l_hand		"slot_l_hand"
 #define icon_r_hand		"slot_r_hand"
