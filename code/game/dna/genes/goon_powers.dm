@@ -68,11 +68,11 @@
 	New()
 		block=CHAMELEONBLOCK
 
-	OnMobLife(var/mob/M)
-		if((world.time - M.last_movement) >= 30 && !M.stat && M.canmove && !M.restrained())
-			M.alpha -= 25
-		else
-			M.alpha = round(255 * 0.80)
+//	OnMobLife(var/mob/M)
+		//if((world.time - M.last_movement) >= 30 && !M.stat && M.canmove && !M.restrained())
+			//M.alpha -= 25
+	//	else
+		//	M.alpha = round(255 * 0.80)
 
 /////////////////////////////////////////////////////////////////////////////////////////
 
@@ -83,7 +83,7 @@
 	activate(var/mob/M, var/connected, var/flags)
 		..(M,connected,flags)
 		var/spell/granted = new spelltype
-		M.add_spell(granted, "genetic_spell_ready", /obj/screen/movable/spell_master/genetic)
+		//M.add_spell(granted, "genetic_spell_ready", /obj/screen/movable/spell_master/genetic)
 		if(!granted_spells)
 			granted_spells = list()
 		granted_spells += granted
@@ -93,9 +93,9 @@
 		..(M,connected,flags)
 		for(var/spell/S in M.spell_list)
 			if(S in granted_spells)
-				M.remove_spell(S)
+			//	M.remove_spell(S)
 				granted_spells -= S
-				qdel(S)
+				del(S)
 		return 1
 
 /datum/dna/gene/basic/grant_verb
@@ -185,7 +185,7 @@
 		loc=location
 		src.icon = I
 		spawn(duration)
-			qdel(src)
+			del(src)
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 
@@ -345,7 +345,7 @@
 	else
 		usr.visible_message("<span class='warning'> [usr] eats \the [the_item].")
 		playsound(usr.loc, 'sound/items/eatfood.ogg', 50, 0)
-		qdel(the_item)
+		del(the_item)
 		doHeal(usr)
 	return
 
@@ -583,22 +583,22 @@
 			user << "<span class='notice'> <b>Condition</b>: [M.name] is suffering excruciating pain.</span>"
 			thoughts = "haunted by their own mortality"
 
-	switch(M.a_intent)
-		if (I_HELP)
-			user << "<span class='notice'> <b>Mood</b>: You sense benevolent thoughts from [M.name].</span>"
-		if (I_DISARM)
-			user << "<span class='notice'> <b>Mood</b>: You sense cautious thoughts from [M.name].</span>"
-		if (I_GRAB)
-			user << "<span class='notice'> <b>Mood</b>: You sense hostile thoughts from [M.name].</span>"
-		if (I_HURT)
-			user << "<span class='notice'> <b>Mood</b>: You sense cruel thoughts from [M.name].</span>"
-			for(var/mob/living/L in view(7,M))
-				if (L == M)
-					continue
-				thoughts = "thinking about punching [L.name]"
-				break
-		else
-			user << "<span class='notice'> <b>Mood</b>: You sense strange thoughts from [M.name].</span>"
+	//switch(M.a_intent)
+	//	if (I_HELP)
+		//	user << "<span class='notice'> <b>Mood</b>: You sense benevolent thoughts from [M.name].</span>"
+	//	if (I_DISARM)
+	//		user << "<span class='notice'> <b>Mood</b>: You sense cautious thoughts from [M.name].</span>"
+	//	if (I_GRAB)
+		//	user << "<span class='notice'> <b>Mood</b>: You sense hostile thoughts from [M.name].</span>"
+		//if (I_HURT)
+		//	user << "<span class='notice'> <b>Mood</b>: You sense cruel thoughts from [M.name].</span>"
+		//	for(var/mob/living/L in view(7,M))
+			//	if (L == M)
+			//		continue
+			//	thoughts = "thinking about punching [L.name]"
+		//		break
+	//	else
+		//	user << "<span class='notice'> <b>Mood</b>: You sense strange thoughts from [M.name].</span>"
 
 	if (istype(M,/mob/living/carbon/human))
 		var/numbers[0]

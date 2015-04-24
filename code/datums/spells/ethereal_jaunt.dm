@@ -86,7 +86,7 @@
 	name = "water"
 	icon = 'icons/effects/effects.dmi'
 	icon_state = "nothing"
-	var/canmove = 1
+	//canmove = 1
 	density = 0
 	anchored = 1
 

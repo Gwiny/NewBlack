@@ -551,7 +551,7 @@ datum/reagent/medicine/antihol/on_mob_life(var/mob/living/M as mob)
 
 /datum/reagent/medicine/stimulants
 	name = "Stimulants"
-	id = "stimulants"
+	id = "epinephrine"
 	description = "Increases run speed and eliminates stuns, can heal minor damage. If overdosed it will deal toxin damage and stun."
 	color = "#C8A5DC"
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM

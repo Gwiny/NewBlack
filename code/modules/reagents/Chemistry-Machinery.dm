@@ -26,6 +26,13 @@
 	"sodium","aluminum","silicon","phosphorus","sulfur","chlorine","potassium","iron",
 	"copper","mercury","radium","water","ethanol","sugar","fuel","sacid","tungsten","silver","iodine","bromine","stable_plasma")
 
+/obj/machinery/chem_dispenser/medical_goon
+	name = "medical chem dispenser"
+	dispensable_reagents = list("silver_sulfadiazine", "styptic_powder", "omnizine", "ephedrine", "morphine", "epinephrine", "insulin")
+
+
+
+
 /obj/machinery/chem_dispenser/proc/recharge()
 	if(stat & (BROKEN|NOPOWER)) return
 	var/addenergy = 1
@@ -188,6 +195,7 @@
 	accept_glass = 1
 	max_energy = 100
 	dispensable_reagents = list("water","ice","coffee","cream","tea","icetea","cola","spacemountainwind","dr_gibb","space_up","tonic","sodawater","lemon_lime","sugar","orangejuice","limejuice","watermelonjuice")
+
 
 /obj/machinery/chem_dispenser/soda/attackby(var/obj/item/weapon/B as obj, var/mob/user as mob)
 	..()
