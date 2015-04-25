@@ -13,3 +13,4 @@ gwin - Game Master
 vallat - Game Master
 zixxa - Game Master
 barka - Game Master
+gwaedh -Game Master
