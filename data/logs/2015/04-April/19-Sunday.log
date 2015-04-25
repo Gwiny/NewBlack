@@ -1,0 +1,382 @@
+
+
+Starting up. 15:46.56
+---------------------
+[15:46:59]ADMIN: Loading jobban_rank
+[15:46:59]ADMIN: jobban_keylist was empty
+[15:46:59]ADMIN: Loading Banlist
+[15:47:05]DEBUG: Rebuilding Master Controller
+[15:58:20]ACCESS: Login: S_Sting/(S_Sting) from 127.0.0.1-1323850029 || BYOND v506
+[15:58:24]ADMIN: S_Sting has started the game.
+[15:58:52]DEBUG: Next event of severity Mundane in 14.69 minutes.
+[15:58:52]DEBUG: Next event of severity Moderate in 49.334 minutes.
+[15:58:52]DEBUG: Next event of severity Major in 96.205 minutes.
+[15:59:05]ACCESS: Logout: *no key*/(S_Sting)
+[15:59:05]ACCESS: Login: S_Sting/(Angel Hardie) from 127.0.0.1-1323850029 || BYOND v506
+[15:59:46]EMOTE: Coffee/ : <B>Coffee</B> clacks.
+[15:59:56]EMOTE: Experiment 68a/ : <B>Experiment 68a</B> clicks.
+[16:00:06]EMOTE: Runtime/ : <B>Runtime</B> mews.
+[16:00:35]EMOTE: Coffee/ : <B>Coffee</B> clacks.
+[16:01:00]EMOTE: Experiment 97d/ : <B>Experiment 97d</B> stamps a foot.
+[16:01:24]EMOTE: Ian/ : <B>Ian</B> chases their tail
+[16:02:20]EMOTE: mouse (994)/ : <B>The mouse (994)</B> runs in a circle.
+[16:02:22]SAY: Runtime/ : HSSSSS
+[16:02:32]EMOTE: Ian/ : <B>Ian</B> dances around
+[16:02:42]EMOTE: mouse (658)/ : <B>The mouse (658)</B> shakes.
+[16:03:01]EMOTE: Ian/ : <B>Ian</B> dances around
+[16:03:27]EMOTE: mouse (827)/ : <B>The mouse (827)</B> shakes.
+[16:04:23]EMOTE: Experiment 68a/ : <B>Experiment 68a</B> clicks.
+[16:04:53]EMOTE: mouse (827)/ : <B>The mouse (827)</B> scritches at something.
+[16:05:09]SAY: mouse (658)/ : SQUEEK!
+[16:05:13]SAY: Ian/ : Bark!
+[16:06:03]EMOTE: Experiment 68a/ : <B>Experiment 68a</B> clicks.
+[16:06:50]EMOTE: Ian/ : <B>Ian</B> chases their tail
+[16:07:19]EMOTE: Coffee/ : <B>Coffee</B> clicks.
+[16:08:25]EMOTE: crab/ : <B>The crab</B> clicks.
+[16:09:04]SAY: grey baby slime (732)/ : Lonely...
+[16:09:38]EMOTE: Ian/ : <B>Ian</B> chases their tail
+[16:09:42]EMOTE: Ian/ : <B>Ian</B> woofs.
+[16:12:50]EMOTE: crab/ : <B>The crab</B> clacks.
+[16:13:56]SAY: Ian/ : Woof!
+[16:14:20]SAY: Runtime/ : Esp!
+[16:14:40]SAY: Experiment 97d/ : Eh?
+[16:14:58]EMOTE: Experiment 68a/ : <B>Experiment 68a</B> clicks.
+[16:15:09]EMOTE: crab/ : <B>The crab</B> clacks.
+[16:15:19]DEBUG: Next event of severity Mundane in 13.19 minutes.
+[16:15:19]DEBUG: Starting event 'Vermin Infestation' of severity Mundane.
+[16:15:43]DEBUG: Event 'Vermin Infestation' has completed at 12:15.
+[16:16:07]EMOTE: mouse (531)/ : <B>The mouse (531)</B> shakes.
+[16:16:45]EMOTE: mouse (531)/ : <B>The mouse (531)</B> squeaks.
+[16:17:40]EMOTE: Runtime/ : <B>Runtime</B> meows.
+[16:18:28]EMOTE: Ian/ : <B>Ian</B> shivers.
+[16:18:47]EMOTE: Ian/ : <B>Ian</B> chases their tail
+[16:19:30]EMOTE: crab/ : <B>The crab</B> clicks.
+[16:20:16]EMOTE: Ian/ : <B>Ian</B> dances around
+[16:20:46]EMOTE: Coffee/ : <B>Coffee</B> clicks.
+[16:20:58]SAY: Ian/ : Bark!
+[16:22:18]EMOTE: Ian/ : <B>Ian</B> chases their tail
+[16:22:18]EMOTE: Coffee/ : <B>Coffee</B> clicks.
+[16:23:25]EMOTE: Ian/ : <B>Ian</B> chases their tail
+[16:23:27]EMOTE: Runtime/ : <B>Runtime</B> meows.
+[16:24:47]EMOTE: Coffee/ : <B>Coffee</B> clicks.
+[16:25:26]EMOTE: Experiment 68a/ : <B>Experiment 68a</B> clacks.
+[16:25:42]EMOTE: Ian/ : <B>Ian</B> pants.
+[16:25:44]EMOTE: crab/ : <B>The crab</B> clacks.
+[16:26:10]EMOTE: Coffee/ : <B>Coffee</B> clicks.
+[16:27:51]EMOTE: Ian/ : <B>Ian</B> dances around
+[16:28:07]EMOTE: crab/ : <B>The crab</B> clicks.
+[16:28:19]EMOTE: Runtime/ : <B>Runtime</B> shakes their head.
+[16:29:16]EMOTE: Ian/ : <B>Ian</B> dances around
+[16:29:44]SAY: Ian/ : YAP
+[16:29:48]EMOTE: Ian/ : <B>Ian</B> dances around
+[16:30:03]DEBUG: Next event of severity Mundane in 17.068 minutes.
+[16:30:03]DEBUG: Starting event 'Trivial News' of severity Mundane.
+[16:30:25]DEBUG: Event 'Trivial News' has completed at 12:28.
+[16:31:34]EMOTE: Experiment 97d/ : <B>Experiment 97d</B> shakes its head.
+[16:32:58]EMOTE: Ian/ : <B>Ian</B> dances around
+[16:33:10]EMOTE: Experiment 68a/ : <B>Experiment 68a</B> clacks.
+[16:33:34]EMOTE: Ian/ : <B>Ian</B> chases their tail
+[16:34:06]SAY: Ian/ : AUUUUUU
+[16:35:06]SAY: grey baby slime (1000)/ : Rawr...
+[16:35:08]EMOTE: crab/ : <B>The crab</B> clacks.
+[16:36:40]SAY: grey baby slime (1000)/ : Blop...
+[16:37:49]EMOTE: crab/ : <B>The crab</B> clacks.
+[16:38:12]SAY: grey baby slime (732)/ : Rawr...
+[16:38:19]SAY: Ian/ : AUUUUUU
+[16:38:53]EMOTE: Ian/ : <B>Ian</B> shivers.
+[16:39:07]EMOTE: crab/ : <B>The crab</B> clacks.
+[16:39:11]SAY: Ian/ : YAP
+[16:39:15]EMOTE: Ian/ : <B>Ian</B> chases their tail
+[16:40:36]SAY: grey baby slime (732)/ : Blop...
+[16:41:46]SAY: Ian/ : YAP
+[16:42:30]EMOTE: Runtime/ : <B>Runtime</B> mews.
+[16:43:38]SAY: grey baby slime (732)/ : Rawr...
+[16:43:40]SAY: Runtime/ : Esp!
+[16:44:31]EMOTE: Coffee/ : <B>Coffee</B> clicks.
+[16:45:21]EMOTE: Ian/ : <B>Ian</B> dances around
+[16:47:58]EMOTE: Experiment 97d/ : <B>Experiment 97d</B> glares around.
+[16:48:14]SAY: Runtime/ : HSSSSS
+[16:49:08]EMOTE: Ian/ : <B>Ian</B> chases their tail
+[16:49:17]DEBUG: Next event of severity Mundane in 14.228 minutes.
+[16:49:17]DEBUG: Starting event 'Economic News' of severity Mundane.
+[16:49:25]EMOTE: Coffee/ : <B>Coffee</B> clicks.
+[16:51:43]EMOTE: crab/ : <B>The crab</B> clacks.
+[16:52:03]EMOTE: crab/ : <B>The crab</B> clicks.
+[16:52:24]EMOTE: Experiment 97d/ : <B>Experiment 97d</B> glares around.
+[16:52:24]EMOTE: Coffee/ : <B>Coffee</B> clacks.
+[16:52:53]SAY: Experiment 97d/ : Eh?
+[16:53:15]SAY: Ian/ : YAP
+[16:53:16]SAY: grey baby slime (1000)/ : Hungry...
+[16:53:38]SAY: Ian/ : Woof!
+[16:54:11]DEBUG: Next event of severity Moderate in 43.874 minutes.
+[16:54:11]DEBUG: Starting event 'Nothing' of severity Moderate.
+[16:54:13]DEBUG: Event 'Nothing' has completed at 12:49.
+[16:54:49]EMOTE: crab/ : <B>The crab</B> clacks.
+[16:55:50]DEBUG: Event 'Economic News' has completed at 12:50.
+[16:56:28]EMOTE: Coffee/ : <B>Coffee</B> clicks.
+[16:56:40]SAY: grey baby slime (732)/ : Lonely...
+[16:57:06]SAY: grey baby slime (1000)/ : I want to eat...
+[16:57:24]EMOTE: Ian/ : <B>Ian</B> dances around
+[16:57:32]ADMIN: S_Sting/(Angel Hardie) jumped to 154,135,1 in the Kitchen
+[16:57:54]EMOTE: Runtime/ : <B>Runtime</B> meows.
+[16:58:02]ACCESS: Logout: S_Sting/(Angel Hardie)
+
+
+Starting up. 17:04.34
+---------------------
+[17:04:37]ADMIN: Loading jobban_rank
+[17:04:37]ADMIN: jobban_keylist was empty
+[17:04:37]ADMIN: Loading Banlist
+[17:04:45]DEBUG: Rebuilding Master Controller
+[17:09:16]ACCESS: Login: S_Sting/(S_Sting) from 127.0.0.1-1323850029 || BYOND v506
+[17:10:16]ADMIN: S_Sting has started the game.
+[17:10:17]ACCESS: Logout: *no key*/(S_Sting)
+[17:10:17]ACCESS: Login: S_Sting/(Emilio Blyant) from 127.0.0.1-1323850029 || BYOND v506
+[17:10:22]DEBUG: Next event of severity Mundane in 17.734 minutes.
+[17:10:22]DEBUG: Next event of severity Moderate in 51.418 minutes.
+[17:10:22]DEBUG: Next event of severity Major in 97.4717 minutes.
+[17:10:26]SAY: mouse (970)/ : Squeek?
+[17:10:32]SAY: Experiment 97d/ : Eh?
+[17:10:57]ADMIN: S_Sting/(Emilio Blyant) jumped to 151,133,1 in the Kitchen
+[17:10:58]EMOTE: crab/ : <B>The crab</B> clacks.
+[17:11:02]EMOTE: Ian/ : <B>Ian</B> chases their tail
+[17:11:07]SAY: mouse (348)/ : SQUEEK!
+[17:11:15]SAY: Runtime/ : HSSSSS
+[17:11:31]EMOTE: Experiment 68a/ : <B>Experiment 68a</B> clicks.
+[17:11:39]EMOTE: Coffee/ : <B>Coffee</B> clicks.
+[17:11:44]ADMIN: S_Sting/(Emilio Blyant) jumped to 153,130,1 in the Starboard Primary Hallway
+[17:12:17]ADMIN: S_Sting/(Emilio Blyant) jumped to 121,134,1 in the Bridge
+[17:12:18]EMOTE: mouse (396)/ : <B>The mouse (396)</B> scritches at something.
+[17:12:21]ADMIN: S_Sting/(Emilio Blyant) deleted Captain's Office at (120,132,1)
+[17:13:00]SAY: grey baby slime (218)/ : Blop...
+[17:13:17]ADMIN: S_Sting/(Emilio Blyant) jumped to 126,133,1 in the Central Primary Hallway
+[17:13:32]EMOTE: mouse (279)/ : <B>The mouse (279)</B> squeeks.
+[17:13:38]EMOTE: Experiment 68a/ : <B>Experiment 68a</B> clicks.
+[17:13:45]ACCESS: Logout: *no key*/(Emilio Blyant)
+[17:13:45]ACCESS: Login: S_Sting/(Emilio Blyant) from 127.0.0.1-1323850029 || BYOND v506
+[17:13:45]ADMIN: *no key*/(Emilio Blyant) used gibself.
+[17:13:48]EMOTE: Ian/ : <B>Ian</B> chases their tail
+[17:14:13]ADMIN: S_Sting/(Emilio Blyant) jumped to 117,141,1 in the Central Primary Hallway
+[17:14:23]ACCESS: Logout: S_Sting/(Emilio Blyant)
+
+
+Starting up. 17:45.50
+---------------------
+[17:45:53]ADMIN: Loading jobban_rank
+[17:45:53]ADMIN: jobban_keylist was empty
+[17:45:53]ADMIN: Loading Banlist
+[17:45:59]DEBUG: Rebuilding Master Controller
+[17:46:17]ACCESS: Login: S_Sting/(S_Sting) from 127.0.0.1-1323850029 || BYOND v506
+[17:47:17]ADMIN: S_Sting has started the game.
+[17:47:17]ACCESS: Logout: *no key*/(S_Sting)
+[17:47:17]ACCESS: Login: S_Sting/(Sadie Johnson) from 127.0.0.1-1323850029 || BYOND v506
+[17:47:21]DEBUG: Next event of severity Mundane in 13.994 minutes.
+[17:47:21]DEBUG: Next event of severity Moderate in 37.952 minutes.
+[17:47:21]DEBUG: Next event of severity Major in 91.4883 minutes.
+[17:47:36]ADMIN: S_Sting/(Sadie Johnson) spawned /obj/machinery/photocopier/SHRUEDER at (158,128,1)
+[17:47:41]EMOTE: mouse (505)/ : <B>The mouse (505)</B> squeeks.
+[17:47:43]SAY: grey baby slime (25)/ : Blorble...
+[17:47:58]EMOTE: mouse (155)/ : <B>The mouse (155)</B> squiks.
+[17:47:58]EMOTE: Tom (779)/ : <B>Tom (779)</B> squiks.
+[17:48:02]EMOTE: Runtime/ : <B>Runtime</B> shivers.
+[17:48:04]SAY: Experiment 97d/ : Eh?
+[17:48:08]EMOTE: Tom (779)/ : <B>Tom (779)</B> runs in a circle.
+[17:48:17]EMOTE: Ian/ : <B>Ian</B> dances around
+[17:48:29]SAY: Experiment 97d/ : EHEHEHEHEH
+[17:49:19]EMOTE: Experiment 97d/ : <B>Experiment 97d</B> stamps a foot.
+[17:49:37]EMOTE: Runtime/ : <B>Runtime</B> shakes their head.
+[17:50:01]EMOTE: Tom (779)/ : <B>Tom (779)</B> squeaks.
+[17:50:23]EMOTE: Ian/ : <B>Ian</B> dances around
+[17:50:44]EMOTE: mouse (652)/ : <B>The mouse (652)</B> shakes.
+[17:51:23]EMOTE: Experiment 97d/ : <B>Experiment 97d</B> brays.
+[17:51:43]SAY: grey baby slime (25)/ : Blorble...
+[17:52:53]EMOTE: Ian/ : <B>Ian</B> dances around
+[17:53:05]SAY: grey baby slime (25)/ : Blorble...
+[17:53:31]SAY: mouse (652)/ : Squeek?
+[17:53:47]SAY: Experiment 97d/ : EHEHEHEHEH
+[17:56:18]SAY: grey baby slime (25)/ : Rawr...
+[17:57:34]EMOTE: Experiment 97d/ : <B>Experiment 97d</B> shakes its head.
+[17:59:36]ACCESS: Logout: S_Sting/(Sadie Johnson)
+
+
+Starting up. 19:23.23
+---------------------
+[19:23:26]ADMIN: Loading jobban_rank
+[19:23:26]ADMIN: jobban_keylist was empty
+[19:23:26]ADMIN: Loading Banlist
+[19:23:32]DEBUG: Rebuilding Master Controller
+[20:52:20]ACCESS: Login: S_Sting/(S_Sting) from 127.0.0.1-1323850029 || BYOND v506
+[20:53:09]ADMIN: S_Sting has started the game.
+[20:53:12]DEBUG: Next event of severity Mundane in 14.972 minutes.
+[20:53:12]DEBUG: Next event of severity Moderate in 40.434 minutes.
+[20:53:12]DEBUG: Next event of severity Major in 82.3167 minutes.
+[20:53:13]EMOTE: mouse (938)/ : <B>The mouse (938)</B> squiks.
+[20:53:48]SAY: mouse (938)/ : SQUEEK!
+[20:55:08]EMOTE: crab/ : <B>The crab</B> clacks.
+[20:55:46]EMOTE: Coffee/ : <B>Coffee</B> clacks.
+[20:56:24]EMOTE: crab/ : <B>The crab</B> clacks.
+[20:58:29]SAY: Experiment 97d/ : EHEHEHEHEH
+[20:58:33]EMOTE: crab/ : <B>The crab</B> clicks.
+[20:58:53]EMOTE: Ian/ : <B>Ian</B> shivers.
+[20:59:05]EMOTE: Coffee/ : <B>Coffee</B> clacks.
+[20:59:07]EMOTE: Coffee/ : <B>Coffee</B> clicks.
+[20:59:51]SAY: mouse (123)/ : Squeek!
+[20:59:59]EMOTE: mouse (938)/ : <B>The mouse (938)</B> squeaks.
+[21:00:15]EMOTE: Coffee/ : <B>Coffee</B> clacks.
+[21:00:59]SAY: grey baby slime (712)/ : Lonely...
+[21:00:59]EMOTE: Ian/ : <B>Ian</B> chases their tail
+[21:01:03]EMOTE: Ian/ : <B>Ian</B> chases their tail
+[21:01:21]EMOTE: Ian/ : <B>Ian</B> dances around
+[21:01:29]ACCESS: Logout: *no key*/(S_Sting)
+[21:01:29]ACCESS: Login: S_Sting/(Carolyn Adams) from 127.0.0.1-1323850029 || BYOND v506
+[21:02:36]SAY: Runtime/ : HSSSSS
+[21:02:36]EMOTE: Coffee/ : <B>Coffee</B> clacks.
+[21:03:03]EMOTE: Experiment 68a/ : <B>Experiment 68a</B> clacks.
+[21:03:27]EMOTE: mouse (123)/ : <B>The mouse (123)</B> squeaks.
+[21:03:39]EMOTE: Coffee/ : <B>Coffee</B> clacks.
+[21:03:45]EMOTE: Ian/ : <B>Ian</B> chases their tail
+[21:03:47]EMOTE: Coffee/ : <B>Coffee</B> clicks.
+[21:05:14]EMOTE: crab/ : <B>The crab</B> clacks.
+[21:06:51]EMOTE: Experiment 97d/ : <B>Experiment 97d</B> stamps a foot.
+[21:06:57]SAY: grey baby slime (712)/ : Rawr...
+[21:07:51]EMOTE: Experiment 68a/ : <B>Experiment 68a</B> clicks.
+[21:09:19]EMOTE: mouse (123)/ : <B>The mouse (123)</B> runs in a circle.
+[21:09:39]EMOTE: Runtime/ : <B>Runtime</B> shakes their head.
+[21:10:06]EMOTE: Experiment 68a/ : <B>Experiment 68a</B> clacks.
+[21:10:10]SAY: grey baby slime (712)/ : Lonely...
+[21:10:20]DEBUG: Next event of severity Mundane in 12.78 minutes.
+[21:10:20]DEBUG: Starting event 'Trivial News' of severity Mundane.
+[21:10:41]DEBUG: Event 'Trivial News' has completed at 12:15.
+[21:10:56]SAY: Experiment 97d/ : Eh?
+[21:11:55]EMOTE: crab/ : <B>The crab</B> clacks.
+[21:13:21]EMOTE: crab/ : <B>The crab</B> clacks.
+[21:13:33]EMOTE: Coffee/ : <B>Coffee</B> clicks.
+[21:14:12]SAY: Runtime/ : Esp!
+[21:15:04]EMOTE: Experiment 97d/ : <B>Experiment 97d</B> glares around.
+[21:15:32]ACCESS: Logout: S_Sting/(Carolyn Adams)
+
+
+Starting up. 21:42.02
+---------------------
+[21:42:05]ADMIN: Loading jobban_rank
+[21:42:05]ADMIN: jobban_keylist was empty
+[21:42:05]ADMIN: Loading Banlist
+[21:42:11]DEBUG: Rebuilding Master Controller
+[21:54:44]ACCESS: Login: S_Sting/(S_Sting) from 127.0.0.1-1323850029 || BYOND v506
+[21:55:42]ADMIN: S_Sting has started the game.
+[21:55:45]ACCESS: Logout: *no key*/(S_Sting)
+[21:55:45]ACCESS: Login: S_Sting/(Kimberley Kelly) from 127.0.0.1-1323850029 || BYOND v506
+[21:55:50]DEBUG: Next event of severity Mundane in 16.094 minutes.
+[21:55:50]DEBUG: Next event of severity Moderate in 46.042 minutes.
+[21:55:50]DEBUG: Next event of severity Major in 96.36 minutes.
+[21:56:18]SAY: Runtime/ : Esp!
+[21:56:52]EMOTE: mouse (859)/ : <B>The mouse (859)</B> squeaks.
+[21:57:20]EMOTE: Ian/ : <B>Ian</B> dances around
+[21:57:31]EMOTE: crab/ : <B>The crab</B> clacks.
+[21:58:11]EMOTE: mouse (882)/ : <B>The mouse (882)</B> squeeks.
+[21:59:19]SAY: Experiment 97d/ : EHEHEHEHEH
+[21:59:27]EMOTE: Ian/ : <B>Ian</B> chases their tail
+[21:59:47]EMOTE: Ian/ : <B>Ian</B> chases their tail
+[22:01:59]EMOTE: Ian/ : <B>Ian</B> chases their tail
+[22:02:54]EMOTE: crab/ : <B>The crab</B> clicks.
+[22:02:58]EMOTE: Ian/ : <B>Ian</B> chases their tail
+[22:03:07]SAY: Runtime/ : HSSSSS
+[22:03:30]SAY: grey baby slime (761)/ : Rawr...
+[22:03:30]EMOTE: Ian/ : <B>Ian</B> dances around
+[22:04:24]EMOTE: Experiment 68a/ : <B>Experiment 68a</B> clacks.
+[22:04:54]EMOTE: Experiment 97d/ : <B>Experiment 97d</B> shakes its head.
+[22:04:56]ACCESS: Logout: S_Sting/(Kimberley Kelly)
+
+
+Starting up. 22:06.10
+---------------------
+[22:06:13]ADMIN: Loading jobban_rank
+[22:06:13]ADMIN: jobban_keylist was empty
+[22:06:13]ADMIN: Loading Banlist
+[22:06:19]DEBUG: Rebuilding Master Controller
+[22:08:40]ACCESS: Login: S_Sting/(S_Sting) from 127.0.0.1-1323850029 || BYOND v506
+[22:09:10]ADMIN: S_Sting has started the game.
+[22:09:24]DEBUG: Next event of severity Mundane in 15.02 minutes.
+[22:09:24]DEBUG: Next event of severity Moderate in 52.252 minutes.
+[22:09:24]DEBUG: Next event of severity Major in 81.0917 minutes.
+[22:10:11]EMOTE: Ian/ : <B>Ian</B> dances around
+[22:10:11]ACCESS: Logout: *no key*/(S_Sting)
+[22:10:11]ACCESS: Login: S_Sting/(Jillie Hastings) from 127.0.0.1-1323850029 || BYOND v506
+[22:10:44]EMOTE: Coffee/ : <B>Coffee</B> clacks.
+[22:12:20]EMOTE: crab/ : <B>The crab</B> clicks.
+[22:12:26]SAY: mouse (659)/ : Squeek!
+[22:13:32]EMOTE: Tom (150)/ : <B>Tom (150)</B> shakes.
+[22:14:34]EMOTE: Coffee/ : <B>Coffee</B> clicks.
+[22:14:58]EMOTE: crab/ : <B>The crab</B> clicks.
+[22:15:24]EMOTE: Coffee/ : <B>Coffee</B> clicks.
+[22:15:36]EMOTE: crab/ : <B>The crab</B> clacks.
+[22:16:30]SAY: Experiment 97d/ : Eh?
+[22:18:30]EMOTE: Ian/ : <B>Ian</B> chases their tail
+[22:19:06]EMOTE: Experiment 68a/ : <B>Experiment 68a</B> clacks.
+[22:19:10]EMOTE: Experiment 97d/ : <B>Experiment 97d</B> shakes its head.
+[22:19:46]SAY: Ian/ : YAP
+[22:22:06]SAY: grey baby slime (504)/ : Blop...
+[22:22:34]EMOTE: Ian/ : <B>Ian</B> dances around
+[22:24:21]SAY: Ian/ : Bark!
+[22:24:33]EMOTE: Ian/ : <B>Ian</B> yaps.
+[22:24:59]EMOTE: Experiment 97d/ : <B>Experiment 97d</B> brays.
+[22:26:16]SAY: Runtime/ : Esp!
+[22:26:16]EMOTE: Ian/ : <B>Ian</B> dances around
+[22:26:23]DEBUG: Next event of severity Mundane in 15.326 minutes.
+[22:26:23]DEBUG: Starting event 'Mundane News' of severity Mundane.
+[22:26:45]DEBUG: Event 'Mundane News' has completed at 12:15.
+[22:27:20]SAY: grey baby slime (864)/ : Rawr...
+[22:28:40]EMOTE: Runtime/ : <B>Runtime</B> shivers.
+[22:30:06]EMOTE: Ian/ : <B>Ian</B> chases their tail
+[22:31:02]EMOTE: Ian/ : <B>Ian</B> woofs.
+[22:31:10]SAY: grey baby slime (504)/ : Rawr...
+[22:31:14]EMOTE: Experiment 68a/ : <B>Experiment 68a</B> clacks.
+[22:31:20]EMOTE: Tom (150)/ : <B>Tom (150)</B> shakes.
+[22:33:57]EMOTE: Ian/ : <B>Ian</B> dances around
+[22:34:11]EMOTE: Ian/ : <B>Ian</B> dances around
+[22:35:23]EMOTE: Ian/ : <B>Ian</B> dances around
+[22:36:57]EMOTE: Experiment 68a/ : <B>Experiment 68a</B> clicks.
+[22:37:13]EMOTE: crab/ : <B>The crab</B> clacks.
+[22:37:31]EMOTE: Experiment 97d/ : <B>Experiment 97d</B> brays.
+[22:37:33]EMOTE: Ian/ : <B>Ian</B> dances around
+[22:38:50]EMOTE: crab/ : <B>The crab</B> clacks.
+[22:38:54]EMOTE: Runtime/ : <B>Runtime</B> shivers.
+[22:38:56]EMOTE: Ian/ : <B>Ian</B> chases their tail
+[22:40:16]EMOTE: crab/ : <B>The crab</B> clicks.
+[22:41:19]EMOTE: Ian/ : <B>Ian</B> dances around
+[22:42:03]EMOTE: Ian/ : <B>Ian</B> dances around
+[22:42:25]SAY: grey baby slime (504)/ : Lonely...
+[22:42:27]EMOTE: Coffee/ : <B>Coffee</B> clacks.
+[22:43:45]DEBUG: Next event of severity Mundane in 14.614 minutes.
+[22:43:45]DEBUG: Starting event 'Nothing' of severity Mundane.
+[22:43:45]EMOTE: Runtime/ : <B>Runtime</B> shakes their head.
+[22:43:47]DEBUG: Event 'Nothing' has completed at 12:30.
+[22:43:59]EMOTE: Ian/ : <B>Ian</B> dances around
+[22:45:15]SAY: Experiment 97d/ : EHEHEHEHEH
+[22:45:34]EMOTE: Experiment 97d/ : <B>Experiment 97d</B> shakes its head.
+[22:46:58]EMOTE: crab/ : <B>The crab</B> clicks.
+[22:48:15]EMOTE: Ian/ : <B>Ian</B> dances around
+[22:48:38]EMOTE: Coffee/ : <B>Coffee</B> clicks.
+[22:50:08]SAY: grey baby slime (864)/ : Blop...
+[22:50:12]EMOTE: Ian/ : <B>Ian</B> shivers.
+[22:50:20]EMOTE: crab/ : <B>The crab</B> clacks.
+[22:50:34]EMOTE: crab/ : <B>The crab</B> clicks.
+[22:51:06]EMOTE: crab/ : <B>The crab</B> clacks.
+[22:51:44]EMOTE: crab/ : <B>The crab</B> clacks.
+[22:51:46]EMOTE: Ian/ : <B>Ian</B> shivers.
+[22:52:08]SAY: Runtime/ : Meow!
+[22:52:42]EMOTE: Coffee/ : <B>Coffee</B> clacks.
+[22:53:36]EMOTE: Ian/ : <B>Ian</B> barks.
+[22:56:18]EMOTE: Experiment 97d/ : <B>Experiment 97d</B> shakes its head.
+[22:57:26]EMOTE: Ian/ : <B>Ian</B> dances around
+[23:00:14]DEBUG: Next event of severity Mundane in 16.146 minutes.
+[23:00:14]DEBUG: Starting event 'Trivial News' of severity Mundane.
+[23:00:16]SAY: grey baby slime (864)/ : Blop...
+[23:00:36]DEBUG: Event 'Trivial News' has completed at 12:45.
+[23:01:07]SAY: grey baby slime (504)/ : Where is the food?
+[23:01:07]EMOTE: Runtime/ : <B>Runtime</B> mews.
+[23:01:27]SAY: Experiment 97d/ : EHEHEHEHEH
+[23:03:01]EMOTE: crab/ : <B>The crab</B> clicks.
+[23:03:38]SAY: Ian/ : Woof!
+[23:03:52]EMOTE: crab/ : <B>The crab</B> clicks.
+[23:03:53]ACCESS: Logout: S_Sting/(Jillie Hastings)

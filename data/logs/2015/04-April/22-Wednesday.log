@@ -1,0 +1,83 @@
+
+
+Starting up. 22:51.23
+---------------------
+[22:51:27]ADMIN: Loading jobban_rank
+[22:51:27]ADMIN: jobban_keylist was empty
+[22:51:27]ADMIN: Loading Banlist
+[22:51:35]DEBUG: Rebuilding Master Controller
+[22:51:47]ACCESS: Login: S_Sting/(S_Sting) from 127.0.0.1-1323850029 || BYOND v506
+[22:52:36]ADMIN: S_Sting has started the game.
+[22:52:39]DEBUG: Next event of severity Mundane in 17.754 minutes.
+[22:52:39]DEBUG: Next event of severity Moderate in 49.716 minutes.
+[22:52:39]DEBUG: Next event of severity Major in 82.1883 minutes.
+[22:52:48]ACCESS: Logout: *no key*/(S_Sting)
+[22:52:48]ACCESS: Login: S_Sting/(Cade Evans) from 127.0.0.1-1323850029 || BYOND v506
+[22:53:39]EMOTE: Coffee/ : <B>Coffee</B> clacks.
+[22:55:58]EMOTE: Experiment 97d/ : <B>Experiment 97d</B> glares around.
+[22:56:36]SAY: grey baby slime (983)/ : Blop...
+[22:57:07]EMOTE: Experiment 68a/ : <B>Experiment 68a</B> clacks.
+[22:59:21]SAY: mouse (12)/ : Squeek?
+[22:59:56]EMOTE: Ian/ : <B>Ian</B> dances around
+[23:00:02]EMOTE: mouse (306)/ : <B>The mouse (306)</B> shakes.
+[23:00:12]SAY: mouse (306)/ : Squeek!
+[23:00:14]EMOTE: crab/ : <B>The crab</B> clacks.
+[23:00:22]EMOTE: Coffee/ : <B>Coffee</B> clacks.
+[23:00:28]EMOTE: Ian/ : <B>Ian</B> chases their tail
+[23:00:36]ACCESS: Logout: S_Sting/(Cade Evans)
+
+
+Starting up. 23:05.51
+---------------------
+[23:05:54]ADMIN: Loading jobban_rank
+[23:05:54]ADMIN: jobban_keylist was empty
+[23:05:54]ADMIN: Loading Banlist
+[23:06:02]DEBUG: Rebuilding Master Controller
+[23:06:56]ACCESS: Login: S_Sting/(S_Sting) from 127.0.0.1-1323850029 || BYOND v506
+[23:07:36]ADMIN: S_Sting has started the game.
+[23:07:41]EMOTE: Experiment 97d/ : <B>Experiment 97d</B> brays.
+[23:07:43]DEBUG: Next event of severity Mundane in 12.448 minutes.
+[23:07:43]DEBUG: Next event of severity Moderate in 36.088 minutes.
+[23:07:43]DEBUG: Next event of severity Major in 92.94 minutes.
+[23:07:53]ACCESS: Logout: *no key*/(S_Sting)
+[23:07:53]ACCESS: Login: S_Sting/(Melvin Smith) from 127.0.0.1-1323850029 || BYOND v506
+[23:09:00]EMOTE: mouse (10)/ : <B>The mouse (10)</B> squeeks.
+[23:09:42]SAY: mouse (935)/ : Squeek!
+[23:09:48]EMOTE: mouse (655)/ : <B>The mouse (655)</B> runs in a circle.
+[23:10:00]EMOTE: mouse (115)/ : <B>The mouse (115)</B> squiks.
+[23:10:10]EMOTE: mouse (115)/ : <B>The mouse (115)</B> runs in a circle.
+[23:10:20]SAY: mouse (554)/ : SQUEEK!
+[23:10:22]SAY: Ian/ : Woof!
+[23:11:14]EMOTE: mouse (115)/ : <B>The mouse (115)</B> scritches at something.
+[23:11:20]EMOTE: mouse (10)/ : <B>The mouse (10)</B> squeaks.
+[23:11:28]EMOTE: crab/ : <B>The crab</B> clicks.
+[23:11:54]EMOTE: Runtime/ : <B>Runtime</B> mews.
+[23:13:28]ACCESS: Logout: S_Sting/(Melvin Smith)
+[23:14:40]ACCESS: Login: S_Sting/(Melvin Smith) from 127.0.0.1-1323850029 || BYOND v506
+[23:14:49]ADMIN: S_Sting/(Melvin Smith) jumped to 135,117,1 in the Chemistry
+[23:15:07]EMOTE: Experiment 68a/ : <B>Experiment 68a</B> clacks.
+[23:15:42]SAY: grey baby slime (433)/ : Blorble...
+[23:15:52]EMOTE: mouse (115)/ : <B>The mouse (115)</B> squeeks.
+[23:16:11]EMOTE: Ian/ : <B>Ian</B> dances around
+[23:16:30]EMOTE: mouse (935)/ : <B>The mouse (935)</B> runs in a circle.
+[23:16:40]SAY: mouse (115)/ : Squeek?
+[23:16:46]EMOTE: Tom (493)/ : <B>Tom (493)</B> squiks.
+[23:16:54]EMOTE: Experiment 97d/ : <B>Experiment 97d</B> stamps a foot.
+[23:17:18]SAY: mouse (394)/ : Squeek?
+[23:18:34]ADMIN: S_Sting/(Melvin Smith) jumped to 129,126,1 in the Central Primary Hallway
+[23:19:07]EMOTE: mouse (115)/ : <B>The mouse (115)</B> runs in a circle.
+[23:19:07]EMOTE: Ian/ : <B>Ian</B> dances around
+[23:19:09]EMOTE: crab/ : <B>The crab</B> clicks.
+[23:19:19]SAY: grey baby slime (552)/ : Rawr...
+[23:19:47]EMOTE: Ian/ : <B>Ian</B> chases their tail
+[23:20:05]EMOTE: Ian/ : <B>Ian</B> chases their tail
+[23:20:30]EMOTE: Ian/ : <B>Ian</B> pants.
+[23:20:56]SAY: Experiment 97d/ : EHEHEHEHEH
+[23:21:18]EMOTE: mouse (394)/ : <B>The mouse (394)</B> shakes.
+[23:21:38]SAY: Runtime/ : Meow!
+[23:21:50]EMOTE: crab/ : <B>The crab</B> clicks.
+[23:22:51]DEBUG: Next event of severity Mundane in 13.266 minutes.
+[23:22:51]DEBUG: Starting event 'Vermin Infestation' of severity Mundane.
+[23:22:59]EMOTE: Experiment 68a/ : <B>Experiment 68a</B> clacks.
+[23:23:15]DEBUG: Event 'Vermin Infestation' has completed at 12:12.
+[23:23:20]ACCESS: Logout: S_Sting/(Melvin Smith)

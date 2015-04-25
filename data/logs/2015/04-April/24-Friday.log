@@ -1,0 +1,78 @@
+
+
+Starting up. 01:08.09
+---------------------
+[01:08:11]ADMIN: Loading jobban_rank
+[01:08:11]ADMIN: jobban_keylist was empty
+[01:08:11]ADMIN: Loading Banlist
+[01:08:17]DEBUG: Rebuilding Master Controller
+[01:12:09]ACCESS: Login: S_Sting/(S_Sting) from 127.0.0.1-1323850029 || BYOND v506
+[01:13:51]ADMIN: S_Sting has started the game.
+[01:13:56]DEBUG: Next event of severity Mundane in 15.194 minutes.
+[01:13:56]DEBUG: Next event of severity Moderate in 40.53 minutes.
+[01:13:56]DEBUG: Next event of severity Major in 95.9767 minutes.
+[01:14:00]EMOTE: Ian/ : <B>Ian</B> dances around
+[01:14:12]ACCESS: Logout: *no key*/(S_Sting)
+[01:14:12]ACCESS: Login: S_Sting/(Alvin Young) from 127.0.0.1-1323850029 || BYOND v506
+[01:14:27]EMOTE: mouse (444)/ : <B>The mouse (444)</B> runs in a circle.
+[01:14:33]EMOTE: mouse (45)/ : <B>The mouse (45)</B> squeeks.
+[01:14:37]SAY: mouse (538)/ : SQUEEK!
+[01:14:38]ACCESS: Logout: S_Sting/(Alvin Young)
+
+
+Starting up. 01:19.51
+---------------------
+[01:19:54]ADMIN: Loading jobban_rank
+[01:19:54]ADMIN: jobban_keylist was empty
+[01:19:54]ADMIN: Loading Banlist
+[01:20:01]DEBUG: Rebuilding Master Controller
+[01:33:22]ACCESS: Login: S_Sting/(S_Sting) from 127.0.0.1-1323850029 || BYOND v506
+[01:35:56]VOTE: Gamemode vote started by the server.
+[01:35:56]DEBUG: The server has called a gamemode vote
+[01:36:56]VOTE: <b>Vote Result: Inconclusive - No Votes!</b>
+[01:38:28]DEBUG: Next event of severity Mundane in 12.204 minutes.
+[01:38:28]DEBUG: Next event of severity Moderate in 40.79 minutes.
+[01:38:28]DEBUG: Next event of severity Major in 87.9133 minutes.
+[01:38:36]EMOTE: Ian/ : <B>Ian</B> chases their tail
+[01:40:02]EMOTE: Coffee/ : <B>Coffee</B> clicks.
+[01:40:19]EMOTE: mouse (204)/ : <B>The mouse (204)</B> scritches at something.
+[01:40:45]EMOTE: mouse (656)/ : <B>The mouse (656)</B> squiks.
+[01:40:51]SAY: mouse (534)/ : SQUEEK!
+[01:40:55]EMOTE: mouse (214)/ : <B>The mouse (214)</B> squiks.
+[01:41:07]EMOTE: crab/ : <B>The crab</B> clicks.
+[01:41:13]EMOTE: Coffee/ : <B>Coffee</B> clicks.
+[01:41:29]SAY: Runtime/ : Esp!
+[01:41:49]EMOTE: crab/ : <B>The crab</B> clacks.
+[01:41:54]ACCESS: Logout: S_Sting/(S_Sting)
+
+
+Starting up. 18:15.47
+---------------------
+[18:15:51]ADMIN: Loading jobban_rank
+[18:15:51]ADMIN: jobban_keylist was empty
+[18:15:51]ADMIN: Loading Banlist
+[18:16:02]DEBUG: Rebuilding Master Controller
+[18:17:23]ACCESS: Login: S_Sting/(S_Sting) from 127.0.0.1-1323850029 || BYOND v506
+[18:18:31]ADMIN: S_Sting has started the game.
+[18:18:32]ACCESS: Logout: *no key*/(S_Sting)
+[18:18:32]ACCESS: Login: S_Sting/(Tanner Allen) from 127.0.0.1-1323850029 || BYOND v506
+[18:18:34]EMOTE: Ian/ : <B>Ian</B> dances around
+[18:18:36]DEBUG: Next event of severity Mundane in 12.204 minutes.
+[18:18:36]DEBUG: Next event of severity Moderate in 43.204 minutes.
+[18:18:36]DEBUG: Next event of severity Major in 94.0733 minutes.
+[18:18:38]ADMIN: S_Sting/(Tanner Allen) jumped to 94,119,1 in the Cargo Office
+[18:19:17]EMOTE: Ian/ : <B>Ian</B> shakes its head.
+[18:19:20]ADMIN: S_Sting/(Tanner Allen) jumped to 139,119,1 in the Medbay Hallway - Port
+[18:19:36]ADMIN: S_Sting/(Tanner Allen) jumped to 144,118,1 in the Medbay Hallway - Fore
+[18:19:40]ADMIN: S_Sting/(Tanner Allen) jumped to 139,118,1 in the Medbay Hallway - Port
+[18:19:56]ADMIN: S_Sting/(Tanner Allen) jumped to 136,118,1 in the Chemistry
+[18:20:00]ADMIN: S_Sting/(Tanner Allen) jumped to 135,123,1 in the Chemistry
+[18:20:38]ADMIN: S_Sting/(Tanner Allen) jumped to 136,120,1 in the Chemistry
+[18:20:42]ADMIN: S_Sting/(Tanner Allen) jumped to 142,118,1 in the Medbay Hallway - Fore
+[18:20:47]ADMIN: S_Sting/(Tanner Allen) jumped to 150,119,1 in the Medbay Hallway - Starboard
+[18:20:49]SAY: grey baby slime (164)/ : Lonely...
+[18:21:26]EMOTE: Runtime/ : <B>Runtime</B> shakes their head.
+[18:21:44]ADMIN: S_Sting/(Tanner Allen) jumped to 147,122,1 in the Medbay Reception
+[18:22:00]EMOTE: mouse (82)/ : <B>The mouse (82)</B> shakes.
+[18:22:39]SAY: mouse (540)/ : Squeek?
+[18:23:07]ACCESS: Logout: S_Sting/(Tanner Allen)
