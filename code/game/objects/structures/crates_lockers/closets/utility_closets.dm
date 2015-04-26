@@ -28,15 +28,15 @@
 			new /obj/item/weapon/tank/emergency_oxygen(src)
 			new /obj/item/clothing/mask/breath(src)
 			new /obj/item/clothing/mask/breath(src)
-			new /obj/item/clothing/suit/space/emergency(src)
-			new /obj/item/clothing/head/helmet/space/emergency(src)
+			//new /obj/item/clothing/suit/space/emergency(src)
+			//new /obj/item/clothing/head/helmet/space/emergency(src) //хлаю дерейред
 		if ("aid")
 			new /obj/item/weapon/tank/emergency_oxygen(src)
 			new /obj/item/weapon/storage/toolbox/emergency(src)
 			new /obj/item/clothing/mask/breath(src)
 			new /obj/item/weapon/storage/firstaid/o2(src)
-			new /obj/item/clothing/suit/space/emergency(src)
-			new /obj/item/clothing/head/helmet/space/emergency(src)
+			//new /obj/item/clothing/suit/space/emergency(src)
+			//new /obj/item/clothing/head/helmet/space/emergency(src) //хлаю дерейред
 		if ("tank")
 			new /obj/item/weapon/tank/emergency_oxygen/engi(src)
 			new /obj/item/clothing/mask/breath(src)
@@ -47,10 +47,10 @@
 			new /obj/item/weapon/tank/emergency_oxygen/engi(src)
 			new /obj/item/clothing/mask/breath(src)
 			new /obj/item/weapon/storage/firstaid/o2(src)
-			new /obj/item/clothing/suit/space/emergency(src)
-			new /obj/item/clothing/suit/space/emergency(src)
-			new /obj/item/clothing/head/helmet/space/emergency(src)
-			new /obj/item/clothing/head/helmet/space/emergency(src)
+			//new /obj/item/clothing/suit/space/emergency(src)
+			//new /obj/item/clothing/suit/space/emergency(src)
+			//new /obj/item/clothing/head/helmet/space/emergency(src)
+			//new /obj/item/clothing/head/helmet/space/emergency(src) //хлаю дерейред
 		if ("nothing")
 			// doot
 

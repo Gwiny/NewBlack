@@ -38,7 +38,7 @@ em						{font-style: normal;font-weight: bold;}
 
 /* Radio: Misc */
 .deadsay				{color: #530FAD; font-style: italic;}
-.radio					{color: #2E8B57; font-style: italic;}
+.radio					{color: #228B22; font-style: italic;}
 .deptradio				{color: #ff00ff; font-style: italic;}	/* when all other department colors fail */
 .newscaster				{color: #750000; font-style: italic;}
 
