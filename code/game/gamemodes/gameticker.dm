@@ -347,6 +347,9 @@ var/global/datum/controller/gameticker/ticker
 					blackbox.save_all_data_to_sql()
 
 				if(!delay_end)
+					world << 'sound/music/space_asshole.ogg'
+					sleep(restart_timeout)
+					sleep(restart_timeout)
 					sleep(restart_timeout)
 					if(!delay_end)
 						world.Reboot()

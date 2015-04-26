@@ -1,3 +1,61 @@
+obj/item/weapon/pool
+	icon='icons/obj/structures.dmi'
+
+
+///pool
+
+obj/item/weapon/pool/ball1
+	name="poolball"
+	icon_state="1"
+	throwforce = 12
+
+obj/item/weapon/pool/ball2
+	name="poolball"
+	icon_state="1"
+	throwforce = 12
+
+obj/item/weapon/pool/ball3
+	name="poolball"
+	icon_state="2"
+	throwforce = 12
+
+obj/item/weapon/pool/ball4
+	name="poolball"
+	icon_state="3"
+	throwforce = 12
+
+obj/item/weapon/pool/ball5
+	name="poolball"
+	icon_state="4"
+	throwforce = 12
+
+obj/item/weapon/pool/ball6
+	name="poolball"
+	icon_state="5"
+	throwforce = 12
+
+obj/item/weapon/pool/ball7
+	name="poolball"
+	icon_state="7"
+	throwforce = 12
+
+obj/item/weapon/pool/ball8
+	name="poolball"
+	icon_state="8"
+	throwforce = 12
+
+obj/item/weapon/pool/cue
+	name="cue"
+	icon_state="Cue"
+	force = 12
+	//throwforce = 12
+
+obj/item/weapon/pool/rack
+	name="rack"
+	icon_state="Rack"
+	//throwforce = 12
+
+
 /obj/item/weapon/dice
 	name = "d6"
 	desc = "A dice with six sides."

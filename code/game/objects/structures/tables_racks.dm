@@ -30,6 +30,13 @@
 	parts = /obj/item/weapon/table_parts/gambling
 	health = 50
 
+/obj/structure/table/pooltable
+	name = "pool table"
+	desc = "A curved wooden table with a thin carpet of green fabric."
+	icon_state = "pool_table"
+	parts = /obj/item/weapon/table_parts/gambling
+	health = 50
+
 /obj/structure/table/reinforced
 	icon_state = "reinf_table"
 	health = 200

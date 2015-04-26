@@ -78,7 +78,8 @@
 		src << "Guests may not use OOC."
 		return
 
-	msg = trim(sanitize(copytext(msg, 1, MAX_MESSAGE_LEN)))
+	//msg = trim(sanitize(copytext(msg, 1, MAX_MESSAGE_LEN)))
+	msg = sanitize_simple(msg)
 	if(!msg)	return
 
 	if(!(prefs.toggles & CHAT_LOOC))
