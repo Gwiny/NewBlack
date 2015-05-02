@@ -10,6 +10,7 @@
 	var/timing = 0.0
 	var/time = 30.0
 	var/title = "Mass Driver Controls"
+	l_color = "#00EE76"
 
 
 /obj/machinery/computer/pod/New()

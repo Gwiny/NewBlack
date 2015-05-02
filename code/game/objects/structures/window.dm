@@ -175,6 +175,8 @@
 	playsound(loc, 'sound/effects/Glasshit.ogg', 50, 1)
 
 /obj/structure/window/attack_hand(mob/user as mob)
+	var/destroy_chance = rand(1000)
+
 	if(HULK in user.mutations)
 		user.say(pick(";RAAAAAAAARGH!", ";HNNNNNNNNNGGGGGGH!", ";GWAAAAAAAARRRHHH!", "NNNNNNNNGGGGGGGGHH!", ";AAAAAAARRRGH!"))
 		user.visible_message("<span class='danger'>[user] smashes through [src]!</span>")
@@ -187,16 +189,47 @@
 			if(H.species.can_shred(H))
 				attack_generic(H,25)
 				return
-
 		playsound(src.loc, 'sound/effects/glassknock.ogg', 80, 1)
 		usr.visible_message("\red [usr.name] bangs against the [src.name]!", \
 							"\red You bang against the [src.name]!", \
 							"You hear a banging sound.")
+
+		if(destroy_chance < 3)
+			playsound(src, "shatter", 70, 1)
+			if(dir == SOUTHWEST)
+				var/index = null
+				index = 0
+				while(index < 2)
+					new shardtype(loc)
+			else
+				new shardtype(loc)
+				if(reinf)
+					new /obj/item/stack/rods(loc)
+			usr.visible_message("\red [usr.name] broke the [src.name]",\
+								"\red you broke the [src.name]",\
+								"You hear a banging sound.")
+			del(src)
 	else
 		playsound(src.loc, 'sound/effects/glassknock.ogg', 80, 1)
 		usr.visible_message("[usr.name] knocks on the [src.name].", \
 							"You knock on the [src.name].", \
 							"You hear a knocking sound.")
+		if(destroy_chance < 3)
+			playsound(src, "shatter", 70, 1)
+			if(dir == SOUTHWEST)
+				var/index = null
+				index = 0
+				while(index < 2)
+					new shardtype(loc)
+					if(reinf) new /obj/item/stack/rods(loc)
+			else
+				new shardtype(loc)
+				if(reinf)
+					new /obj/item/stack/rods(loc)
+			usr.visible_message("\red [usr.name] broke the [src.name]",\
+								"\red you broke the [src.name]",\
+								"You hear a banging sound.")
+			del(src)
 	return
 
 /obj/structure/window/attack_generic(var/mob/user, var/damage)

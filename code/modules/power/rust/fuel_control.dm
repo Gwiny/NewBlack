@@ -12,6 +12,7 @@
 	var/announce_stageprogression = 0
 	var/scan_range = 25
 	var/ticks_this_stage = 0
+	l_color = "#FFF68F"
 
 /*/obj/machinery/computer/rust_fuel_control/New()
 	..()

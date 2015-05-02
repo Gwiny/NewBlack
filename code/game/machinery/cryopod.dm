@@ -18,6 +18,7 @@
 	density = 0
 	interact_offline = 1
 	var/mode = null
+	l_color = "#00EE76"
 
 	//Used for logging people entering cryosleep and important items they are carrying.
 	var/list/frozen_crew = list()

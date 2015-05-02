@@ -15,6 +15,7 @@
 	var/a_id = null
 	var/temp = null
 	var/printing = null
+	l_color = "#483D8B"
 
 /obj/machinery/computer/med_data/verb/eject_id()
 	set category = "Object"

@@ -16,6 +16,7 @@
 	var/mapping = 0//For the overview file, interesting bit of code.
 	circuit = /obj/item/weapon/circuitboard/security
 	var/camera_cache = null
+	l_color = "#FF4500"
 
 	attack_ai(var/mob/user as mob)
 		return attack_hand(user)

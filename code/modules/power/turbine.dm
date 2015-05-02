@@ -24,6 +24,7 @@
 	var/obj/machinery/compressor/compressor
 	var/turf/simulated/outturf
 	var/lastgen
+	l_color = "#483D8B"
 
 /obj/machinery/computer/turbine_computer
 	name = "Gas turbine control computer"

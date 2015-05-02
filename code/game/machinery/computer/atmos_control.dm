@@ -14,6 +14,7 @@
 	var/list/monitored_alarm_ids = null
 	var/list/monitored_alarms = null
 	var/ui_ref
+	l_color = "#00EE76"
 
 /obj/machinery/computer/atmoscontrol/laptop
 	name = "Atmospherics Laptop"

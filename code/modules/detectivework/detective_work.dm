@@ -60,6 +60,7 @@ obj/machinery/computer/forensic_scanning
 	var/temp = ""
 	var/canclear = 1
 	var/authenticated = 0
+	l_color = "#FF4500"
 
 //Here's the structure for files: each entry is a list, and entry one in that list is the string of their
 //full and scrambled fingerprint.  This acts as the method to arrange evidence.  Each subsequent entry is list

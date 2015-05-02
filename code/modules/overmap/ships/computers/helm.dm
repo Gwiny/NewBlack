@@ -8,6 +8,7 @@
 	var/list/known_sectors = list()
 	var/dx		//desitnation
 	var/dy		//coordinates
+	l_color = "#483D8B"
 
 /obj/machinery/computer/helm/initialize()
 	linked = map_sectors["[z]"]

@@ -5,6 +5,7 @@
 	icon_state = "power"
 	req_access = list(access_engine_equip)
 	circuit = "/obj/item/weapon/circuitboard/drone_control"
+	l_color = "#FFF68F"
 
 	//Used when pinging drones.
 	var/drone_call_area = "Engineering"

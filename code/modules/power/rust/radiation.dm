@@ -72,3 +72,4 @@
 /obj/machinery/computer/rust_radiation_monitor
 	name = "Radiation Monitor"
 	icon_state = "power"
+	l_color = "#FFF68F"

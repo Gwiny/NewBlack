@@ -310,6 +310,7 @@
 	icon = 'icons/obj/computer.dmi'
 	icon_state = "scanner"
 	density = 1
+	l_color = "#483D8B"
 
 	anchored = 1
 	idle_power_usage = 200

@@ -30,6 +30,7 @@ datum/genesequence
 	var/list/manually_placed_genomes = list()
 	var/list/discovered_genomes = list("! Clear !")
 	var/list/accepted_fossil_types = list(/obj/item/weapon/fossil/plant)
+	l_color = "#483D8B"
 
 
 /obj/machinery/computer/reconstitutor/initialize()

@@ -53,6 +53,8 @@
 
 	var/list/internal_log = list()
 	var/mode = 0  // 0 - making pass, 1 - viewing logs
+	l_color = "#483D8B"
+	luminosity = 3
 
 /obj/machinery/computer/guestpass/New()
 	..()

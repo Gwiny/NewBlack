@@ -5,7 +5,7 @@
 	circuit = /obj/item/weapon/circuitboard/curefab
 	var/curing
 	var/virusing
-
+	l_color = "#483D8B"
 	var/obj/item/weapon/reagent_containers/container = null
 
 /obj/machinery/computer/curer/attackby(var/obj/I as obj, var/mob/user as mob)

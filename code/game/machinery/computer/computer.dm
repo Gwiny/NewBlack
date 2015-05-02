@@ -8,6 +8,8 @@
 	active_power_usage = 300
 	var/circuit = null //The path to the circuit board type. If circuit==null, the computer can't be disassembled.
 	var/processing = 0
+	luminosity = 2
+	l_color = "#483D8B"
 
 /obj/machinery/computer/New()
 	..()
@@ -20,6 +22,7 @@
 
 /obj/machinery/computer/process()
 	if(stat & (NOPOWER|BROKEN))
+		luminosity = 0
 		return 0
 	return 1
 

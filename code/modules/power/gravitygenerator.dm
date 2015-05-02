@@ -8,6 +8,7 @@
 	anchored = 1
 	density = 1
 	var/obj/machinery/gravity_generator = null
+	l_color = "#483D8B"
 
 
 /obj/machinery/gravity_generator/

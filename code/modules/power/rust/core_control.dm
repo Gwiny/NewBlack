@@ -6,6 +6,7 @@
 	var/list/connected_devices = list()
 	var/id_tag = "allan remember to update this before you leave"
 	var/scan_range = 25
+	l_color = "#FFF68F"
 
 	//currently viewed
 	var/obj/machinery/power/rust_core/cur_viewed_device

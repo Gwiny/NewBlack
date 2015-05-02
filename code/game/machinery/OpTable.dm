@@ -49,8 +49,11 @@
 		del(src)
 
 /obj/machinery/optable/attack_hand(mob/user as mob)
-	if(src.victim)
+	if(locate(/mob/living/carbon/human, src.loc))
 		var/mob/living/carbon/human/M = locate(/mob/living/carbon/human, src.loc)
+		if(M.lying)
+			src.victim = M
+		//var/mob/living/carbon/human/M = locate(/mob/living/carbon/human, src.loc)
 		if (!istype(M, /mob/living/carbon/human))
 			usr << "\red You don't have the dexterity to do this!"
 			return

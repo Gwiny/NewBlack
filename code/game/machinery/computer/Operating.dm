@@ -8,6 +8,7 @@
 	circuit = "/obj/item/weapon/circuitboard/operating"
 	var/mob/living/carbon/human/victim = null
 	var/obj/machinery/optable/table = null
+	l_color = "#483D8B"
 
 /obj/machinery/computer/operating/New()
 	..()

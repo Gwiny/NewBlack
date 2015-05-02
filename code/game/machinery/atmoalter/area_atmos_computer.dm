@@ -3,6 +3,7 @@
 	desc = "A computer used to control the stationary scrubbers and pumps in the area."
 	icon_state = "area_atmos"
 	circuit = "/obj/item/weapon/circuitboard/area_atmos"
+	l_color = "#483D8B"
 
 	var/list/connectedscrubbers = new()
 	var/status = ""

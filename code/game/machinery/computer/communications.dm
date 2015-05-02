@@ -32,6 +32,7 @@
 	var/status_display_freq = "1435"
 	var/stat_msg1
 	var/stat_msg2
+	l_color = "#483D8B"
 
 	var/datum/announcement/priority/crew_announcement = new
 
