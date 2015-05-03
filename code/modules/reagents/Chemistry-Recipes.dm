@@ -100,6 +100,12 @@ datum
 			required_reagents = list("radium" = 1, "phosphorus" = 1, "chlorine" = 1)
 			result_amount = 3
 
+		luminol
+			name = "Luminol"
+			id = "luminol"
+			result = "luminol"
+			required_reagents = list("hydrogen" = 3, "carbon" = 3, "ammonia" = 3)
+
 		tramadol
 			name = "Tramadol"
 			id = "tramadol"

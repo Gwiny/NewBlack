@@ -300,6 +300,62 @@ datum
 				holder.remove_reagent(src.id, 10 * REAGENTS_METABOLISM) //high metabolism to prevent extended uncult rolls.
 				return
 
+
+		luminol
+			name = "Luminol"
+			id = "luminol"
+			description = "A compound that interacts with blood on the molecular level."
+			reagent_state = LIQUID
+			color = "#F2F3F4"
+			overdose = REAGENTS_OVERDOSE
+
+			reaction_obj(var/obj/O, var/volume)
+				if(istype(O,/obj/effect/decal/cleanable/blood))
+					var/obj/effect/decal/cleanable/blood/W = O
+					W.invisibility = 1
+					W.color = "#007fff"
+					W.basecolor = "#007fff"
+				else if (istype(O, /obj/item/))
+					var/obj/item/I = O
+					I.reveal_blood()
+					return
+				else
+					return
+
+			reaction_turf(var/turf/T, var/volume)
+				if(volume >= 1)
+					if(istype(T, /turf/simulated))
+						var/turf/simulated/S = T
+						S.dirt = 0
+					T.clean_blood()
+					for(var/obj/effect/decal/cleanable/blood/C in T.contents)
+						C.invisibility = 1
+						C.basecolor = "#007fff"
+						C.color = "#007fff"
+						if(istype(C, /obj/effect/decal/cleanable/blood/tracks/footprints))
+							var/obj/effect/decal/cleanable/blood/tracks/footprints/D = C
+							for(var/datum/fluidtrack/E in D.stack)
+								E.basecolor = "#007fff"
+								D.update_icon()
+					return
+
+			reaction_mob(var/mob/living/carbon/human/H, var/method=TOUCH, var/volume)
+				if(H.head)
+					if(H.head.reveal_blood())
+						H.update_inv_head(0)
+				if(H.wear_suit)
+					if(H.wear_suit.reveal_blood())
+						H.update_inv_wear_suit(0)
+				else if(H.w_uniform)
+					if(H.w_uniform.reveal_blood())
+						H.update_inv_w_uniform(0)
+				if(H.shoes)
+					if(H.shoes.reveal_blood())
+						H.update_inv_shoes(0)
+				else
+					return
+
+
 		lube
 			name = "Space Lube"
 			id = "lube"
@@ -4444,3 +4500,17 @@ datum
 
 // Undefine the alias for REAGENTS_EFFECT_MULTIPLER
 #undef REM
+
+
+//OTHER
+
+obj/item
+	var/wasbloody = 0
+
+/obj/item/proc/reveal_blood()
+	if(wasbloody == 1)
+		wasbloody = 2
+		generate_blood_overlay()
+		blood_overlay.color = "#007fff"
+		/*blood_overlay.invisibility = INVISIBILITY_LUMINOL*/
+		overlays += blood_overlay
