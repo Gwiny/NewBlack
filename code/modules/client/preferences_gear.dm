@@ -280,79 +280,103 @@ var/global/list/gear_datums = list()
 	display_name = "executive suit"
 	path = /obj/item/clothing/under/suit_jacket/really_black
 	slot = slot_w_uniform
-	cost = 2
+	cost = 0
 
 /datum/gear/blazer_blue
 	display_name = "blazer, blue"
 	path = /obj/item/clothing/under/blazer
 	slot = slot_w_uniform
-	cost = 2
+	cost = 0
 
 /datum/gear/kilt
 	display_name = "kilt"
 	path = /obj/item/clothing/under/kilt
 	slot = slot_w_uniform
-	cost = 3
+	cost = 0
 
 /datum/gear/blackjumpskirt
 	display_name = "jumpskirt, black"
 	path = /obj/item/clothing/under/blackjumpskirt
 	slot = slot_w_uniform
-	cost = 2
+	cost = 0
 
 /datum/gear/skirt_blue
 	display_name = "plaid skirt, blue"
 	path = /obj/item/clothing/under/dress/plaid_blue
 	slot = slot_w_uniform
-	cost = 2
+	cost = 0
+
+/datum/gear/rainbow
+	display_name = "clothes, rainbow"
+	path = /obj/item/clothing/under/rainbow
+	slot = slot_w_uniform
+	cost = 0
+
+/datum/gear/oldman
+	display_name = "clothes, oldman"
+	path = /obj/item/clothing/under/lawyer/oldman
+	slot = slot_w_uniform
+	cost = 0
+
+/datum/gear/bluesuit
+	display_name = "clothes, bluesuit"
+	path = /obj/item/clothing/under/lawyer/bluesuit
+	slot = slot_w_uniform
+	cost = 0
+
+/datum/gear/navy
+	display_name = "clothes, navy"
+	path = /obj/item/clothing/under/suit_jacket/navy
+	slot = slot_w_uniform
+	cost = 0
 
 /datum/gear/skirt_purple
 	display_name = "plaid skirt, purple"
 	path = /obj/item/clothing/under/dress/plaid_purple
 	slot = slot_w_uniform
-	cost = 2
+	cost = 0
 
 /datum/gear/skirt_red
 	display_name = "plaid skirt, red"
 	path = /obj/item/clothing/under/dress/plaid_red
 	slot = slot_w_uniform
-	cost = 2
+	cost = 0
 
 /datum/gear/skirt_black
 	display_name = "skirt, black"
 	path = /obj/item/clothing/under/blackskirt
 	slot = slot_w_uniform
-	cost = 2
+	cost = 0
 
 /datum/gear/sundress
 	display_name = "sundress"
 	path = /obj/item/clothing/under/sundress
 	slot = slot_w_uniform
-	cost = 3
+	cost = 0
 
 /datum/gear/sundress_white
 	display_name = "sundress, white"
 	path = /obj/item/clothing/under/sundress_white
 	slot = slot_w_uniform
-	cost = 3
+	cost = 0
 
 /datum/gear/cheongsam
 	display_name = "cheongsam, white"
 	path = /obj/item/clothing/under/cheongsam
 	slot = slot_w_uniform
-	cost = 3
+	cost = 0
 
 /datum/gear/uniform_captain
 	display_name = "uniform, captain's dress"
 	path = /obj/item/clothing/under/dress/dress_cap
 	slot = slot_w_uniform
-	cost = 1
+	cost = 0
 	allowed_roles = list("Captain")
 
 /datum/gear/corpsecsuit
 	display_name = "uniform, corporate (Security)"
 	path = /obj/item/clothing/under/rank/security/corp
-	cost = 2
+	cost = 0
 	slot = slot_w_uniform
 	allowed_roles = list("Security Officer","Head of Security","Warden")
 
@@ -360,20 +384,20 @@ var/global/list/gear_datums = list()
 	display_name = "uniform, HoP's dress"
 	path = /obj/item/clothing/under/dress/dress_hop
 	slot = slot_w_uniform
-	cost = 1
+	cost = 0
 	allowed_roles = list("Head of Personnel")
 
 /datum/gear/uniform_hr
 	display_name = "uniform, HR director (HoP)"
 	path = /obj/item/clothing/under/dress/dress_hr
 	slot = slot_w_uniform
-	cost = 1
+	cost = 0
 	allowed_roles = list("Head of Personnel")
 
 /datum/gear/navysecsuit
 	display_name = "uniform, navyblue (Security)"
 	path = /obj/item/clothing/under/rank/security/navyblue
-	cost = 2
+	cost = 0
 	slot = slot_w_uniform
 	allowed_roles = list("Security Officer","Head of Security","Warden")
 
