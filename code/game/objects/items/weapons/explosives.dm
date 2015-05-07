@@ -14,6 +14,14 @@
 	var/open_panel = 0
 	var/image_overlay = null
 
+/obj/item/weapon/plastique/lowpower
+	name = "Low power explosive charge"
+	desc = "Used to put holes in specific areas without too much extra hole."
+
+/obj/item/weapon/plastique/highpower
+	name = "High power explosive charge"
+	desc = "Used to put holes in specific areas without too much extra hole."
+
 /obj/item/weapon/plastique/New()
 	wires = new(src)
 	image_overlay = image('icons/obj/assemblies.dmi', "plastic-explosive2")
@@ -84,3 +92,47 @@
 
 /obj/item/weapon/plastique/attack(mob/M as mob, mob/user as mob, def_zone)
 	return
+
+
+/obj/item/weapon/plastique/lowpower/explode(var/location)
+
+	if(!target)
+		target = get_atom_on_turf(src)
+	if(!target)
+		target = src
+	if(location)
+		explosion(location, 2, 3, 2, 3)
+
+	if(target)
+		if (istype(target, /turf/simulated/wall))
+			var/turf/simulated/wall/W = target
+			W.dismantle_wall(1)
+		else if(istype(target, /mob/living))
+			target.ex_act(2) // c4 can't gib mobs anymore.
+		else
+			target.ex_act(1)
+	if(target)
+		target.overlays -= image_overlay
+	del(src) // qdel
+
+
+/obj/item/weapon/plastique/highpower/explode(var/location)
+
+	if(!target)
+		target = get_atom_on_turf(src)
+	if(!target)
+		target = src
+	if(location)
+		explosion(location, 4, 5, 4, 5)
+
+	if(target)
+		if (istype(target, /turf/simulated/wall))
+			var/turf/simulated/wall/W = target
+			W.dismantle_wall(1)
+		else if(istype(target, /mob/living))
+			target.ex_act(2) // c4 can't gib mobs anymore.
+		else
+			target.ex_act(1)
+	if(target)
+		target.overlays -= image_overlay
+	del(src) // qdel

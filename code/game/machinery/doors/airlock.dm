@@ -29,6 +29,7 @@
 	var/hasShocked = 0 //Prevents multiple shocks from happening
 	var/secured_wires = 0
 	var/datum/wires/airlock/wires = null
+	var/datum/effect/effect/system/spark_spread/spark_system
 
 /obj/machinery/door/airlock/attack_generic(var/mob/user, var/damage)
 	if(stat & (BROKEN|NOPOWER))
@@ -899,9 +900,17 @@ About the new airlock wires panel:
 		return src.attack_hand(user)
 	else if(istype(C, /obj/item/device/multitool))
 		return src.attack_hand(user)
+		spark_system.set_up(5, 10, src.loc)
+		spark_system.start()
+		if(src.emagged == 0)
+			user << "Door not emagged"
+		if(src.emagged == 1)
+			user << "Door emagged"
+		if(src.secondsElectrified != 0)
+			user << "Door electrified"
 	else if(istype(C, /obj/item/device/assembly/signaler))
 		return src.attack_hand(user)
-	else if(istype(C, /obj/item/weapon/pai_cable))	// -- TLE
+	else if(istype(C, /obj/item/weapon/pai_cable || /obj/item/device/multitool))	// -- TLE
 		var/obj/item/weapon/pai_cable/cable = C
 		cable.plugin(src, user)
 	else if(!repairing && istype(C, /obj/item/weapon/crowbar))
@@ -945,6 +954,16 @@ About the new airlock wires panel:
 				spawn(0)	open(1)
 			else
 				spawn(0)	close(1)
+
+	else if(istype(C, /obj/item/device/debugger/plin))
+		spark_system.set_up(5, 10, src.loc)
+		spark_system.start()
+		if(src.emagged == 0)
+			user << "Door not emagged"
+		if(src.emagged == 1)
+			user << "Door emagged"
+		if(src.secondsElectrified != 0)
+			user << "Door electrified"
 
 	else if(istype(C, /obj/item/weapon/twohanded/fireaxe) && !arePowerSystemsOn())
 		if(locked)

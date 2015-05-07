@@ -12,6 +12,17 @@
 	projectile_type = /obj/item/projectile/beam
 	fire_delay = 1 //rapid fire
 
+/obj/item/weapon/gun/energy/laser/XENOMORPH
+	name = "FUCKEN NECROMORPH"
+	desc = "From 2station with love."
+	icon_state = "plasmacutter"
+	item_state = "gun"
+	var/digspeed = 20 //Can slice though normal walls, all girders, or be used in reinforced wall deconstruction/ light thermite on fire
+	origin_tech = "materials=4;phorontech=3;engineering=3"
+	//desc = "A rock cutter that uses bursts of hot plasma. You could use it to cut limbs off of xenos! Or, you know, mine stuff."
+	var/drill_verb = "cutting"
+
+
 /obj/item/weapon/gun/energy/laser/mounted
 	self_recharge = 1
 	use_external_power = 1

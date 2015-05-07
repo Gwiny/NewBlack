@@ -128,7 +128,7 @@
 			user << "\blue \icon[P] [src] has been excavated to a depth of [2*excavation_level]cm."
 		return
 
-	if (istype(W, /obj/item/weapon/pickaxe))
+	if (istype(W, /obj/item/weapon/pickaxe || /obj/item/weapon/gun/energy/laser/XENOMORPH))
 		var/turf/T = user.loc
 		if (!( istype(T, /turf) ))
 			return

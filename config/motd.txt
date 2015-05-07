@@ -2,4 +2,14 @@
 
 -<i>This server is running <a href="http://baystation12.net/">Baystation 12's</a> modification of the <a href="http://ss13.eu/">/tg/station13</a> SS13 code.</i>
 <br><br>
+-<i>Animus Konfochka(for fun and cheerful communication with animus!) - Jabber spacestation13@conference.jabber.ru.</i>
+-<i>Forum topic <a href="http://forum.ss13.ru/index.php?showtopic=11997&st=0">Animus </a>. </i>
+<br>
+<h1>Needed Wiki Guides:</h1>
+-<i>Chemistry - <a href="http://wiki.ss13.co/Chemistry">partly Goon</a> and <a href="http://wiki.baystation12.net/index.php/Guide_to_Chemistry">Bay12</a> .</i>
+-<i>Medicine - <a href="http://wiki.baystation12.net/index.php/Guide_to_Medicine">Bay12</a>.</i>
+-<i>Surgery - <a href="http:http://wiki.baystation12.net/index.php/Surgery">Bay12</a>.</i>
+-<i>Food and Drinks - <a href="http://wiki.baystation12.net/index.php/Guide_to_Food_and_Drinks">Bay12</a>.</i>
+-<i>Supermatter Engine - <a href="http://wiki.baystation12.net/index.php/Supermatter_Engine">Bay12</a>.</i>
+<br>
 <strong>Bugtracker:</strong> <a href="http://baystation12.net/forums/viewtopic.php?f=18&t=8185">http://baystation12.net/forums/viewtopic.php?f=18&t=8185</a>
