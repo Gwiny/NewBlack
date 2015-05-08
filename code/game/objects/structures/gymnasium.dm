@@ -2,24 +2,28 @@
 //Gift from the Syndicate station 13
 //And yes, all items of sportroom in one file. Not so great feature.
 
-//VERSION 0.1//
+//VERSION 0.2//
 //What we have for now//
 /*
 	1. Horizontal rod
 	2. Sport bed with weight rod
 	3. Some turfs
 	4. Boombox
+	5. Transpiration
+	6. Unfinished boxing bag
 */
 
 //What i want to do soon//
 /*
-	1. Transpiration
-	2. Yoga
-	3. Boxing bag
-	4. Maybe someting else
+	1. Yoga
+	2. Maybe something else
+	3. Oh, and fix shitting bugs and bad code
 */
 //This code touched some files:
 //jukebox.dmi
+//human.dm
+//clothing.dm
+//examine.dm //human
 
 //Horizontal rod
 //i know about relaymove(), but here i use proc loop
@@ -84,6 +88,11 @@
 				"\blue You tries to get... up! U-u-ugh!")
 	user.pixel_y += 2
 	up_count++
+	if(prob(10))
+		user.sweat_lvl++
+		if(user.sweat_lvl > 4)
+			user.sweat_lvl = 4
+		user.perspiration()
 
 //Sport bed
 /obj/structure/bed/chair/sport_bed
@@ -123,6 +132,11 @@
 	if(user.health < 40)
 		user << "/red Your wounds is too bad for use this."
 	if(user.buckled)
+		if(prob(17))
+			user.sweat_lvl++
+			if(user.sweat_lvl > 4)
+				user.sweat_lvl = 4
+			user.perspiration()
 		if(discs == 0)
 			lifted = 1
 			user.visible_message("[user] easily lifted [src]!",	\
@@ -230,8 +244,52 @@
 //So and this is end of yoga and my ideas. I add other in next update, but before i think about it. - M962
 
 
+//boxing bag. Oh, yeah. This ported from syndie by part, eh.
+//Not working yet.
+/obj/structure/boxing_stand
+	name = "Boxing stand"
+	desc = "This stand hang up the boxing bag."
+	icon = 'icons/obj/sportroom.dmi'
+	icon_state = "boxing_stand"
+	density = 1
+	anchored = 1 //yep, why not?
+
+	New()
+		new /obj/structure/boxing_bag(src.loc)
+
+/obj/structure/boxing_bag
+	name = "Boxing bag"
+	desc = "Boxing bag for train your fists and your body."
+	icon = 'icons/obj/sportroom.dmi'
+	icon_state = "boxing_part"
+	anchored = 1
+	var/forcing
+
+/obj/structure/boxing_bag/attack_hand(var/mob/living/user)
+	user.visible_message("[user] beats the [src]!",	\
+				"\blue you attack this [src]!")
+	forcing += 4
+	if(forcing > 8)
+		forcing = 8
+	while(forcing > 0)
+		if(forcing < 1 && forcing > 0)
+			forcing = 0
+		if(forcing)
+			var/turn_out = round(forcing/2)
+			for(forcing, forcing > 0, forcing--)
+				sleep(1)
+				src.icon = turn(src.icon, 5)
+			forcing = round(turn_out/2)
+			for(turn_out, turn_out > 0, turn_out--)
+				sleep(1)
+				src.icon = turn(src.icon, -5)
+	src.icon = turn(src.icon, 0)
+	return
+
+
 //Eye of the tige-e-er!
 //First: Later, i do it like item. Second: this is child of jukebox, but why not? - M962
+//Rework this shit in future. But before, i do a 3d sound, yep.
 /obj/machinery/media/jukebox/boombox
 	name = "Boombox"
 	icon = 'icons/obj/sportroom.dmi'

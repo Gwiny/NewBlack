@@ -13,6 +13,11 @@
 
 /datum/job/assistant/equip(var/mob/living/carbon/human/H)
 	if(!H)	return 0
+<<<<<<< HEAD
+	if(!slot_w_uniform)
+		var/obj/item/rand_under = pick(random_under)
+		H.equip_to_slot_or_del(new rand_under(H), slot_w_uniform)
+=======
 	if(H.ckey == "ssting")
 		H.equip_to_slot_or_del(new /obj/item/clothing/head/fluff/bruce_hachert(H), slot_head)
 	if(H.ckey == "ravager966")
@@ -20,6 +25,7 @@
 	if(H.ckey == "perfectian")
 		H.equip_to_slot_or_del(new /obj/item/weapon/deck/PERFECTIAN(H), slot_l_hand)
 	//H.equip_to_slot_or_del(new /obj/item/clothing/under/color/grey(H), slot_w_uniform)
+>>>>>>> 595f624f9fe06d553e2d0e2ebed957d29d779038
 	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/black(H), slot_shoes)
 	if(H.backbag == 1)
 		H.equip_to_slot_or_del(new /obj/item/weapon/storage/box/survival(H), slot_r_hand)

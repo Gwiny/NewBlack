@@ -46,6 +46,9 @@
 	for(var/obj/item/I in contents)
 		I.decontaminate()
 
+	for(var/obj/item/clothing/under/U in contents)
+		U.clear_of_dirt()
+
 	//Tanning!
 	for(var/obj/item/stack/sheet/hairlesshide/HH in contents)
 		var/obj/item/stack/sheet/wetleather/WL = new(src)

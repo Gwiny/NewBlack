@@ -71,6 +71,7 @@
 		else
 			msg += "[t_He] [t_is] wearing \icon[w_uniform] \a [w_uniform][tie_msg].\n"
 
+
 	//head
 	if(head)
 		if(head.blood_DNA)
@@ -238,6 +239,9 @@
 		msg += "[t_He] [t_is] quite chubby.\n"
 
 	msg += "</span>"
+
+	if(is_wet())
+		msg += "\red [t_He] [t_is] covered by sweat.\n"
 
 	if(getBrainLoss() >= 60)
 		msg += "[t_He] [t_has] a stupid expression on [t_his] face.\n"

@@ -1308,3 +1308,32 @@
 	if((species.flags & NO_SLIP) || (shoes && (shoes.flags & NOSLIP)))
 		return 0
 	..(slipped_on,stun_duration)
+
+//perspiration
+/mob/living/carbon/human/proc/is_wet()
+	if(sweat_lvl > 0)
+		return 1
+
+/mob/living/carbon/human/proc/perspiration()
+	if(src.is_wet())
+		if(sweat_lvl == 4)
+			return
+		switch(sweat_lvl) //at first, typing of sweat lvl
+			if(1)
+				src << "\red You feel like your body covers by sweat."
+			if(2)
+				src << "\red Your body are wet and sticky. You feel discomfort."
+			if(3)
+				var/say = "\red Large drips of sweat flows trough you face."
+				if(src.w_uniform)
+					say += " Your clothes completely soaked."
+					w_uniform.dirty = 1
+					src.w_uniform.dirty()
+				src << say
+			if(4)
+				src << "\red Now you completely covered by sweat. This shacles your moves and you stinks awful."
+
+/mob/living/carbon/human/proc/washing()
+	src << "\blue You completely washed your body from sweat."
+	if(sweat_lvl < 0)
+		sweat_lvl = 0
