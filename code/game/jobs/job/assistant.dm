@@ -15,6 +15,10 @@
 	if(!H)	return 0
 	if(H.ckey == "ssting")
 		H.equip_to_slot_or_del(new /obj/item/clothing/head/fluff/bruce_hachert(H), slot_head)
+	if(H.ckey == "ravager966")
+		H.equip_to_slot_or_del(new /obj/item/clothing/under/psyche(H), slot_w_uniform)
+	if(H.ckey == "perfectian")
+		H.equip_to_slot_or_del(new /obj/item/weapon/deck/PERFECTIAN(H), slot_l_hand)
 	//H.equip_to_slot_or_del(new /obj/item/clothing/under/color/grey(H), slot_w_uniform)
 	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/black(H), slot_shoes)
 	if(H.backbag == 1)

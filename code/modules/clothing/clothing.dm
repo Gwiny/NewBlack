@@ -201,6 +201,22 @@ BLIND     // can't see anything
 	species_restricted = list("exclude","Unathi","Tajara")
 	sprite_sheets = list("Vox" = 'icons/mob/species/vox/gloves.dmi')
 
+/obj/item/clothing/gloves/the_lord_of_the_rings
+	name = "the_lord_of_the_rings"
+	icon_state = "the_lord"
+	var/ring = 0
+
+/obj/item/clothing/gloves/the_lord_of_the_rings/attack_self(mob/user)
+	if(ring == 0)
+		user.invisibility = INVISIBILITY_OBSERVER
+		ring = 1
+		return
+
+	if(ring == 1)
+		user.invisibility = null
+		ring = 0
+		return
+
 /obj/item/clothing/gloves/update_clothing_icon()
 	if (ismob(src.loc))
 		var/mob/M = src.loc

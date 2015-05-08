@@ -272,3 +272,70 @@
 
 /obj/item/weapon/hand/pickup(mob/user as mob)
 	src.update_icon()
+
+
+/obj/item/weapon/deck/PERFECTIAN
+
+/obj/item/weapon/hand/PERFECTIAN/attack_self(mob/user)
+	user.visible_message("\The [user] a [pick("fool", "clown", "hos", "cocksucker")].")
+
+/obj/item/weapon/deck/PERFECTIAN/New()
+	..()
+
+	var/datum/playingcard/P
+	for(var/suit in list("spades","clubs","diamonds","hearts"))
+
+		var/colour
+		if(suit == "spades" || suit == "clubs")
+			colour = "black_"
+		else
+			colour = "red_"
+
+		for(var/number in list("joker","joker","joker","joker","joker","joker","joker","joker","joker","joker"))
+			P = new()
+			P.name = "[number] of [suit]"
+			P.card_icon = "[colour]col"
+			cards += P
+
+		for(var/number in list("joker","joker","joker"))
+			P = new()
+			P.name = "[number] of [suit]"
+			P.card_icon = "[colour]col"
+			cards += P
+
+
+/obj/item/weapon/deck/PERFECTIAN/draw_card()
+
+	set category = "Object"
+	set name = "Draw"
+	set desc = "Draw a card from a deck."
+	set src in view(1)
+
+	if(usr.stat || !Adjacent(usr)) return
+
+	if(!istype(usr,/mob/living/carbon))
+		return
+
+	var/mob/living/carbon/user = usr
+
+	if(!cards.len)
+		usr << "There are no cards in the deck."
+		return
+
+	var/obj/item/weapon/hand/PERFECTIAN/H
+	if(user.l_hand && istype(user.l_hand,/obj/item/weapon/hand/PERFECTIAN))
+		H = user.l_hand
+	else if(user.r_hand && istype(user.r_hand,/obj/item/weapon/hand/PERFECTIAN))
+		H = user.r_hand
+	else
+		H = new(get_turf(src))
+		user.put_in_hands(H)
+
+	if(!H || !user) return
+
+	var/datum/playingcard/P = cards[1]
+	H.cards += P
+	cards -= P
+	H.update_icon()
+	user.visible_message("\The [user] draws a card.")
+	user << "It's the [P]."
