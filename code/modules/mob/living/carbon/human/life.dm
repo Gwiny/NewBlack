@@ -63,6 +63,14 @@
 
 	voice = GetVoice()
 
+	if(src.sweat_lvl == 4)
+		for(var/mob/living/carbon/C in range(2, src))
+			if(C != src)
+				C << "/red You feel awful stinch from [src]'s side"
+		if(w_uniform)
+			w_uniform.dirty = 1
+			w_uniform.dirty()
+
 	//No need to update all of these procs if the guy is dead.
 	if(stat != DEAD && !in_stasis)
 		if(air_master.current_cycle%4==2 || failed_last_breath || (health < config.health_threshold_crit)) 	//First, resolve location and get a breath

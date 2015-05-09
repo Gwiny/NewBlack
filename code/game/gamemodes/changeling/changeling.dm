@@ -7,7 +7,7 @@ var/list/possible_changeling_IDs = list("Alpha","Beta","Gamma","Delta","Epsilon"
 /datum/game_mode/changeling
 	name = "changeling"
 	config_tag = "changeling"
-	restricted_jobs = list("AI", "Cyborg")
+	restricted_jobs = list("AI", "Cyborg", "Android", "Robot") //All robots
 	protected_jobs = list("Security Officer", "Warden", "Detective", "Head of Security", "Captain")
 	required_players = 2
 	required_players_secret = 10
@@ -51,6 +51,8 @@ var/list/possible_changeling_IDs = list("Alpha","Beta","Gamma","Delta","Epsilon"
 		for(var/job in restricted_jobs)//Removing robots from the list
 			if(player.assigned_role == job)
 				possible_changelings -= player
+		if(istype(player, /mob/living/carbon/human/machine)) //if player is machine. Really, this species is suck. I do androids for syndie, but not for animus and this robo-humans really nice. - M962
+			possible_changelings -= player
 
 	changeling_amount = 1 + round(num_players() / 10)
 

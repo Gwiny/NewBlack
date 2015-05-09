@@ -14,6 +14,13 @@
 	var/on = 0
 	var/brightness_on = 4 //luminosity when on
 
+// GEM
+/obj/item/device/flashlight/gem
+	icon_state = "gem"
+	name = "gem"
+	item_state = "egg2"
+	l_color = "#7FFFD4"
+
 /obj/item/device/flashlight/initialize()
 	..()
 	if(on)

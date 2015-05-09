@@ -40,7 +40,8 @@
 
 	. = src.emote_dead(message)
 
-/*
+//Oh, that's bay's guys...
+
 	for (var/mob/M in hearers(null, null))
 		if (!M.stat)
 			if(M.job == "Chaplain")
@@ -49,8 +50,8 @@
 					if(prob(20))
 						playsound(src.loc, pick('sound/effects/ghost.ogg','sound/effects/ghost2.ogg'), 10, 1)
 				else
-					M.show_message("<span class='game'><i>You hear muffled speech... you can almost make out some words...</i></span>", 2)
-//				M.show_message("<span class='game'><i>[stutter(message)]</i></span>", 2)
+//					M.show_message("<span class='game'><i>You hear muffled speech... you can almost make out some words...</i></span>", 2)
+					M.show_message("<span class='game'><i>[stutter(message)]</i></span>", 2)
 					if(prob(30))
 						playsound(src.loc, pick('sound/effects/ghost.ogg','sound/effects/ghost2.ogg'), 10, 1)
 			else
@@ -61,7 +62,7 @@
 					if(prob(20))
 						playsound(src.loc, pick('sound/effects/ghost.ogg','sound/effects/ghost2.ogg'), 10, 1)
 				else
-					M.show_message("<span class='game'><i>You hear muffled speech... you can almost make out some words...</i></span>", 2)
-//				M.show_message("<span class='game'><i>[stutter(message)]</i></span>", 2)
+//					M.show_message("<span class='game'><i>You hear muffled speech... you can almost make out some words...</i></span>", 2)
+					M.show_message("<span class='game'><i>[stutter(message)]</i></span>", 2)
 					playsound(src.loc, pick('sound/effects/ghost.ogg','sound/effects/ghost2.ogg'), 10, 1)
-*/
+

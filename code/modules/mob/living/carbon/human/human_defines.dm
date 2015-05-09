@@ -44,7 +44,7 @@
 
 	//Equipment slots
 	var/obj/item/wear_suit = null
-	var/obj/item/w_uniform = null
+	var/obj/item/clothing/under/w_uniform = null //shhh
 	var/obj/item/shoes = null
 	var/obj/item/belt = null
 	var/obj/item/gloves = null
@@ -82,3 +82,6 @@
 	var/hand_blood_color
 
 	var/list/flavor_texts = list()
+
+	//perspiration
+	var/sweat_lvl = 0

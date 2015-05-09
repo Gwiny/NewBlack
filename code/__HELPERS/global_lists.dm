@@ -127,6 +127,27 @@ var/global/list/backbaglist = list("Nothing", "Backpack", "Satchel", "Satchel Al
 
 	return 1
 
+//random undersuits by Derven
+//And yep, we can do it better, but i rework it in future - M962
+var/global/list/random_under = list(/obj/item/clothing/under/color/black, \
+									/obj/item/clothing/under/color/blue, \
+									/obj/item/clothing/under/color/green, \
+									/obj/item/clothing/under/color/grey, \
+									/obj/item/clothing/under/color/pink, \
+									/obj/item/clothing/under/color/red, \
+									/obj/item/clothing/under/color/yellow, \
+									/obj/item/clothing/under/lightblue, \
+									/obj/item/clothing/under/aqua, \
+									/obj/item/clothing/under/brown, \
+									/obj/item/clothing/under/darkred, \
+									/obj/item/clothing/under/johnny, \
+									/obj/item/clothing/under/rainbow, \
+									/obj/item/clothing/under/gentlesuit, \
+									/obj/item/clothing/under/suit_jacket, \
+									/obj/item/clothing/under/suit_jacket/really_black, \
+									/obj/item/clothing/under/assistantformal, \
+									/obj/item/clothing/under/blazer)
+
 /* // Uncomment to debug chemical reaction list.
 /client/verb/debug_chemical_list()
 

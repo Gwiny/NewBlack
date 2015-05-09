@@ -11,6 +11,8 @@
 	fire_dam_coeff = 0.7
 	brute_dam_coeff = 0.5
 	req_one_access = list(access_security, access_forensics_lockers)
+	luminosity = 3
+	l_color = "#B22222"
 
 	var/mob/target
 	var/oldtarget_name
@@ -118,10 +120,12 @@
 /obj/machinery/bot/secbot/turn_on()
 	..()
 	update_icon()
+	luminosity = 3
 	src.updateUsrDialog()
 
 /obj/machinery/bot/secbot/turn_off()
 	..()
+	luminosity = 0
 	src.target = null
 	src.oldtarget_name = null
 	src.anchored = 0

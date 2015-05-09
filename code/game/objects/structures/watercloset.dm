@@ -233,6 +233,14 @@
 			var/washears = 1
 			var/washglasses = 1
 
+			if(H.is_wet())
+				H << "\blue You begin to washing yourself..."
+				H.sweat_lvl--
+				sleep(100)
+				if(H.loc == src.loc)
+					H.sweat_lvl = 0
+					H.washing()
+
 			if(H.wear_suit)
 				washgloves = !(H.wear_suit.flags_inv & HIDEGLOVES)
 				washshoes = !(H.wear_suit.flags_inv & HIDESHOES)
@@ -293,6 +301,7 @@
 		for(var/obj/effect/E in tile)
 			if(istype(E,/obj/effect/rune) || istype(E,/obj/effect/decal/cleanable) || istype(E,/obj/effect/overlay))
 				del(E)
+
 
 /obj/machinery/shower/process()
 	if(!on) return
