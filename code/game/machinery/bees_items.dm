@@ -77,6 +77,7 @@
 	New()
 		..()
 
+
 /obj/item/weapon/reagent_containers/food/snacks/honeycomb/New()
 	..()
 	reagents.add_reagent("honey",10)

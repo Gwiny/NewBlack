@@ -97,6 +97,8 @@
 		if(!slot_w_uniform)
 			var/obj/item/rand_under = pick(random_under)
 			H.equip_to_slot_or_del(new rand_under(H), slot_w_uniform)
+		if(H.ckey == "thesarkazmus")
+			H.equip_to_slot_or_del(new /obj/item/clothing/under/fluff/jumpsuitdown(H), slot_w_uniform)
 		//H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/hydroponics(H), slot_w_uniform)
 		H.equip_to_slot_or_del(new /obj/item/clothing/shoes/black(H), slot_shoes)
 		H.equip_to_slot_or_del(new /obj/item/clothing/gloves/botanic_leather(H), slot_gloves)
