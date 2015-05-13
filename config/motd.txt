@@ -2,7 +2,6 @@
 
 -<i>This server is running <a href="http://baystation12.net/">Baystation 12's</a> modification of the <a href="http://ss13.eu/">/tg/station13</a> SS13 code.</i>
 <br><br>
--<i>Animus Konfochka(for fun and cheerful communication with animus!) - Jabber spacestation13@conference.jabber.ru.</i>
 -<i>Forum topic <a href="http://forum.ss13.ru/index.php?showtopic=11997&st=0">Animus </a>. </i>
 -<i>Main <a href="http://myownblack.smforum.ru/">forum</a>. </i>
 <br>
