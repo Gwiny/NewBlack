@@ -300,6 +300,52 @@ var/global/list/gear_datums = list()
 	slot = slot_w_uniform
 	cost = 0
 
+//////JUMPSUIT//////
+
+/datum/gear/aqua
+	display_name = "jumpsuit, aqua"
+	path = /obj/item/clothing/under/aqua
+	slot = slot_w_uniform
+	cost = 0
+
+/datum/gear/lightblue
+	display_name = "jumpsuit, lightblue"
+	path = /obj/item/clothing/under/lightblue
+	slot = slot_w_uniform
+	cost = 0
+
+/datum/gear/yellow
+	display_name = "jumpsuit, yellow"
+	path = /obj/item/clothing/under/color/yellow
+	slot = slot_w_uniform
+	cost = 0
+
+/datum/gear/white
+	display_name = "jumpsuit, white"
+	path = /obj/item/clothing/under/color/white
+	slot = slot_w_uniform
+	cost = 0
+
+/datum/gear/pink
+	display_name = "jumpsuit, pink"
+	path = /obj/item/clothing/under/color/pink
+	slot = slot_w_uniform
+	cost = 0
+
+/datum/gear/red
+	display_name = "jumpsuit, red"
+	path = /obj/item/clothing/under/color/red
+	slot = slot_w_uniform
+	cost = 0
+
+/datum/gear/black
+	display_name = "jumpsuit, black"
+	path = /obj/item/clothing/under/color/black
+	slot = slot_w_uniform
+	cost = 0
+
+//////JUMPSUIT//////
+
 /datum/gear/skirt_blue
 	display_name = "plaid skirt, blue"
 	path = /obj/item/clothing/under/dress/plaid_blue

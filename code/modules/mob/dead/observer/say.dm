@@ -20,7 +20,7 @@
 /mob/dead/observer/emote(var/act, var/type, var/message)
 	//message = copytext(sanitize(message), 1, MAX_MESSAGE_LEN)
 	message = sanitize_simple(message)
-	message = rhtml_decode(message)
+	//message = rhtml_decode(message)
 
 	if(!message)
 		return
