@@ -2,7 +2,7 @@
 //Gift from the Syndicate station 13
 //And yes, all items of sportroom in one file. Not so great feature.
 
-//VERSION 0.2//
+//VERSION 0.2,5//
 //What we have for now//
 /*
 	1. Horizontal rod
@@ -11,6 +11,7 @@
 	4. Boombox
 	5. Transpiration
 	6. Unfinished boxing bag
+	7. Running track. bugged and very unfinished.
 */
 
 //What i want to do soon//
@@ -171,6 +172,8 @@
 		user << "\red You need to be buckled first"
 
 /obj/structure/hands_rod/attackby(var/obj/item/weapon/disc/D, mob/user as mob)
+	if(!istype(D, /obj/item/weapon/disc)) //ugh
+		return
 	if(discs > 5)
 		user << "\red not enough space for this disc"
 		return
@@ -200,7 +203,11 @@
 	desc = "Steel piece of metal with hole in a center."
 	icon = 'icons/obj/sportroom.dmi'
 	icon_state = "disc"
+	force = 3.2
 
+	New()
+		src.pixel_y = rand(-8, 8)
+		src.pixel_x = rand(-8, 8)
 
 //space yoga
 /obj/item/weapon/yoga
@@ -263,29 +270,148 @@
 	icon = 'icons/obj/sportroom.dmi'
 	icon_state = "boxing_part"
 	anchored = 1
-	var/forcing
+//	var/forcing //coming soon...
 
-/obj/structure/boxing_bag/attack_hand(var/mob/living/user)
+/obj/structure/boxing_bag/attack_hand(var/mob/living/carbon/human/user)
 	user.visible_message("[user] beats the [src]!",	\
-				"\blue you attack this [src]!")
-	forcing += 4
+				"\blue You attack this [src]!")
+	flick("boxing_part_anim", src)
+	if(prob(12))
+		user.sweat_lvl++
+		if(user.sweat_lvl > 4)
+			user.sweat_lvl = 4
+		user.perspiration()
+	/*forcing += 4
 	if(forcing > 8)
 		forcing = 8
-	while(forcing > 0)
-		if(forcing < 1 && forcing > 0)
-			forcing = 0
-		if(forcing)
-			var/turn_out = round(forcing/2)
-			for(forcing, forcing > 0, forcing--)
-				sleep(1)
-				src.icon = turn(src.icon, 5)
-			forcing = round(turn_out/2)
-			for(turn_out, turn_out > 0, turn_out--)
-				sleep(1)
-				src.icon = turn(src.icon, -5)
-	src.icon = turn(src.icon, 0)
+	while(forcing >= 1)
+		var/turn_out = round(forcing + (forcing/2)) ////// I'm working under physics sim. Stay waitguy :c
+		for(forcing, forcing < 1, forcing--)
+			sleep(4)
+			src.icon = turn(src.icon, 5)
+			world << "kitty"
+		forcing = round(forcing - (forcing/2))
+		sleep(8)
+		for(turn_out, turn_out < 1, turn_out--)
+			sleep(4)
+			src.icon = turn(src.icon, -5)
+		forcing = round(turn_out + (turn_out/2))*/
+//	src.icon = turn(src.icon, 5)
 	return
 
+//Running track
+/obj/machinery/running_track_terminal
+	name = "Running track's terminal"
+	desc = "This terminal controls running track, you see small pad and display on it"
+	icon = 'icons/obj/sportroom.dmi'
+	icon_state = "running_terminal"
+	anchored = 1
+	density = 1
+	var/working = 0
+	var/speed = 0
+	var/dat = ""
+	var/obj/structure/running_track/begin/B
+	var/obj/structure/running_track/T
+	var/obj/structure/running_track/end/E
+	idle_power_usage = 60
+	active_power_usage = 180
+
+
+	New()
+		if(dir in cardinal)
+			B = new(get_step(src, dir))
+			B.dir = dir
+			B.main_machine = src
+			T = new(get_step(B, dir))
+			T.dir = dir
+			T.main_machine = B
+			E = new(get_step(T, dir))
+			E.dir = dir
+			E.main_machine = T
+
+/obj/machinery/running_track_terminal/attack_hand(mob/user)
+	dat = "<html><head><title>RTT</title></head><body><TT><p align=center><B>RUNNING TRACK TERMINAL</B></p><HR>"
+	dat += "Status: <A href='?src=\ref[src];button=1'>[working ? "On" : "Off"]</A><BR>"
+	if(working == 1)
+		dat += "<A href='?src=\ref[src];minus=1'>-</A>[speed]<A href='?src=\ref[src];plus=1'>+</A>"
+	dat += "</TT></body></html>"
+	user << browse(dat, "window=running_track;size=400x680")
+	onclose(user, "running_track")
+	return
+
+
+/obj/machinery/running_track_terminal/Topic(href, href_list)
+	if(href_list["minus"])
+		src.speed--
+	if(href_list["plus"])
+		src.speed++
+	if(href_list["button"])
+		if(working)
+			working = 0
+			src.speed = 0
+		else
+			src.work_in()
+			working = 1
+			src.speed = 1
+	updating()
+
+/obj/machinery/running_track_terminal/proc/updating()
+	usr << browse(dat, "window=running_track")
+	src.attack_hand(usr)
+	return
+
+/obj/machinery/running_track_terminal/proc/work_in()
+	if(working)
+		while(speed > 0)
+			sleep(1)
+			B.moving()
+			T.moving()
+			E.moving()
+		if(src.speed < 1)
+			src.speed = 0
+
+/obj/structure/running_track
+	name = "Running track"
+	desc = "Running track. Peoples stands here, press some buttons on terminal's pad and just run."
+	icon = 'icons/obj/sportroom.dmi'
+	icon_state = "running_track"
+	anchored = 1
+	var/obj/machinery/running_track_terminal/RTT
+	var/obj/structure/running_track/main_machine
+	var/working
+	var/speed
+
+
+/obj/structure/running_track/proc/moving()
+	var/mob/user = locate()
+	if(istype(src, /obj/structure/running_track/begin))
+		speed = RTT.speed
+	else
+		speed = main_machine.speed
+	if(main_machine.working)
+		working = 1
+	if(working)
+		sleep(11 - speed * 10)
+		if(user in src.loc.loc)
+			user.Move(get_step(src, dir))
+			if(istype(src, /obj/structure/running_track/end))
+				if(speed > 4)
+					user.Weaken(5)
+	if(main_machine.speed < 1)
+		working = 0
+		speed = 0
+
+/obj/structure/running_track/begin
+	name = "Running track"
+	desc = "Running track. Peoples stands here, press some buttons on terminal's pad and just run."
+	icon = 'icons/obj/sportroom.dmi'
+	icon_state = "running_begin"
+
+/obj/structure/running_track/end
+	name = "Running track"
+	desc = "Running track. Peoples stands here, press some buttons on terminal's pad and just run."
+	icon = 'icons/obj/sportroom.dmi'
+	icon_state = "running_end"
 
 //Eye of the tige-e-er!
 //First: Later, i do it like item. Second: this is child of jukebox, but why not? - M962

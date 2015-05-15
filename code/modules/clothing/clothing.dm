@@ -521,7 +521,7 @@ BLIND     // can't see anything
 			if(!C in last_mobs)
 				C << "\red You feel awful stench from [src]."
 				last_mobs += C
-		sleep(200) //waiting for xmas? - M962
+	sleep(200) //waiting for xmas? - M962
 
 /obj/item/clothing/under/proc/dirty()
 	if(dirty)

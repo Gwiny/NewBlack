@@ -12,9 +12,6 @@
 	alt_titles = list("Technical Assistant","Medical Intern","Research Assistant","Security Cadet","Visitor")
 
 /datum/job/assistant/equip(var/mob/living/carbon/human/H)
-	if(!slot_w_uniform)
-		var/obj/item/rand_under = pick(random_under)
-		H.equip_to_slot_or_del(new rand_under(H), slot_w_uniform)
 	if(!H)	return 0
 	if(!slot_w_uniform)
 		var/obj/item/rand_under = pick(random_under)

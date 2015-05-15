@@ -21,22 +21,6 @@
 	item_state = "egg2"
 	l_color = "#7FFFD4"
 
-//EMERGEN
-/obj/item/device/flashlight/wall
-	anchored = 1
-	name = "emergency light"
-	icon_state = "wall"
-	brightness_on = 4
-	l_color = "#66CDAA"
-
-/obj/item/device/flashlight/wall/attack_hand(mob/user)
-	if(!isturf(user.loc))
-		user << "You cannot turn the light on while in this [user.loc]." //To prevent some lighting anomalities.
-		return 0
-	on = !on
-	update_brightness(user)
-	return 1
-
 /obj/item/device/flashlight/initialize()
 	..()
 	if(on)
@@ -67,7 +51,6 @@
 	on = !on
 	update_brightness(user)
 	return 1
-
 
 
 /obj/item/device/flashlight/attack(mob/living/M as mob, mob/living/user as mob)
