@@ -11,6 +11,7 @@
 	explosion_resistance = 5
 	var/health = 10
 	var/destroyed = 0
+	color = "#BEBEBE"
 
 
 /obj/structure/grille/ex_act(severity)

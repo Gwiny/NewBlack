@@ -7,6 +7,7 @@
 	pressure_resistance = 4*ONE_ATMOSPHERE
 	anchored = 1.0
 	flags = ON_BORDER
+	color = "#ADD8E6"
 	var/maxhealth = 14.0
 	var/health
 	var/ini_dir = null

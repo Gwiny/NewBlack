@@ -121,6 +121,28 @@ var/global/datum/controller/gameticker/ticker
 	else
 		src.mode.announce()
 
+	for(var/mob/new_player/player in player_list)
+		if(player && player.ready && player.mind)
+			if(player.mind.assigned_role== "Head of Personnel")
+				if(player.mind.assigned_role== "Chief Engineer")
+					if(player.mind.assigned_role== "Scientist")
+						break
+					else
+						world << "<B>Reverting to pre-game lobby. For start the game needed Head of Personnel, Chief Engineer and Scientist!<B>"
+						current_state = GAME_STATE_PREGAME
+						job_master.ResetOccupations()
+						return 0
+				else
+					world << "<B>Reverting to pre-game lobby. For start the game needed Head of Personnel, Chief Engineer and Scientist!<B>"
+					current_state = GAME_STATE_PREGAME
+					job_master.ResetOccupations()
+					return 0
+			else
+				world << "<B>Reverting to pre-game lobby. For start the game needed Head of Personnel, Chief Engineer and Scientist!<B>"
+				current_state = GAME_STATE_PREGAME
+				job_master.ResetOccupations()
+				return 0
+
 	create_characters() //Create player characters and transfer them
 	collect_minds()
 	equip_characters()

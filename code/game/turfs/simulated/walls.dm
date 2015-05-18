@@ -4,6 +4,7 @@
 	icon = 'icons/turf/walls.dmi'
 	var/mineral = "metal"
 	var/rotting = 0
+	color = "#BEBEBE"
 
 	var/damage = 0
 	var/damage_cap = 150 //Wall will break down to girders if damage reaches this point

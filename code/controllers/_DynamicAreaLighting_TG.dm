@@ -239,6 +239,7 @@ turf
 
 turf/space
 	lighting_lumcount = 4		//starlight
+	color = "#b0c4de"
 
 turf/proc/update_lumcount(amount, col_r, col_g, col_b, removing = 0)
 	lighting_lumcount += amount

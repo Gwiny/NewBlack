@@ -434,6 +434,10 @@
 		if(I && istype(I))
 			I.status &= ~ORGAN_CUT_AWAY
 
+		if(istype(I, /datum/organ/internal/lungs))	//This should solve the problem with breathing if lungs is reattached.
+			target.internal_organs_by_name["lungs"] = I
+
+
 	fail_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 		var/datum/organ/external/affected = target.get_organ(target_zone)
 		user.visible_message("\red [user]'s hand slips, damaging the flesh in [target]'s [affected.display_name] with \the [tool]!", \

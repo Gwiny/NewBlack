@@ -12,6 +12,7 @@
 	climbable = 1
 	breakable = 1
 	parts = /obj/item/weapon/table_parts
+	color = "#BEBEBE"
 
 	var/flipped = 0
 	var/health = 100
@@ -22,6 +23,7 @@
 	icon_state = "wood_table"
 	parts = /obj/item/weapon/table_parts/wood
 	health = 50
+	color = "#FAFAD2"
 
 /obj/structure/table/gamblingtable
 	name = "gambling table"
@@ -41,6 +43,7 @@
 	icon_state = "reinf_table"
 	health = 200
 	parts = /obj/item/weapon/table_parts/reinforced
+	color = "#BEBEBE"
 
 /obj/structure/table/rack
 	name = "rack"

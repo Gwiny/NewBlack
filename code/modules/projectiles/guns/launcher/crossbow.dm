@@ -6,7 +6,7 @@
 	icon = 'icons/obj/weapons.dmi'
 	icon_state = "bolt"
 	item_state = "bolt"
-	throwforce = 2 * 8
+	throwforce = 8
 	w_class = 3.0
 	sharp = 1
 	edge = 0
@@ -19,7 +19,7 @@
 	desc = "It's about a foot of weird silver metal with a wicked point."
 	sharp = 1
 	edge = 0
-	throwforce = 2 * 5
+	throwforce = 5
 	w_class = 2
 	icon = 'icons/obj/weapons.dmi'
 	icon_state = "metal-rod"
@@ -31,7 +31,7 @@
 	icon = 'icons/obj/weapons.dmi'
 	icon_state = "quill"
 	item_state = "quill"
-	throwforce = 2 * 5
+	throwforce = 5
 
 /obj/item/weapon/arrow/rod
 	name = "metal rod"
@@ -178,7 +178,7 @@
 	if(!istype(bolt,/obj/item/weapon/arrow/rod)) return
 
 	user << "<span class='notice'>[bolt] plinks and crackles as it begins to glow red-hot.</span>"
-	bolt.throwforce = 2 * 15
+	bolt.throwforce = 15
 	bolt.icon_state = "metal-rod-superheated"
 	cell.use(500)
 

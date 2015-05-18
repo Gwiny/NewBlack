@@ -41,8 +41,7 @@
 	. = src.emote_dead(message)
 
 //Oh, that's bay's guys...
-
-	for (var/mob/M in hearers(null, null))
+	for (var/mob/M in ohearers(null, null))
 		if (!M.stat)
 			if(M.job == "Chaplain")
 				if (prob (49))
