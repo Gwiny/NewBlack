@@ -30,6 +30,7 @@
 	name = "floor"
 	icon_state = "wood"
 	floor_type = /obj/item/stack/tile/wood
+	color = "#EEDD82"
 
 /turf/simulated/floor/vault
 	icon_state = "rockvault"
@@ -107,6 +108,7 @@
 /turf/simulated/floor/bluegrid
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "bcircuit"
+	color = "#00FFFF"
 
 /turf/simulated/floor/greengrid
 	icon = 'icons/turf/floors.dmi'

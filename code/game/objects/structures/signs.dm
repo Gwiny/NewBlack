@@ -79,6 +79,7 @@
 	name = "\improper SECURE AREA"
 	desc = "A warning sign which reads 'SECURE AREA'."
 	icon_state = "securearea"
+	color = "#FFFF00"
 
 /obj/structure/sign/biohazard
 	name = "\improper BIOHAZARD"
@@ -94,21 +95,28 @@
 	name = "\improper EXAM"
 	desc = "A guidance sign which reads 'EXAM ROOM'."
 	icon_state = "examroom"
+	color = "#FFFF00"
+
 
 /obj/structure/sign/vacuum
 	name = "\improper HARD VACUUM AHEAD"
 	desc = "A warning sign which reads 'HARD VACUUM AHEAD'."
 	icon_state = "space"
+	color = "#FFFF00"
+
 
 /obj/structure/sign/deathsposal
 	name = "\improper DISPOSAL LEADS TO SPACE"
 	desc = "A warning sign which reads 'DISPOSAL LEADS TO SPACE'."
 	icon_state = "deathsposal"
+	color = "#FFFF00"
 
 /obj/structure/sign/pods
 	name = "\improper ESCAPE PODS"
 	desc = "A warning sign which reads 'ESCAPE PODS'."
 	icon_state = "pods"
+	color = "#FFFF00"
+
 
 /obj/structure/sign/fire
 	name = "\improper DANGER: FIRE"
@@ -164,16 +172,20 @@
 	name = "\improper SCIENCE!"
 	desc = "A warning sign which reads 'SCIENCE!'."
 	icon_state = "science1"
+	color = "#FFFF00"
+
 
 /obj/structure/sign/chemistry
 	name = "\improper CHEMISTRY"
 	desc = "A warning sign which reads 'CHEMISTRY'."
 	icon_state = "chemistry1"
+	color = "#FFFF00"
 
 /obj/structure/sign/botany
 	name = "\improper HYDROPONICS"
 	desc = "A warning sign which reads 'HYDROPONICS'."
 	icon_state = "hydro1"
+	color = "#FFFF00"
 
 /obj/structure/sign/directions/science
 	name = "\improper Science department"
