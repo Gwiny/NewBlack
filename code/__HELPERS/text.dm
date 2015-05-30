@@ -74,8 +74,13 @@ proc/sanitize_russian(var/msg) //?????????? ??? ?????, ??? ?? ????? ??????? ????
 
 
 //Runs byond's sanitization proc along-side sanitize_simple
-/proc/sanitize(var/t,var/list/repl_chars = null)
-	return html_encode(sanitize_simple(t,repl_chars))
+/proc/sanitize(var/t,var/list/repl_chars = list("\n"="#","\t"="#","ÿ"="&#255;"))
+	for(var/char in repl_chars)
+		var/index = findtext(t, char)
+		while(index)
+			t = copytext(t, 1, index) + repl_chars[char] + copytext(t, index+1)
+			index = findtext(t, char)
+	return strip_html_properly(t)
 
 //Runs sanitize and strip_html_simple
 //I believe strip_html_simple() is required to run first to prevent '<' from displaying as '&lt;' after sanitize() calls byond's html_encode()
@@ -95,7 +100,7 @@ proc/sanitize_russian(var/msg) //?????????? ??? ?????, ??? ?? ????? ??????? ????
 	for(var/i=1, i<=length(text), i++)
 		switch(text2ascii(text,i))
 			if(62,60,92,47)	return			//rejects the text if it contains these bad characters: <, >, \ or /
-			if(127 to 255)	return			//rejects weird letters like ï¿½
+//			if(127 to 255)	return			//rejects weird letters like ï¿½
 			if(0 to 31)		return			//more weird stuff
 			if(32)			continue		//whitespace
 			else			non_whitespace = 1
@@ -353,7 +358,7 @@ proc/TextPreview(var/string,var/len=40)
 //This proc strips html properly, but it's not lazy like the other procs.
 //This means that it doesn't just remove < and > and call it a day.
 //Also limit the size of the input, if specified.
-/proc/strip_html_properly(var/input, var/max_length = MAX_MESSAGE_LEN)
+/proc/strip_html_properly(var/input,var/max_length=MAX_MESSAGE_LEN)
 	if(!input)
 		return
 	var/opentag = 1 //These store the position of < and > respectively.
@@ -362,20 +367,12 @@ proc/TextPreview(var/string,var/len=40)
 		opentag = findtext(input, "<")
 		closetag = findtext(input, ">")
 		if(closetag && opentag)
-			if(closetag < opentag)
-				input = copytext(input, (closetag + 1))
-			else
-				input = copytext(input, 1, opentag) + copytext(input, (closetag + 1))
-		else if(closetag || opentag)
-			if(opentag)
-				input = copytext(input, 1, opentag)
-			else
-				input = copytext(input, (closetag + 1))
+			input = copytext(input, 1, opentag) + copytext(input, (closetag + 1))
 		else
 			break
 	if(max_length)
 		input = copytext(input,1,max_length)
-	return sanitize(input)
+	return input
 
 /proc/trim_strip_html_properly(var/input, var/max_length = MAX_MESSAGE_LEN)
     return trim(strip_html_properly(input, max_length))

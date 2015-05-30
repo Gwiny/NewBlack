@@ -1325,12 +1325,16 @@ area/space/atmosalert()
 	icon_state = "chem"
 
 /area/medical/surgery
+	name = "\improper Operating Theatre"
+	icon_state = "surgery"
+
+/*/area/medical/surgery1
 	name = "\improper Operating Theatre 1"
 	icon_state = "surgery"
 
 /area/medical/surgery2
 	name = "\improper Operating Theatre 2"
-	icon_state = "surgery"
+	icon_state = "surgery"*/
 
 /area/medical/surgeryobs
 	name = "\improper Operation Observation Room"

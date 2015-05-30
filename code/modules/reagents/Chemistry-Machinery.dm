@@ -24,11 +24,11 @@
 	var/hackedcheck = 0
 	var/list/dispensable_reagents = list("hydrogen","lithium","carbon","nitrogen","oxygen","fluorine",
 	"sodium","aluminum","silicon","phosphorus","sulfur","chlorine","potassium","iron",
-	"copper","mercury","radium","water","ethanol","sugar","fuel","sacid","tungsten","silver","iodine","bromine","stable_plasma")
+	"copper","mercury","radium","water","ethanol","sugar","fuel","sacid","tungsten","silver","iodine","bromine","stable_plasma","oil","charcoal")
 
 /obj/machinery/chem_dispenser/medical_goon
 	name = "medical chem dispenser"
-	dispensable_reagents = list("silver_sulfadiazine", "styptic_powder", "omnizine", "ephedrine", "morphine", "epinephrine", "insulin")
+	dispensable_reagents = list("silver_sulfadiazine", "styptic_powder", "omnizine", "ephedrine", "morphine", "epinephrine", "insulin", "oculine")
 
 
 

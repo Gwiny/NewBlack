@@ -21,6 +21,7 @@ log transactions
 	icon_state = "atm"
 	anchored = 1
 	use_power = 1
+	var/speak_chance = 3 // ANIMAL RULES, JUNGLES LAW
 	idle_power_usage = 10
 	var/datum/money_account/authenticated_account
 	var/number_incorrect_tries = 0
@@ -33,6 +34,15 @@ log transactions
 	var/editing_security_level = 0
 	var/view_screen = NO_SCREEN
 	var/datum/effect/effect/system/spark_spread/spark_system
+
+/obj/machinery/atm/update_icon() //SHITCODE BY DERVEN// IT's REALLY WORKS?
+	if(stat & NOPOWER)
+		return
+
+	if(speak_chance)
+		if(rand(0,200) < speak_chance)
+			view() << pick("ATM says: No money - No honey.","ATM says: You needed money, bro", "ATM says: Cash as trash")
+
 
 /obj/machinery/atm/New()
 	..()

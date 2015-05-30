@@ -6,7 +6,7 @@
 		usr << "\red Speech is currently admin-disabled."
 		return
 
-	message = trim_strip_html_properly(message)
+	message = trim(copytext(sanitize(message), 1, MAX_MESSAGE_LEN))
 	log_whisper("[src.name]/[src.key] : [message]")
 
 	if (src.client)
@@ -22,6 +22,8 @@
 
 	if (src.stat)
 		return
+
+
 
 	if(name != GetVoice())
 		alt_name = "(as [get_id_name("Unknown")])"

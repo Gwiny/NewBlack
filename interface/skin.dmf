@@ -253,7 +253,6 @@ macro "hotkeymode"
 		name = "ALT+WEST"
 		command = "westfaceperm"
 		is-disabled = false
-		is-disabled = false
 	elem 
 		name = "ALT+NORTH"
 		command = "northfaceperm"
@@ -1842,10 +1841,36 @@ window "infowindow"
 		macro = ""
 		menu = ""
 		on-close = ""
+	elem "hello"
+		type = BROWSER
+		pos = 0,1
+		size = 639x83
+		anchor1 = 0,0
+		anchor2 = 100,100
+		font-family = ""
+		font-size = 0
+		font-style = ""
+		text-color = #000000
+		background-color = none
+		is-visible = true
+		is-disabled = false
+		is-transparent = false
+		is-default = false
+		border = sunken
+		drop-zone = false
+		right-click = false
+		saved-params = ""
+		on-size = ""
+		show-history = false
+		show-url = false
+		auto-format = true
+		use-title = false
+		on-show = ""
+		on-hide = ""
 	elem "info"
 		type = INFO
-		pos = 0,0
-		size = 638x477
+		pos = 0,86
+		size = 638x391
 		anchor1 = 0,0
 		anchor2 = 100,100
 		font-family = ""
