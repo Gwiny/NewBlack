@@ -66,7 +66,7 @@
 	if(src.sweat_lvl == 4)
 		for(var/mob/living/carbon/C in range(2, src))
 			if(C != src)
-				C << "/red You feel awful stinch from [src]'s side"
+				C << "\red You feel awful stinch from [src]'s side"
 		if(w_uniform)
 			w_uniform.dirty = 1
 			w_uniform.dirty()
